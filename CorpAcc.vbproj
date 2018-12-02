@@ -1,0 +1,1251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2295E496-277F-4219-ACF9-F0FCF7ABA067}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>newhotline32v6.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>CustPhrs</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>CustPhrs</RootNamespace>
+    <StartupObject>CustPhrs.Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CustPhrs.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CustPhrs.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>CustPhrs.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>CustPhrs.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2D855C4204D4EDA16550522FB2E34E8FE3EFD9FC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CorpAcc_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.VBVRINGLib">
+      <HintPath>.\AxInterop.VBVRINGLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Pronexus.VBVoice, Version=10.2.3.1067, Culture=neutral, PublicKeyToken=e1fb684c38af2b04, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Pronexus\bin\Pronexus.VBVoice.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole">
+      <Name>stdole</Name>
+      <HintPath>..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllData.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CallReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CallUnverified.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallUnverified.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Callverified.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Callverified.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myrepdata.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myrepdata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myresdata.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myresdata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verified.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="AllData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllData.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="CallReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CallReport.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="CallUnverified.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CallUnverified.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Callverified.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Callverified.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Log Monitor\NLog.exe" />
+    <Content Include="Log Monitor\NLogServer.exe" />
+    <Content Include="Log Monitor\pfxlogger.dll" />
+    <Content Include="Log Monitor\PortageTester.exe" />
+    <Content Include="Log Monitor\reg_clean.exe" />
+    <Content Include="Log Monitor\SlaveFinder.exe" />
+    <Content Include="myrepdata.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myrepdata.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="myresdata.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myresdata.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="newhotline32v6.ico" />
+    <Content Include="spanish\beep.wav" />
+    <Content Include="spanish\error.wav" />
+    <Content Include="spanish\old\beep.wav" />
+    <Content Include="vap\NC1-030116171753.wav" />
+    <Content Include="voice\Copy of NC4-280910043451.wav" />
+    <Content Include="voice\Copy of NC4-281013191115.wav" />
+    <Content Include="voice\Copy of NC4-281114221609.wav" />
+    <Content Include="voice\NC1-010105125049.wav" />
+    <Content Include="voice\NC1-011204090956.wav" />
+    <Content Include="voice\NC1-020205153846.wav" />
+    <Content Include="voice\NC1-020305102804.wav" />
+    <Content Include="voice\NC1-020305110927.wav" />
+    <Content Include="voice\NC1-020305111220.wav" />
+    <Content Include="voice\NC1-020305152716.wav" />
+    <Content Include="voice\NC1-020305175518.wav" />
+    <Content Include="voice\NC1-020305180507.wav" />
+    <Content Include="voice\NC1-030105175855.wav" />
+    <Content Include="voice\NC1-030105180359.wav" />
+    <Content Include="voice\NC1-030205051801.wav" />
+    <Content Include="voice\NC1-030205053629.wav" />
+    <Content Include="voice\NC1-030205075109.wav" />
+    <Content Include="voice\NC1-030305173949.wav" />
+    <Content Include="voice\NC1-031204223310.wav" />
+    <Content Include="voice\NC1-031204224608.wav" />
+    <Content Include="voice\NC1-031204225759.wav" />
+    <Content Include="voice\NC1-040205091641.wav" />
+    <Content Include="voice\NC1-040205103406.wav" />
+    <Content Include="voice\NC1-040305141331.wav" />
+    <Content Include="voice\NC1-050105091713.wav" />
+    <Content Include="voice\NC1-050105101932.wav" />
+    <Content Include="voice\NC1-060105091632.wav" />
+    <Content Include="voice\NC1-060105154217.wav" />
+    <Content Include="voice\NC1-060305084946.wav" />
+    <Content Include="voice\NC1-061104103514.wav" />
+    <Content Include="voice\NC1-070105155442.wav" />
+    <Content Include="voice\NC1-070205120113.wav" />
+    <Content Include="voice\NC1-070205133006.wav" />
+    <Content Include="voice\NC1-070205143349.wav" />
+    <Content Include="voice\NC1-070205231120.wav" />
+    <Content Include="voice\NC1-070305130646.wav" />
+    <Content Include="voice\NC1-071104045211.wav" />
+    <Content Include="voice\NC1-071204125118.wav" />
+    <Content Include="voice\NC1-071204140202.wav" />
+    <Content Include="voice\NC1-080205035954.wav" />
+    <Content Include="voice\NC1-081104105735.wav" />
+    <Content Include="voice\NC1-090205114721.wav" />
+    <Content Include="voice\NC1-090205115851.wav" />
+    <Content Include="voice\NC1-091104144628.wav" />
+    <Content Include="voice\NC1-091204132600.wav" />
+    <Content Include="voice\NC1-091204232441.wav" />
+    <Content Include="voice\NC1-100105130238.wav" />
+    <Content Include="voice\NC1-100205150446.wav" />
+    <Content Include="voice\NC1-100205151208.wav" />
+    <Content Include="voice\NC1-100305111624.wav" />
+    <Content Include="voice\NC1-100305141403.wav" />
+    <Content Include="voice\NC1-100305155208.wav" />
+    <Content Include="voice\NC1-101104070546.wav" />
+    <Content Include="voice\NC1-101104090014.wav" />
+    <Content Include="voice\NC1-101204103051.wav" />
+    <Content Include="voice\NC1-101204161754.wav" />
+    <Content Include="voice\NC1-110205212257.wav" />
+    <Content Include="voice\NC1-110305070418.wav" />
+    <Content Include="voice\NC1-111104120435.wav" />
+    <Content Include="voice\NC1-111204134318.wav" />
+    <Content Include="voice\NC1-120105150914.wav" />
+    <Content Include="voice\NC1-121104110338.wav" />
+    <Content Include="voice\NC1-121104111201.wav" />
+    <Content Include="voice\NC1-130105181320.wav" />
+    <Content Include="voice\NC1-130407084004.wav" />
+    <Content Include="voice\NC1-130407084847.wav" />
+    <Content Include="voice\NC1-131204114801.wav" />
+    <Content Include="voice\NC1-140105020424.wav" />
+    <Content Include="voice\NC1-140105071221.wav" />
+    <Content Include="voice\NC1-140205012545.wav" />
+    <Content Include="voice\NC1-140205053539.wav" />
+    <Content Include="voice\NC1-140205054012.wav" />
+    <Content Include="voice\NC1-140205073534.wav" />
+    <Content Include="voice\NC1-140205080559.wav" />
+    <Content Include="voice\NC1-141204040556.wav" />
+    <Content Include="voice\NC1-141204054543.wav" />
+    <Content Include="voice\NC1-141204105041.wav" />
+    <Content Include="voice\NC1-141204175541.wav" />
+    <Content Include="voice\NC1-150205103725.wav" />
+    <Content Include="voice\NC1-150205161100.wav" />
+    <Content Include="voice\NC1-150305064257.wav" />
+    <Content Include="voice\NC1-151104150511.wav" />
+    <Content Include="voice\NC1-151104180122.wav" />
+    <Content Include="voice\NC1-151204045635.wav" />
+    <Content Include="voice\NC1-151204190506.wav" />
+    <Content Include="voice\NC1-160105121415.wav" />
+    <Content Include="voice\NC1-161104191047.wav" />
+    <Content Include="voice\NC1-170105131157.wav" />
+    <Content Include="voice\NC1-170105150643.wav" />
+    <Content Include="voice\NC1-170205210004.wav" />
+    <Content Include="voice\NC1-171204101312.wav" />
+    <Content Include="voice\NC1-171204154614.wav" />
+    <Content Include="voice\NC1-180105082535.wav" />
+    <Content Include="voice\NC1-180205172550.wav" />
+    <Content Include="voice\NC1-180305065049.wav" />
+    <Content Include="voice\NC1-180305065757.wav" />
+    <Content Include="voice\NC1-180305082707.wav" />
+    <Content Include="voice\NC1-181104215004.wav" />
+    <Content Include="voice\NC1-190105131717.wav" />
+    <Content Include="voice\NC1-201204084120.wav" />
+    <Content Include="voice\NC1-210105211049.wav" />
+    <Content Include="voice\NC1-210205121247.wav" />
+    <Content Include="voice\NC1-210205130347.wav" />
+    <Content Include="voice\NC1-210305090939.wav" />
+    <Content Include="voice\NC1-211104161829.wav" />
+    <Content Include="voice\NC1-211204084846.wav" />
+    <Content Include="voice\NC1-211204103327.wav" />
+    <Content Include="voice\NC1-211204143813.wav" />
+    <Content Include="voice\NC1-211204165802.wav" />
+    <Content Include="voice\NC1-211204170748.wav" />
+    <Content Include="voice\NC1-220305122034.wav" />
+    <Content Include="voice\NC1-221104055619.wav" />
+    <Content Include="voice\NC1-221104104025.wav" />
+    <Content Include="voice\NC1-221104111903.wav" />
+    <Content Include="voice\NC1-221104174638.wav" />
+    <Content Include="voice\NC1-221204084347.wav" />
+    <Content Include="voice\NC1-230305105443.wav" />
+    <Content Include="voice\NC1-230305115123.wav" />
+    <Content Include="voice\NC1-230305152404.wav" />
+    <Content Include="voice\NC1-230305161733.wav" />
+    <Content Include="voice\NC1-231104080202.wav" />
+    <Content Include="voice\NC1-240105070639.wav" />
+    <Content Include="voice\NC1-240105113555.wav" />
+    <Content Include="voice\NC1-240305081350.wav" />
+    <Content Include="voice\NC1-240305121330.wav" />
+    <Content Include="voice\NC1-240305202443.wav" />
+    <Content Include="voice\NC1-241104051118.wav" />
+    <Content Include="voice\NC1-241104093123.wav" />
+    <Content Include="voice\NC1-241204120238.wav" />
+    <Content Include="voice\NC1-250105062441.wav" />
+    <Content Include="voice\NC1-250105063200.wav" />
+    <Content Include="voice\NC1-250105084114.wav" />
+    <Content Include="voice\NC1-250105130244.wav" />
+    <Content Include="voice\NC1-250105164643.wav" />
+    <Content Include="voice\NC1-250105190513.wav" />
+    <Content Include="voice\NC1-250205091433.wav" />
+    <Content Include="voice\NC1-250305102654.wav" />
+    <Content Include="voice\NC1-260105050812.wav" />
+    <Content Include="voice\NC1-271104120740.wav" />
+    <Content Include="voice\NC1-280105102515.wav" />
+    <Content Include="voice\NC1-280105134004.wav" />
+    <Content Include="voice\NC1-280205095217.wav" />
+    <Content Include="voice\NC1-280205142103.wav" />
+    <Content Include="voice\NC1-280205142827.wav" />
+    <Content Include="voice\NC1-281204084400.wav" />
+    <Content Include="voice\NC1-290105065427.wav" />
+    <Content Include="voice\NC1-291104113013.wav" />
+    <Content Include="voice\NC1-291104144601.wav" />
+    <Content Include="voice\NC1-291104145529.wav" />
+    <Content Include="voice\NC1-291204131527.wav" />
+    <Content Include="voice\NC1-291204144341.wav" />
+    <Content Include="voice\NC1-301104232945.wav" />
+    <Content Include="voice\NC1-301204100513.wav" />
+    <Content Include="voice\NC2-010305162935.wav" />
+    <Content Include="voice\NC2-010504074713.wav" />
+    <Content Include="voice\NC2-010904071646.wav" />
+    <Content Include="voice\NC2-010904083749.wav" />
+    <Content Include="voice\NC2-010904185319.wav" />
+    <Content Include="voice\NC2-011004124807.wav" />
+    <Content Include="voice\NC2-011104230234.wav" />
+    <Content Include="voice\NC2-020604124440.wav" />
+    <Content Include="voice\NC2-020804202110.wav" />
+    <Content Include="voice\NC2-020904113605.wav" />
+    <Content Include="voice\NC2-021104134849.wav" />
+    <Content Include="voice\NC2-030404153535.wav" />
+    <Content Include="voice\NC2-030404175243.wav" />
+    <Content Include="voice\NC2-030504060647.wav" />
+    <Content Include="voice\NC2-031004151624.wav" />
+    <Content Include="voice\NC2-031004185449.wav" />
+    <Content Include="voice\NC2-040504000510.wav" />
+    <Content Include="voice\NC2-040604111959.wav" />
+    <Content Include="voice\NC2-040804144204.wav" />
+    <Content Include="voice\NC2-041004102849.wav" />
+    <Content Include="voice\NC2-041004125040.wav" />
+    <Content Include="voice\NC2-060404092328.wav" />
+    <Content Include="voice\NC2-060704042124.wav" />
+    <Content Include="voice\NC2-060804131258.wav" />
+    <Content Include="voice\NC2-060804132929.wav" />
+    <Content Include="voice\NC2-061004110554.wav" />
+    <Content Include="voice\NC2-061004135534.wav" />
+    <Content Include="voice\NC2-061004200100.wav" />
+    <Content Include="voice\NC2-061004200947.wav" />
+    <Content Include="voice\NC2-070305145502.wav" />
+    <Content Include="voice\NC2-070504112131.wav" />
+    <Content Include="voice\NC2-070604084902.wav" />
+    <Content Include="voice\NC2-070604090242.wav" />
+    <Content Include="voice\NC2-080604113233.wav" />
+    <Content Include="voice\NC2-080704122812.wav" />
+    <Content Include="voice\NC2-080904112447.wav" />
+    <Content Include="voice\NC2-081004091040.wav" />
+    <Content Include="voice\NC2-081004134517.wav" />
+    <Content Include="voice\NC2-090404113917.wav" />
+    <Content Include="voice\NC2-090404154949.wav" />
+    <Content Include="voice\NC2-090604172407.wav" />
+    <Content Include="voice\NC2-090604173457.wav" />
+    <Content Include="voice\NC2-090904140013.wav" />
+    <Content Include="voice\NC2-100504134327.wav" />
+    <Content Include="voice\NC2-100504224430.wav" />
+    <Content Include="voice\NC2-100504225122.wav" />
+    <Content Include="voice\NC2-100604162418.wav" />
+    <Content Include="voice\NC2-100604163301.wav" />
+    <Content Include="voice\NC2-100604171506.wav" />
+    <Content Include="voice\NC2-100804064128.wav" />
+    <Content Include="voice\NC2-100804141431.wav" />
+    <Content Include="voice\NC2-100904091408.wav" />
+    <Content Include="voice\NC2-100904140559.wav" />
+    <Content Include="voice\NC2-100904151036.wav" />
+    <Content Include="voice\NC2-110504110519.wav" />
+    <Content Include="voice\NC2-110504130955.wav" />
+    <Content Include="voice\NC2-110504154440.wav" />
+    <Content Include="voice\NC2-110704075719.wav" />
+    <Content Include="voice\NC2-110704165753.wav" />
+    <Content Include="voice\NC2-120404041711.wav" />
+    <Content Include="voice\NC2-120704130819.wav" />
+    <Content Include="voice\NC2-120704144106.wav" />
+    <Content Include="voice\NC2-120704193403.wav" />
+    <Content Include="voice\NC2-121004134012.wav" />
+    <Content Include="voice\NC2-121004152020.wav" />
+    <Content Include="voice\NC2-130504174707.wav" />
+    <Content Include="voice\NC2-130604141000.wav" />
+    <Content Include="voice\NC2-130804133445.wav" />
+    <Content Include="voice\NC2-130804144523.wav" />
+    <Content Include="voice\NC2-130904085236.wav" />
+    <Content Include="voice\NC2-131004055835.wav" />
+    <Content Include="voice\NC2-140504142744.wav" />
+    <Content Include="voice\NC2-140604074910.wav" />
+    <Content Include="voice\NC2-140604094420.wav" />
+    <Content Include="voice\NC2-140704133424.wav" />
+    <Content Include="voice\NC2-140904154712.wav" />
+    <Content Include="voice\NC2-141004125355.wav" />
+    <Content Include="voice\NC2-150404114311.wav" />
+    <Content Include="voice\NC2-150904155415.wav" />
+    <Content Include="voice\NC2-160404075653.wav" />
+    <Content Include="voice\NC2-160604081431.wav" />
+    <Content Include="voice\NC2-160704104840.wav" />
+    <Content Include="voice\NC2-160704110917.wav" />
+    <Content Include="voice\NC2-160704111523.wav" />
+    <Content Include="voice\NC2-160804092020.wav" />
+    <Content Include="voice\NC2-160904113108.wav" />
+    <Content Include="voice\NC2-161004110213.wav" />
+    <Content Include="voice\NC2-161004115712.wav" />
+    <Content Include="voice\NC2-161004204740.wav" />
+    <Content Include="voice\NC2-161004205322.wav" />
+    <Content Include="voice\NC2-170604211301.wav" />
+    <Content Include="voice\NC2-170704083506.wav" />
+    <Content Include="voice\NC2-170804131350.wav" />
+    <Content Include="voice\NC2-170904151819.wav" />
+    <Content Include="voice\NC2-171004153216.wav" />
+    <Content Include="voice\NC2-180804081651.wav" />
+    <Content Include="voice\NC2-180804114256.wav" />
+    <Content Include="voice\NC2-180904085102.wav" />
+    <Content Include="voice\NC2-181004083637.wav" />
+    <Content Include="voice\NC2-181004100640.wav" />
+    <Content Include="voice\NC2-181004102700.wav" />
+    <Content Include="voice\NC2-181004180903.wav" />
+    <Content Include="voice\NC2-190404071418.wav" />
+    <Content Include="voice\NC2-190404074244.wav" />
+    <Content Include="voice\NC2-190704090614.wav" />
+    <Content Include="voice\NC2-190704091619.wav" />
+    <Content Include="voice\NC2-190704170234.wav" />
+    <Content Include="voice\NC2-190804174543.wav" />
+    <Content Include="voice\NC2-191004134251.wav" />
+    <Content Include="voice\NC2-200404064910.wav" />
+    <Content Include="voice\NC2-200404083538.wav" />
+    <Content Include="voice\NC2-200404133130.wav" />
+    <Content Include="voice\NC2-200404182005.wav" />
+    <Content Include="voice\NC2-200804023212.wav" />
+    <Content Include="voice\NC2-200804101423.wav" />
+    <Content Include="voice\NC2-200804121505.wav" />
+    <Content Include="voice\NC2-200804211815.wav" />
+    <Content Include="voice\NC2-200904094427.wav" />
+    <Content Include="voice\NC2-210404092118.wav" />
+    <Content Include="voice\NC2-210404144025.wav" />
+    <Content Include="voice\NC2-210504053528.wav" />
+    <Content Include="voice\NC2-210504072741.wav" />
+    <Content Include="voice\NC2-210504112421.wav" />
+    <Content Include="voice\NC2-210604110351.wav" />
+    <Content Include="voice\NC2-210704090622.wav" />
+    <Content Include="voice\NC2-210704171619.wav" />
+    <Content Include="voice\NC2-210804155701.wav" />
+    <Content Include="voice\NC2-211004101937.wav" />
+    <Content Include="voice\NC2-211004113847.wav" />
+    <Content Include="voice\NC2-220604143149.wav" />
+    <Content Include="voice\NC2-220704130058.wav" />
+    <Content Include="voice\NC2-220904142323.wav" />
+    <Content Include="voice\NC2-221004092844.wav" />
+    <Content Include="voice\NC2-221004114724.wav" />
+    <Content Include="voice\NC2-221004150132.wav" />
+    <Content Include="voice\NC2-230404121709.wav" />
+    <Content Include="voice\NC2-230504152459.wav" />
+    <Content Include="voice\NC2-230704154935.wav" />
+    <Content Include="voice\NC2-230704223944.wav" />
+    <Content Include="voice\NC2-230704230737.wav" />
+    <Content Include="voice\NC2-230804081526.wav" />
+    <Content Include="voice\NC2-230804130715.wav" />
+    <Content Include="voice\NC2-230804152225.wav" />
+    <Content Include="voice\NC2-240504073143.wav" />
+    <Content Include="voice\NC2-240604103857.wav" />
+    <Content Include="voice\NC2-240604124425.wav" />
+    <Content Include="voice\NC2-240604132206.wav" />
+    <Content Include="voice\NC2-240804061301.wav" />
+    <Content Include="voice\NC2-240904070433.wav" />
+    <Content Include="voice\NC2-241004122436.wav" />
+    <Content Include="voice\NC2-250804174215.wav" />
+    <Content Include="voice\NC2-250804211154.wav" />
+    <Content Include="voice\NC2-260404094752.wav" />
+    <Content Include="voice\NC2-261004085938.wav" />
+    <Content Include="voice\NC2-270404112909.wav" />
+    <Content Include="voice\NC2-270404141053.wav" />
+    <Content Include="voice\NC2-270504172421.wav" />
+    <Content Include="voice\NC2-271004084129.wav" />
+    <Content Include="voice\NC2-271004105258.wav" />
+    <Content Include="voice\NC2-280404131902.wav" />
+    <Content Include="voice\NC2-280504044918.wav" />
+    <Content Include="voice\NC2-280504193906.wav" />
+    <Content Include="voice\NC2-280604125807.wav" />
+    <Content Include="voice\NC2-280904112722.wav" />
+    <Content Include="voice\NC2-281004062458.wav" />
+    <Content Include="voice\NC2-281004193549.wav" />
+    <Content Include="voice\NC2-281004194822.wav" />
+    <Content Include="voice\NC2-290604133006.wav" />
+    <Content Include="voice\NC2-290704095014.wav" />
+    <Content Include="voice\NC2-290704101029.wav" />
+    <Content Include="voice\NC2-290704200749.wav" />
+    <Content Include="voice\NC2-291004084023.wav" />
+    <Content Include="voice\NC2-291004124759.wav" />
+    <Content Include="voice\NC2-291004201530.wav" />
+    <Content Include="voice\NC2-300404094940.wav" />
+    <Content Include="voice\NC2-300404170918.wav" />
+    <Content Include="voice\NC2-300604081036.wav" />
+    <Content Include="voice\NC2-300804072216.wav" />
+    <Content Include="voice\NC2-300804202529.wav" />
+    <Content Include="voice\NC3-250304221450.wav" />
+    <Content Include="voice\NC3-280205105718.wav" />
+    <Content Include="voice\NC4-010111164156.wav" />
+    <Content Include="voice\NC4-010211142605.wav" />
+    <Content Include="voice\NC4-010213074222.wav" />
+    <Content Include="voice\NC4-010213122546.wav" />
+    <Content Include="voice\NC4-010311071751.wav" />
+    <Content Include="voice\NC4-010513091427.wav" />
+    <Content Include="voice\NC4-010513093334.wav" />
+    <Content Include="voice\NC4-010514102834.wav" />
+    <Content Include="voice\NC4-010514105501.wav" />
+    <Content Include="voice\NC4-010811160942.wav" />
+    <Content Include="voice\NC4-011014172213.wav" />
+    <Content Include="voice\NC4-011210160040.wav" />
+    <Content Include="voice\NC4-020113190504.wav" />
+    <Content Include="voice\NC4-020211190919.wav" />
+    <Content Include="voice\NC4-020212095317.wav" />
+    <Content Include="voice\NC4-020412140009.wav" />
+    <Content Include="voice\NC4-020412144541.wav" />
+    <Content Include="voice\NC4-020412145703.wav" />
+    <Content Include="voice\NC4-020414094548.wav" />
+    <Content Include="voice\NC4-020414095730.wav" />
+    <Content Include="voice\NC4-020414122457.wav" />
+    <Content Include="voice\NC4-020414123728.wav" />
+    <Content Include="voice\NC4-020511121850.wav" />
+    <Content Include="voice\NC4-020512115907.wav" />
+    <Content Include="voice\NC4-020514161744.wav" />
+    <Content Include="voice\NC4-020614131047.wav" />
+    <Content Include="voice\NC4-020712171124.wav" />
+    <Content Include="voice\NC4-020810063627.wav" />
+    <Content Include="voice\NC4-020910082519.wav" />
+    <Content Include="voice\NC4-020914120543.wav" />
+    <Content Include="voice\NC4-021211122213.wav" />
+    <Content Include="voice\NC4-030211105527.wav" />
+    <Content Include="voice\NC4-030314145710.wav" />
+    <Content Include="voice\NC4-030412112335.wav" />
+    <Content Include="voice\NC4-030413092404.wav" />
+    <Content Include="voice\NC4-030511065656.wav" />
+    <Content Include="voice\NC4-030512194134.wav" />
+    <Content Include="voice\NC4-030611105549.wav" />
+    <Content Include="voice\NC4-030611113209.wav" />
+    <Content Include="voice\NC4-030613102452.wav" />
+    <Content Include="voice\NC4-030712062049.wav" />
+    <Content Include="voice\NC4-030712144329.wav" />
+    <Content Include="voice\NC4-030713132139.wav" />
+    <Content Include="voice\NC4-030714004049.wav" />
+    <Content Include="voice\NC4-030810012814.wav" />
+    <Content Include="voice\NC4-031014093708.wav" />
+    <Content Include="voice\NC4-031110090426.wav" />
+    <Content Include="voice\NC4-040212161509.wav" />
+    <Content Include="voice\NC4-040313150248.wav" />
+    <Content Include="voice\NC4-040413192527.wav" />
+    <Content Include="voice\NC4-040414170059.wav" />
+    <Content Include="voice\NC4-040414171307.wav" />
+    <Content Include="voice\NC4-040512082142.wav" />
+    <Content Include="voice\NC4-040614092513.wav" />
+    <Content Include="voice\NC4-040614131019.wav" />
+    <Content Include="voice\NC4-040614132017.wav" />
+    <Content Include="voice\NC4-040713113533.wav" />
+    <Content Include="voice\NC4-040913120125.wav" />
+    <Content Include="voice\NC4-041010101404.wav" />
+    <Content Include="voice\NC4-041011105837.wav" />
+    <Content Include="voice\NC4-041012111258.wav" />
+    <Content Include="voice\NC4-041013135117.wav" />
+    <Content Include="voice\NC4-041013142537.wav" />
+    <Content Include="voice\NC4-041111123602.wav" />
+    <Content Include="voice\NC4-041113164211.wav" />
+    <Content Include="voice\NC4-041113225852.wav" />
+    <Content Include="voice\NC4-041210163612.wav" />
+    <Content Include="voice\NC4-041212144448.wav" />
+    <Content Include="voice\NC4-050114182223.wav" />
+    <Content Include="voice\NC4-050212111703.wav" />
+    <Content Include="voice\NC4-050312093947.wav" />
+    <Content Include="voice\NC4-050312162238.wav" />
+    <Content Include="voice\NC4-050611202709.wav" />
+    <Content Include="voice\NC4-050611203444.wav" />
+    <Content Include="voice\NC4-050611204205.wav" />
+    <Content Include="voice\NC4-050611204900.wav" />
+    <Content Include="voice\NC4-050612213308.wav" />
+    <Content Include="voice\NC4-050614134247.wav" />
+    <Content Include="voice\NC4-050711084219.wav" />
+    <Content Include="voice\NC4-050713092101.wav" />
+    <Content Include="voice\NC4-050811183230.wav" />
+    <Content Include="voice\NC4-050911203341.wav" />
+    <Content Include="voice\NC4-050912133927.wav" />
+    <Content Include="voice\NC4-050912184243.wav" />
+    <Content Include="voice\NC4-051012151618.wav" />
+    <Content Include="voice\NC4-051110132322.wav" />
+    <Content Include="voice\NC4-051114151641.wav" />
+    <Content Include="voice\NC4-051214160029.wav" />
+    <Content Include="voice\NC4-060114195352.wav" />
+    <Content Include="voice\NC4-060213065640.wav" />
+    <Content Include="voice\NC4-060214161152.wav" />
+    <Content Include="voice\NC4-060311173405.wav" />
+    <Content Include="voice\NC4-060312052535.wav" />
+    <Content Include="voice\NC4-060312103605.wav" />
+    <Content Include="voice\NC4-060312105136.wav" />
+    <Content Include="voice\NC4-060314113052.wav" />
+    <Content Include="voice\NC4-060611105105.wav" />
+    <Content Include="voice\NC4-060812151836.wav" />
+    <Content Include="voice\NC4-061210184947.wav" />
+    <Content Include="voice\NC4-061211225256.wav" />
+    <Content Include="voice\NC4-070114175950.wav" />
+    <Content Include="voice\NC4-070204153228.wav" />
+    <Content Include="voice\NC4-070204154535.wav" />
+    <Content Include="voice\NC4-070212103242.wav" />
+    <Content Include="voice\NC4-070214080843.wav" />
+    <Content Include="voice\NC4-070313093939.wav" />
+    <Content Include="voice\NC4-070313143813.wav" />
+    <Content Include="voice\NC4-070411001654.wav" />
+    <Content Include="voice\NC4-070413141726.wav" />
+    <Content Include="voice\NC4-070613080750.wav" />
+    <Content Include="voice\NC4-070810101638.wav" />
+    <Content Include="voice\NC4-070912100645.wav" />
+    <Content Include="voice\NC4-070912160330.wav" />
+    <Content Include="voice\NC4-070913131214.wav" />
+    <Content Include="voice\NC4-071011143912.wav" />
+    <Content Include="voice\NC4-071011144538.wav" />
+    <Content Include="voice\NC4-071011145052.wav" />
+    <Content Include="voice\NC4-071014165055.wav" />
+    <Content Include="voice\NC4-071113145207.wav" />
+    <Content Include="voice\NC4-071113170329.wav" />
+    <Content Include="voice\NC4-071210133259.wav" />
+    <Content Include="voice\NC4-071210154618.wav" />
+    <Content Include="voice\NC4-080113123420.wav" />
+    <Content Include="voice\NC4-080113191155.wav" />
+    <Content Include="voice\NC4-080211171755.wav" />
+    <Content Include="voice\NC4-080213121629.wav" />
+    <Content Include="voice\NC4-080311074924.wav" />
+    <Content Include="voice\NC4-080311140551.wav" />
+    <Content Include="voice\NC4-080611124650.wav" />
+    <Content Include="voice\NC4-080711182054.wav" />
+    <Content Include="voice\NC4-080812092541.wav" />
+    <Content Include="voice\NC4-080813172622.wav" />
+    <Content Include="voice\NC4-080911111032.wav" />
+    <Content Include="voice\NC4-081012125650.wav" />
+    <Content Include="voice\NC4-081110134824.wav" />
+    <Content Include="voice\NC4-081110135815.wav" />
+    <Content Include="voice\NC4-081110140556.wav" />
+    <Content Include="voice\NC4-081112121444.wav" />
+    <Content Include="voice\NC4-081112191840.wav" />
+    <Content Include="voice\NC4-081113052502.wav" />
+    <Content Include="voice\NC4-081214093135.wav" />
+    <Content Include="voice\NC4-081214150055.wav" />
+    <Content Include="voice\NC4-090114144003.wav" />
+    <Content Include="voice\NC4-090213155829.wav" />
+    <Content Include="voice\NC4-090312115950.wav" />
+    <Content Include="voice\NC4-090312140224.wav" />
+    <Content Include="voice\NC4-090412071721.wav" />
+    <Content Include="voice\NC4-090511211223.wav" />
+    <Content Include="voice\NC4-090713212434.wav" />
+    <Content Include="voice\NC4-090810060119.wav" />
+    <Content Include="voice\NC4-090812102815.wav" />
+    <Content Include="voice\NC4-090914102027.wav" />
+    <Content Include="voice\NC4-091014123112.wav" />
+    <Content Include="voice\NC4-091110073111.wav" />
+    <Content Include="voice\NC4-091113120413.wav" />
+    <Content Include="voice\NC4-091214113945.wav" />
+    <Content Include="voice\NC4-091214123739.wav" />
+    <Content Include="voice\NC4-091214140011.wav" />
+    <Content Include="voice\NC4-100113100440.wav" />
+    <Content Include="voice\NC4-100113104304.wav" />
+    <Content Include="voice\NC4-100211111729.wav" />
+    <Content Include="voice\NC4-100212125437.wav" />
+    <Content Include="voice\NC4-100212144301.wav" />
+    <Content Include="voice\NC4-100311082924.wav" />
+    <Content Include="voice\NC4-100311100943.wav" />
+    <Content Include="voice\NC4-100311102001.wav" />
+    <Content Include="voice\NC4-100311102829.wav" />
+    <Content Include="voice\NC4-100311103350.wav" />
+    <Content Include="voice\NC4-100314122921.wav" />
+    <Content Include="voice\NC4-100412210945.wav" />
+    <Content Include="voice\NC4-100512140626.wav" />
+    <Content Include="voice\NC4-100513093954.wav" />
+    <Content Include="voice\NC4-100613150711.wav" />
+    <Content Include="voice\NC4-100614111630.wav" />
+    <Content Include="voice\NC4-100712173250.wav" />
+    <Content Include="voice\NC4-100713101305.wav" />
+    <Content Include="voice\NC4-100914000930.wav" />
+    <Content Include="voice\NC4-100914141055.wav" />
+    <Content Include="voice\NC4-100914141934.wav" />
+    <Content Include="voice\NC4-101012082624.wav" />
+    <Content Include="voice\NC4-101012164814.wav" />
+    <Content Include="voice\NC4-101013194756.wav" />
+    <Content Include="voice\NC4-101014205010.wav" />
+    <Content Include="voice\NC4-101210211920.wav" />
+    <Content Include="voice\NC4-101214194226.wav" />
+    <Content Include="voice\NC4-110111091056.wav" />
+    <Content Include="voice\NC4-110113022857.wav" />
+    <Content Include="voice\NC4-110113132352.wav" />
+    <Content Include="voice\NC4-110214095821.wav" />
+    <Content Include="voice\NC4-110214162420.wav" />
+    <Content Include="voice\NC4-110214170600.wav" />
+    <Content Include="voice\NC4-110214181505.wav" />
+    <Content Include="voice\NC4-110312155257.wav" />
+    <Content Include="voice\NC4-110314083052.wav" />
+    <Content Include="voice\NC4-110413111457.wav" />
+    <Content Include="voice\NC4-110511165333.wav" />
+    <Content Include="voice\NC4-110512093641.wav" />
+    <Content Include="voice\NC4-110711140904.wav" />
+    <Content Include="voice\NC4-110712075404.wav" />
+    <Content Include="voice\NC4-110712080340.wav" />
+    <Content Include="voice\NC4-110812061029.wav" />
+    <Content Include="voice\NC4-110914180046.wav" />
+    <Content Include="voice\NC4-111011073404.wav" />
+    <Content Include="voice\NC4-111110193710.wav" />
+    <Content Include="voice\NC4-111110195535.wav" />
+    <Content Include="voice\NC4-111210192350.wav" />
+    <Content Include="voice\NC4-111210193253.wav" />
+    <Content Include="voice\NC4-111212093046.wav" />
+    <Content Include="voice\NC4-111212103839.wav" />
+    <Content Include="voice\NC4-120113010053.wav" />
+    <Content Include="voice\NC4-120113031009.wav" />
+    <Content Include="voice\NC4-120312155755.wav" />
+    <Content Include="voice\NC4-120312160625.wav" />
+    <Content Include="voice\NC4-120314135022.wav" />
+    <Content Include="voice\NC4-120314164947.wav" />
+    <Content Include="voice\NC4-120412132122.wav" />
+    <Content Include="voice\NC4-120611230649.wav" />
+    <Content Include="voice\NC4-120611231524.wav" />
+    <Content Include="voice\NC4-120611232157.wav" />
+    <Content Include="voice\NC4-120712092203.wav" />
+    <Content Include="voice\NC4-120810091334.wav" />
+    <Content Include="voice\NC4-120911115734.wav" />
+    <Content Include="voice\NC4-121110083333.wav" />
+    <Content Include="voice\NC4-121113182650.wav" />
+    <Content Include="voice\NC4-121113183259.wav" />
+    <Content Include="voice\NC4-121210181812.wav" />
+    <Content Include="voice\NC4-130111164842.wav" />
+    <Content Include="voice\NC4-130114213451.wav" />
+    <Content Include="voice\NC4-130212171709.wav" />
+    <Content Include="voice\NC4-130213111351.wav" />
+    <Content Include="voice\NC4-130314140630.wav" />
+    <Content Include="voice\NC4-130412150005.wav" />
+    <Content Include="voice\NC4-130612062849.wav" />
+    <Content Include="voice\NC4-130612110933.wav" />
+    <Content Include="voice\NC4-130613180834.wav" />
+    <Content Include="voice\NC4-131014155856.wav" />
+    <Content Include="voice\NC4-140113234537.wav" />
+    <Content Include="voice\NC4-140114103325.wav" />
+    <Content Include="voice\NC4-140312134412.wav" />
+    <Content Include="voice\NC4-140514202222.wav" />
+    <Content Include="voice\NC4-140612192854.wav" />
+    <Content Include="voice\NC4-140614183217.wav" />
+    <Content Include="voice\NC4-140713113733.wav" />
+    <Content Include="voice\NC4-140913093417.wav" />
+    <Content Include="voice\NC4-141014145659.wav" />
+    <Content Include="voice\NC4-150113010337.wav" />
+    <Content Include="voice\NC4-150312110428.wav" />
+    <Content Include="voice\NC4-150312140343.wav" />
+    <Content Include="voice\NC4-150411055537.wav" />
+    <Content Include="voice\NC4-150411101901.wav" />
+    <Content Include="voice\NC4-150411102556.wav" />
+    <Content Include="voice\NC4-150412142601.wav" />
+    <Content Include="voice\NC4-150414093601.wav" />
+    <Content Include="voice\NC4-150812083929.wav" />
+    <Content Include="voice\NC4-150910144651.wav" />
+    <Content Include="voice\NC4-151012161729.wav" />
+    <Content Include="voice\NC4-151114122103.wav" />
+    <Content Include="voice\NC4-160111161817.wav" />
+    <Content Include="voice\NC4-160113091749.wav" />
+    <Content Include="voice\NC4-160113102812.wav" />
+    <Content Include="voice\NC4-160114165021.wav" />
+    <Content Include="voice\NC4-160211121726.wav" />
+    <Content Include="voice\NC4-160211124133.wav" />
+    <Content Include="voice\NC4-160411101514.wav" />
+    <Content Include="voice\NC4-160411200224.wav" />
+    <Content Include="voice\NC4-160413110753.wav" />
+    <Content Include="voice\NC4-160513071659.wav" />
+    <Content Include="voice\NC4-160613220101.wav" />
+    <Content Include="voice\NC4-160713131725.wav" />
+    <Content Include="voice\NC4-161010091646.wav" />
+    <Content Include="voice\NC4-161012112840.wav" />
+    <Content Include="voice\NC4-161012113601.wav" />
+    <Content Include="voice\NC4-161013051900.wav" />
+    <Content Include="voice\NC4-161013053328.wav" />
+    <Content Include="voice\NC4-161210124831.wav" />
+    <Content Include="voice\NC4-170111073509.wav" />
+    <Content Include="voice\NC4-170114131325.wav" />
+    <Content Include="voice\NC4-170214211021.wav" />
+    <Content Include="voice\NC4-170311060159.wav" />
+    <Content Include="voice\NC4-170412080758.wav" />
+    <Content Include="voice\NC4-170412125422.wav" />
+    <Content Include="voice\NC4-170413121413.wav" />
+    <Content Include="voice\NC4-170513162853.wav" />
+    <Content Include="voice\NC4-170613072555.wav" />
+    <Content Include="voice\NC4-170614135202.wav" />
+    <Content Include="voice\NC4-170712125534.wav" />
+    <Content Include="voice\NC4-170713195209.wav" />
+    <Content Include="voice\NC4-170714105435.wav" />
+    <Content Include="voice\NC4-170810100405.wav" />
+    <Content Include="voice\NC4-170912090338.wav" />
+    <Content Include="voice\NC4-171011182002.wav" />
+    <Content Include="voice\NC4-171111052303.wav" />
+    <Content Include="voice\NC4-171111075832.wav" />
+    <Content Include="voice\NC4-171114052341.wav" />
+    <Content Include="voice\NC4-171114085456.wav" />
+    <Content Include="voice\NC4-171114091852.wav" />
+    <Content Include="voice\NC4-171114105448.wav" />
+    <Content Include="voice\NC4-171114110047.wav" />
+    <Content Include="voice\NC4-171210223658.wav" />
+    <Content Include="voice\NC4-171212102149.wav" />
+    <Content Include="voice\NC4-180113062615.wav" />
+    <Content Include="voice\NC4-180211060049.wav" />
+    <Content Include="voice\NC4-180313142149.wav" />
+    <Content Include="voice\NC4-180512121142.wav" />
+    <Content Include="voice\NC4-180713131036.wav" />
+    <Content Include="voice\NC4-180810154046.wav" />
+    <Content Include="voice\NC4-180911131032.wav" />
+    <Content Include="voice\NC4-180913174441.wav" />
+    <Content Include="voice\NC4-180913180109.wav" />
+    <Content Include="voice\NC4-180914115743.wav" />
+    <Content Include="voice\NC4-181110160627.wav" />
+    <Content Include="voice\NC4-181113125952.wav" />
+    <Content Include="voice\NC4-181113182016.wav" />
+    <Content Include="voice\NC4-190111084902.wav" />
+    <Content Include="voice\NC4-190214193832.wav" />
+    <Content Include="voice\NC4-190312172441.wav" />
+    <Content Include="voice\NC4-190313082435.wav" />
+    <Content Include="voice\NC4-190612172837.wav" />
+    <Content Include="voice\NC4-190712124305.wav" />
+    <Content Include="voice\NC4-191114114310.wav" />
+    <Content Include="voice\NC4-191211155246.wav" />
+    <Content Include="voice\NC4-191213110034.wav" />
+    <Content Include="voice\NC4-200114071655.wav" />
+    <Content Include="voice\NC4-200114072616.wav" />
+    <Content Include="voice\NC4-200114073121.wav" />
+    <Content Include="voice\NC4-200212095150.wav" />
+    <Content Include="voice\NC4-200312194211.wav" />
+    <Content Include="voice\NC4-200314072725.wav" />
+    <Content Include="voice\NC4-200513075240.wav" />
+    <Content Include="voice\NC4-200612201932.wav" />
+    <Content Include="voice\NC4-200614081510.wav" />
+    <Content Include="voice\NC4-200614113041.wav" />
+    <Content Include="voice\NC4-200614124252.wav" />
+    <Content Include="voice\NC4-200714120532.wav" />
+    <Content Include="voice\NC4-200812100013.wav" />
+    <Content Include="voice\NC4-201111131947.wav" />
+    <Content Include="voice\NC4-201210081735.wav" />
+    <Content Include="voice\NC4-201210170435.wav" />
+    <Content Include="voice\NC4-201211151104.wav" />
+    <Content Include="voice\NC4-201211151653.wav" />
+    <Content Include="voice\NC4-210113173931.wav" />
+    <Content Include="voice\NC4-210213111144.wav" />
+    <Content Include="voice\NC4-210311131955.wav" />
+    <Content Include="voice\NC4-210314082500.wav" />
+    <Content Include="voice\NC4-210512142900.wav" />
+    <Content Include="voice\NC4-210813155406.wav" />
+    <Content Include="voice\NC4-210813160640.wav" />
+    <Content Include="voice\NC4-210814154039.wav" />
+    <Content Include="voice\NC4-210814154848.wav" />
+    <Content Include="voice\NC4-210910085457.wav" />
+    <Content Include="voice\NC4-210911044034.wav" />
+    <Content Include="voice\NC4-210911092523.wav" />
+    <Content Include="voice\NC4-211013183528.wav" />
+    <Content Include="voice\NC4-211113062019.wav" />
+    <Content Include="voice\NC4-211210170039.wav" />
+    <Content Include="voice\NC4-211214122406.wav" />
+    <Content Include="voice\NC4-220212143911.wav" />
+    <Content Include="voice\NC4-220414014357.wav" />
+    <Content Include="voice\NC4-220414153515.wav" />
+    <Content Include="voice\NC4-220512111848.wav" />
+    <Content Include="voice\NC4-220712101521.wav" />
+    <Content Include="voice\NC4-220714193722.wav" />
+    <Content Include="voice\NC4-220812203121.wav" />
+    <Content Include="voice\NC4-220911091102.wav" />
+    <Content Include="voice\NC4-221012071605.wav" />
+    <Content Include="voice\NC4-221013002837.wav" />
+    <Content Include="voice\NC4-221114132349.wav" />
+    <Content Include="voice\NC4-221214205514.wav" />
+    <Content Include="voice\NC4-230413104447.wav" />
+    <Content Include="voice\NC4-230512120725.wav" />
+    <Content Include="voice\NC4-230513054706.wav" />
+    <Content Include="voice\NC4-230613175237.wav" />
+    <Content Include="voice\NC4-230713104436.wav" />
+    <Content Include="voice\NC4-230812144624.wav" />
+    <Content Include="voice\NC4-230813013548.wav" />
+    <Content Include="voice\NC4-230814132632.wav" />
+    <Content Include="voice\NC4-230914084812.wav" />
+    <Content Include="voice\NC4-231011173427.wav" />
+    <Content Include="voice\NC4-231012094917.wav" />
+    <Content Include="voice\NC4-231012125416.wav" />
+    <Content Include="voice\NC4-231012140449.wav" />
+    <Content Include="voice\NC4-231012161629.wav" />
+    <Content Include="voice\NC4-231110164800.wav" />
+    <Content Include="voice\NC4-231113192733.wav" />
+    <Content Include="voice\NC4-231113193518.wav" />
+    <Content Include="voice\NC4-231213112846.wav" />
+    <Content Include="voice\NC4-240111083617.wav" />
+    <Content Include="voice\NC4-240111175003.wav" />
+    <Content Include="voice\NC4-240113174326.wav" />
+    <Content Include="voice\NC4-240311101611.wav" />
+    <Content Include="voice\NC4-240314001208.wav" />
+    <Content Include="voice\NC4-240413045052.wav" />
+    <Content Include="voice\NC4-240512115805.wav" />
+    <Content Include="voice\NC4-240512153256.wav" />
+    <Content Include="voice\NC4-240613074330.wav" />
+    <Content Include="voice\NC4-240613110522.wav" />
+    <Content Include="voice\NC4-240810135050.wav" />
+    <Content Include="voice\NC4-240910105610.wav" />
+    <Content Include="voice\NC4-240910110712.wav" />
+    <Content Include="voice\NC4-240910184904.wav" />
+    <Content Include="voice\NC4-240913075127.wav" />
+    <Content Include="voice\NC4-241011100607.wav" />
+    <Content Include="voice\NC4-241012192350.wav" />
+    <Content Include="voice\NC4-241014160708.wav" />
+    <Content Include="voice\NC4-250112135830.wav" />
+    <Content Include="voice\NC4-250112195911.wav" />
+    <Content Include="voice\NC4-250113030649.wav" />
+    <Content Include="voice\NC4-250314101232.wav" />
+    <Content Include="voice\NC4-250413082326.wav" />
+    <Content Include="voice\NC4-250511091837.wav" />
+    <Content Include="voice\NC4-250614100252.wav" />
+    <Content Include="voice\NC4-250712101614.wav" />
+    <Content Include="voice\NC4-250713143113.wav" />
+    <Content Include="voice\NC4-250713144125.wav" />
+    <Content Include="voice\NC4-250713150137.wav" />
+    <Content Include="voice\NC4-250811101153.wav" />
+    <Content Include="voice\NC4-250814111906.wav" />
+    <Content Include="voice\NC4-250911181734.wav" />
+    <Content Include="voice\NC4-251012014418.wav" />
+    <Content Include="voice\NC4-251012121421.wav" />
+    <Content Include="voice\NC4-251113164014.wav" />
+    <Content Include="voice\NC4-251210134204.wav" />
+    <Content Include="voice\NC4-260111193922.wav" />
+    <Content Include="voice\NC4-260112124249.wav" />
+    <Content Include="voice\NC4-260112204434.wav" />
+    <Content Include="voice\NC4-260114124342.wav" />
+    <Content Include="voice\NC4-260114125338.wav" />
+    <Content Include="voice\NC4-260313172654.wav" />
+    <Content Include="voice\NC4-260412071251.wav" />
+    <Content Include="voice\NC4-260412135318.wav" />
+    <Content Include="voice\NC4-260910084813.wav" />
+    <Content Include="voice\NC4-260911184719.wav" />
+    <Content Include="voice\NC4-260914121603.wav" />
+    <Content Include="voice\NC4-261010112152.wav" />
+    <Content Include="voice\NC4-261011085021.wav" />
+    <Content Include="voice\NC4-261011085831.wav" />
+    <Content Include="voice\NC4-261011150347.wav" />
+    <Content Include="voice\NC4-261110045610.wav" />
+    <Content Include="voice\NC4-261113155651.wav" />
+    <Content Include="voice\NC4-261113174904.wav" />
+    <Content Include="voice\NC4-270111110230.wav" />
+    <Content Include="voice\NC4-270212062509.wav" />
+    <Content Include="voice\NC4-270213074303.wav" />
+    <Content Include="voice\NC4-270214081847.wav" />
+    <Content Include="voice\NC4-270214134308.wav" />
+    <Content Include="voice\NC4-270411132131.wav" />
+    <Content Include="voice\NC4-270413133644.wav" />
+    <Content Include="voice\NC4-270513050806.wav" />
+    <Content Include="voice\NC4-270611173340.wav" />
+    <Content Include="voice\NC4-270711071325.wav" />
+    <Content Include="voice\NC4-270810115940.wav" />
+    <Content Include="voice\NC4-270812054405.wav" />
+    <Content Include="voice\NC4-270911111254.wav" />
+    <Content Include="voice\NC4-271010100250.wav" />
+    <Content Include="voice\NC4-271011134754.wav" />
+    <Content Include="voice\NC4-280111132638.wav" />
+    <Content Include="voice\NC4-280112101158.wav" />
+    <Content Include="voice\NC4-280212082624.wav" />
+    <Content Include="voice\NC4-280513055312.wav" />
+    <Content Include="voice\NC4-280513153416.wav" />
+    <Content Include="voice\NC4-280514143425.wav" />
+    <Content Include="voice\NC4-280611103222.wav" />
+    <Content Include="voice\NC4-280611105506.wav" />
+    <Content Include="voice\NC4-280711132438.wav" />
+    <Content Include="voice\NC4-280711140304.wav" />
+    <Content Include="voice\NC4-280712112644.wav" />
+    <Content Include="voice\NC4-280714110739.wav" />
+    <Content Include="voice\NC4-280813130302.wav" />
+    <Content Include="voice\NC4-280814163212.wav" />
+    <Content Include="voice\NC4-280910043451.wav" />
+    <Content Include="voice\NC4-281013191115.wav" />
+    <Content Include="voice\NC4-281114221609.wav" />
+    <Content Include="voice\NC4-281210080305.wav" />
+    <Content Include="voice\NC4-281212064805.wav" />
+    <Content Include="voice\NC4-281212094956.wav" />
+    <Content Include="voice\NC4-281212123747.wav" />
+    <Content Include="voice\NC4-290114075439.wav" />
+    <Content Include="voice\NC4-290312065217.wav" />
+    <Content Include="voice\NC4-290413135727.wav" />
+    <Content Include="voice\NC4-290513104120.wav" />
+    <Content Include="voice\NC4-290712160458.wav" />
+    <Content Include="voice\NC4-290713085408.wav" />
+    <Content Include="voice\NC4-290713150331.wav" />
+    <Content Include="voice\NC4-290911124912.wav" />
+    <Content Include="voice\NC4-291012120226.wav" />
+    <Content Include="voice\NC4-291012125241.wav" />
+    <Content Include="voice\NC4-291013135953.wav" />
+    <Content Include="voice\NC4-291014180521.wav" />
+    <Content Include="voice\NC4-291112095356.wav" />
+    <Content Include="voice\NC4-291112102356.wav" />
+    <Content Include="voice\NC4-291112130435.wav" />
+    <Content Include="voice\NC4-291112132944.wav" />
+    <Content Include="voice\NC4-291114065503.wav" />
+    <Content Include="voice\NC4-291210110141.wav" />
+    <Content Include="voice\NC4-300112153350.wav" />
+    <Content Include="voice\NC4-300112205834.wav" />
+    <Content Include="voice\NC4-300113190025.wav" />
+    <Content Include="voice\NC4-300114051506.wav" />
+    <Content Include="voice\NC4-300114215431.wav" />
+    <Content Include="voice\NC4-300411104358.wav" />
+    <Content Include="voice\NC4-300512093158.wav" />
+    <Content Include="voice\NC4-300611085904.wav" />
+    <Content Include="voice\NC4-300611105820.wav" />
+    <Content Include="voice\NC4-300914085312.wav" />
+    <Content Include="voice\NC4-301012180436.wav" />
+    <Content Include="voice\NC4-301112124337.wav" />
+    <Content Include="voice\NC4-310111001556.wav" />
+    <Content Include="voice\NC4-310111122613.wav" />
+    <Content Include="voice\NC4-310313061934.wav" />
+    <Content Include="voice\NC4-310511152308.wav" />
+    <Content Include="voice\NC4-310513113126.wav" />
+    <Content Include="voice\NC4-310714201805.wav" />
+    <Content Include="voice\NC4-310810040844.wav" />
+    <Content Include="voice\NC4-310810172454.wav" />
+    <Content Include="voice\NC4-311011110953.wav" />
+    <Content Include="voice\NC4-311014151325.wav" />
+    <Content Include="voice\NC4-311210093413.wav" />
+    <Content Include="voice\NC4-311212135249.wav" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportData.resx">
+      <DependentUpon>ReportData.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AllData.xsx">
+      <DependentUpon>AllData.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="CallReport.xsx">
+      <DependentUpon>CallReport.xsd</DependentUpon>
+    </None>
+    <None Include="CallUnverified.xsc">
+      <DependentUpon>CallUnverified.xsd</DependentUpon>
+    </None>
+    <None Include="Callverified.xsx">
+      <DependentUpon>Callverified.xsd</DependentUpon>
+    </None>
+    <None Include="CorpAcc_TemporaryKey.pfx" />
+    <None Include="myrepdata.xsx">
+      <DependentUpon>myrepdata.xsd</DependentUpon>
+    </None>
+    <None Include="myresdata.xsx">
+      <DependentUpon>myresdata.xsd</DependentUpon>
+    </None>
+    <None Include="oldcode.vb">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="spanish\CAH5000.VAP" />
+    <None Include="spanish\CAH5000sp.VAP" />
+    <None Include="spanish\CAH5010.suo" />
+    <None Include="spanish\CAH5010.VAP" />
+    <None Include="spanish\CAH5010sp.VAP" />
+    <None Include="spanish\CAH5020.VAP" />
+    <None Include="spanish\CAH5020sp.VAP" />
+    <None Include="spanish\CAH5030.VAP" />
+    <None Include="spanish\CAH5030sp.VAP" />
+    <None Include="spanish\CAH5040.VAP" />
+    <None Include="spanish\CAH5040sp.VAP" />
+    <None Include="spanish\CAH5050.VAP" />
+    <None Include="spanish\CAH5050sp.VAP" />
+    <None Include="spanish\CAH5060.VAP" />
+    <None Include="spanish\CAH5060sp.VAP" />
+    <None Include="spanish\CAH5070.VAP" />
+    <None Include="spanish\CAH5070sp.VAP" />
+    <None Include="spanish\CAH5080.VAP" />
+    <None Include="spanish\CAH5080sp.VAP" />
+    <None Include="spanish\CAH5090.VAP" />
+    <None Include="spanish\CAH5090sp.VAP" />
+    <None Include="spanish\CAH6000.VAP" />
+    <None Include="spanish\CAH6000sp.VAP" />
+    <None Include="spanish\CAH7000.VAP" />
+    <None Include="spanish\CAH7000sp.VAP" />
+    <None Include="spanish\CAH7010.VAP" />
+    <None Include="spanish\CAH7010sp.VAP" />
+    <None Include="spanish\CAHcommons.vap" />
+    <None Include="spanish\CAHcommonssp.vap" />
+    <None Include="spanish\dtmfs.vap" />
+    <None Include="spanish\old\CAH5000.VAP" />
+    <None Include="spanish\old\CAH5000sp.VAP" />
+    <None Include="spanish\old\CAH5010.suo" />
+    <None Include="spanish\old\CAH5010.VAP" />
+    <None Include="spanish\old\CAH5010sp.VAP" />
+    <None Include="spanish\old\CAH5020.VAP" />
+    <None Include="spanish\old\CAH5020sp.VAP" />
+    <None Include="spanish\old\CAH5030.VAP" />
+    <None Include="spanish\old\CAH5030sp.VAP" />
+    <None Include="spanish\old\CAH5040.VAP" />
+    <None Include="spanish\old\CAH5040sp.VAP" />
+    <None Include="spanish\old\CAH5050.VAP" />
+    <None Include="spanish\old\CAH5050sp.VAP" />
+    <None Include="spanish\old\CAH5060.VAP" />
+    <None Include="spanish\old\CAH5060sp.VAP" />
+    <None Include="spanish\old\CAH5070.VAP" />
+    <None Include="spanish\old\CAH5070sp.VAP" />
+    <None Include="spanish\old\CAH5080.VAP" />
+    <None Include="spanish\old\CAH5080sp.VAP" />
+    <None Include="spanish\old\CAH5090.VAP" />
+    <None Include="spanish\old\CAH5090sp.VAP" />
+    <None Include="spanish\old\CAH6000.VAP" />
+    <None Include="spanish\old\CAH6000sp.VAP" />
+    <None Include="spanish\old\CAH7000.VAP" />
+    <None Include="spanish\old\CAH7000sp.VAP" />
+    <None Include="spanish\old\CAH7010.VAP" />
+    <None Include="spanish\old\CAH7010sp.VAP" />
+    <None Include="spanish\old\CAHcommons.vap" />
+    <None Include="spanish\old\CAHcommonssp.vap" />
+    <None Include="spanish\old\dtmfs.vap" />
+    <None Include="spanish\old\record.vap" />
+    <None Include="spanish\old\recordsp.vap" />
+    <None Include="spanish\old\vbvoice30.bak" />
+    <None Include="spanish\old\vbvoice30.vap" />
+    <None Include="spanish\old\vbvoice30sp.vap" />
+    <None Include="spanish\record.vap" />
+    <None Include="spanish\recordsp.vap" />
+    <None Include="spanish\vbvoice30.bak" />
+    <None Include="spanish\vbvoice30.vap" />
+    <None Include="spanish\vbvoice30sp.vap" />
+    <None Include="vap\CAH5000-1.VAP" />
+    <None Include="vap\CAH5000.VAP" />
+    <None Include="vap\CAH5000a.VAP" />
+    <None Include="vap\CAH5010.VAP" />
+    <None Include="vap\CAH5010a.VAP" />
+    <None Include="vap\CAH5020.VAP" />
+    <None Include="vap\CAH5020a.VAP" />
+    <None Include="vap\CAH5030.VAP" />
+    <None Include="vap\CAH5030a.VAP" />
+    <None Include="vap\CAH5040.VAP" />
+    <None Include="vap\CAH5050.VAP" />
+    <None Include="vap\CAH5060.VAP" />
+    <None Include="vap\CAH5060a.VAP" />
+    <None Include="vap\CAH5070.VAP" />
+    <None Include="vap\CAH5070a.VAP" />
+    <None Include="vap\CAH5080.VAP" />
+    <None Include="vap\CAH5080a.VAP" />
+    <None Include="vap\CAH5090.VAP" />
+    <None Include="vap\CAH6000.VAP" />
+    <None Include="vap\CAH6000a.VAP" />
+    <None Include="vap\CAH6080.VAP" />
+    <None Include="vap\CAH7000.VAP" />
+    <None Include="vap\CAH7000a.VAP" />
+    <None Include="vap\CAH7010.VAP" />
+    <None Include="vap\CAHcommons.vap" />
+    <None Include="vap\CAHcommonsa.vap" />
+    <None Include="vap\commons.VAP" />
+    <None Include="vap\custphrs.vap" />
+    <None Include="vap\dtmfs.vap" />
+    <None Include="vap\playmsgs.vap" />
+    <None Include="vap\record.vap" />
+    <None Include="vap\vbvoice30.vap" />
+    <None Include="vap\vbvoice30a.vap" />
+    <None Include="vap\voicerec.vap" />
+    <None Include="VBVDataPlugIn.tlb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+    <Folder Include="voice\New Folder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

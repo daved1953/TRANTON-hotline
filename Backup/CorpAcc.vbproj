@@ -1,0 +1,311 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{2295E496-277F-4219-ACF9-F0FCF7ABA067}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "newhotline32v6.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "CustPhrs"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "CustPhrs"
+                StartupObject = "CustPhrs.Main"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "vbvoicedotnetinterface"
+                    AssemblyName = "VBVoiceDotnetInterface"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\vbvoicedotnetinterface.dll"
+                />
+                <Reference
+                    Name = "CONVERSATIONOCXLib"
+                    AssemblyName = "CONVERSATIONOCXLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\CONVERSATIONOCXLib.dll"
+                />
+                <Reference
+                    Name = "D42OCXLib"
+                    AssemblyName = "D42OCXLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\D42OCXLib.dll"
+                />
+                <Reference
+                    Name = "DYNRESOURCELib"
+                    AssemblyName = "DYNRESOURCELib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\DYNRESOURCELib.dll"
+                />
+                <Reference
+                    Name = "LINESTATUSLib"
+                    AssemblyName = "LINESTATUSLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\LINESTATUSLib.dll"
+                />
+                <Reference
+                    Name = "VBVCALLQLib"
+                    AssemblyName = "VBVCALLQLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\VBVCALLQLib.dll"
+                />
+                <Reference
+                    Name = "VBVoiceLib"
+                    AssemblyName = "VBVoiceLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\VBVoiceLib.dll"
+                />
+                <Reference
+                    Name = "VBVRINGLib"
+                    AssemblyName = "VBVRINGLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\VBVRINGLib.dll"
+                />
+                <Reference
+                    Name = "WAPOCXLib"
+                    AssemblyName = "WAPOCXLib"
+                    HintPath = "..\..\..\..\program files\pronexus\vbvoice\WAPOCXLib.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Design.dll"
+                />
+                <Reference
+                    Name = "stdole"
+                    AssemblyName = "stdole"
+                    HintPath = "..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\stdole.dll"
+                />
+                <Reference
+                    Name = "VBVRINGLib1"
+                    Guid = "{19716575-F835-11D2-AEE9-006097D7500D}"
+                    VersionMajor = "5"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxVBVRINGLib"
+                    Guid = "{19716575-F835-11D2-AEE9-006097D7500D}"
+                    VersionMajor = "5"
+                    VersionMinor = "1"
+                    Lcid = "0"
+                    WrapperTool = "aximp"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AllData.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AllData.vb"
+                />
+                <File
+                    RelPath = "AllData.vb"
+                    DependentUpon = "AllData.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "AllData.xsx"
+                    DependentUpon = "AllData.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CallReport.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "CallReport.vb"
+                />
+                <File
+                    RelPath = "CallReport.vb"
+                    DependentUpon = "CallReport.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "CallReport.xsx"
+                    DependentUpon = "CallReport.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "CallUnverified.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "CallUnverified.vb"
+                />
+                <File
+                    RelPath = "CallUnverified.vb"
+                    DependentUpon = "CallUnverified.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Callverified.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Callverified.vb"
+                />
+                <File
+                    RelPath = "Callverified.vb"
+                    DependentUpon = "Callverified.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Callverified.xsx"
+                    DependentUpon = "Callverified.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Main.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Main.resx"
+                    DependentUpon = "Main.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "myrepdata.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "myrepdata.vb"
+                />
+                <File
+                    RelPath = "myrepdata.vb"
+                    DependentUpon = "myrepdata.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "myrepdata.xsx"
+                    DependentUpon = "myrepdata.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "myresdata.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "myresdata.vb"
+                />
+                <File
+                    RelPath = "myresdata.vb"
+                    DependentUpon = "myresdata.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "myresdata.xsx"
+                    DependentUpon = "myresdata.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "newhotline32v6.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "oldcode.vb"
+                    SubType = "Code"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "report.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "report.resx"
+                    DependentUpon = "report.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

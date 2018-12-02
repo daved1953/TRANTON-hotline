@@ -1,0 +1,47 @@
+C:\Dev\VBVoice\hotline\bin\x86\Debug\CustPhrs.exe.config
+C:\Dev\VBVoice\hotline\bin\x86\Debug\CustPhrs.exe
+C:\Dev\VBVoice\hotline\bin\x86\Debug\CustPhrs.pdb
+C:\Dev\VBVoice\hotline\bin\x86\Debug\CustPhrs.xml
+C:\Dev\VBVoice\hotline\bin\x86\Debug\AxInterop.VBVRINGLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\CONVERSATIONOCXLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\D42OCXLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\DYNRESOURCELib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\LINESTATUSLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\VBVCALLQLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\VBVoiceDotnetInterface.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\VBVoiceLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\VBVRINGLib.dll
+C:\Dev\VBVoice\hotline\bin\x86\Debug\WAPOCXLib.dll
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CorpAcc.vbprojResolveAssemblyReference.cache
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CustPhrs.Main.resources
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CustPhrs.report.resources
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CorpAcc.vbproj.GenerateResource.Cache
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CustPhrs.exe
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CustPhrs.xml
+C:\Dev\VBVoice\hotline\obj\x86\Debug\CustPhrs.pdb
+C:\hotline\bin\x86\Debug\CustPhrs.exe.config
+C:\hotline\obj\x86\Debug\CustPhrs.exe
+C:\hotline\obj\x86\Debug\CustPhrs.xml
+C:\hotline\obj\x86\Debug\CustPhrs.pdb
+C:\Dev\TRANTON hotline\bin\x86\Debug\CustPhrs.exe.config
+C:\Dev\TRANTON hotline\bin\x86\Debug\CustPhrs.exe.manifest
+C:\Dev\TRANTON hotline\bin\x86\Debug\CustPhrs.application
+C:\Dev\TRANTON hotline\bin\x86\Debug\CustPhrs.exe
+C:\Dev\TRANTON hotline\bin\x86\Debug\CustPhrs.pdb
+C:\Dev\TRANTON hotline\bin\x86\Debug\CustPhrs.xml
+C:\Dev\TRANTON hotline\bin\x86\Debug\AxInterop.VBVRINGLib.dll
+C:\Dev\TRANTON hotline\bin\x86\Debug\Pronexus.VBVoice.dll
+C:\Dev\TRANTON hotline\bin\x86\Debug\stdole.dll
+C:\Dev\TRANTON hotline\bin\x86\Debug\EnvDTE.dll
+C:\Dev\TRANTON hotline\bin\x86\Debug\VSLangProj.dll
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.Main.resources
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.report.resources
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.ReportData.resources
+C:\Dev\TRANTON hotline\obj\x86\Debug\CorpAcc.vbproj.GenerateResource.cache
+C:\Dev\TRANTON hotline\obj\x86\Debug\CorpAcc.vbproj.CoreCompileInputs.cache
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.exe.manifest
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.application
+C:\Dev\TRANTON hotline\obj\x86\Debug\CorpAcc.vbproj.CopyComplete
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.exe
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.xml
+C:\Dev\TRANTON hotline\obj\x86\Debug\CustPhrs.pdb

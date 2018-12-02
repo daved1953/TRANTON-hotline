@@ -1,0 +1,1742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PlaySpecial.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.TermOnDTMF=0
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+_ExtentX=1852
+_ExtentY=1720
+Pos_X=7461
+Pos_Y=8334
+Pos_XP=282
+Pos_YP=315
+ControlName=PlaySpecial
+BlockId=1074294595
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1069476422
+Dest0.Conn=1
+Dest1BlockID=0
+Comment=Use this page to document the configuration for this control
+FastForwardDigit=0
+RewindDigit=0
+PauseDigit=0
+FastFwdSecs=1
+RewindSecs=2
+PauseSecs=20
+LouderDigit=0
+SofterDigit=0
+TerminateOnSpeech=0
+MinSpeechTermTime=50
+</value>
+  </data>
+  <data name="LineGroup1.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+_ExtentX=1720
+_ExtentY=2910
+Pos_X=635
+Pos_Y=926
+Pos_XP=24
+Pos_YP=35
+ControlName=LineGroup1
+BlockId=1032705711
+FramePage=0
+ContainerType=5
+NumNodes=5
+Dest0BlockID=1066372156
+Dest0.Conn=1
+Dest1BlockID=1066372156
+Dest1.Conn=1
+Dest2BlockID=0
+Dest3BlockID=0
+Dest4BlockID=0
+DelayTime=5
+Mode=2
+LinesInGroup=2
+Mode=2
+MobileAppName=EZHRIncidents
+</value>
+  </data>
+  <data name="Msurvey.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=Phrs 1-9
+Condition0.Data=1-9
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name= Exit *
+Condition1.Data=*
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1931
+_ExtentY=2011
+Pos_X=17092
+Pos_Y=5689
+Pos_XP=646
+Pos_YP=215
+ControlName=Msurvey
+BlockId=1032705719
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1069476113
+Dest0.Conn=1
+Dest1BlockID=1069476422
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=1
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="OnHook1.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.TermOnDTMF=0
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+_ExtentX=1482
+_ExtentY=1482
+Pos_X=19897
+Pos_Y=3413
+Pos_XP=752
+Pos_YP=129
+ControlName=OnHook1
+BlockId=1032706053
+FramePage=0
+ContainerType=5
+Comment=Use this page to document the configuration for this control
+</value>
+  </data>
+  <data name="InitGreet.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH5000a.VAP
+EntryGreeting.Phrase0.Data=5000
+EntryGreeting.Phrase0.Type=262144
+EntryGreeting.Phrase0.DataExtra= Select a language to continue
+HintGreeting.NumPhrase=0
+_ExtentX=1852
+_ExtentY=1720
+Pos_X=3598
+Pos_Y=1455
+Pos_XP=136
+Pos_YP=55
+ControlName=InitGreet
+BlockId=1066372156
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1066372191
+Dest0.Conn=1
+Dest1BlockID=1066372191
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+FastForwardDigit=0
+RewindDigit=0
+PauseDigit=0
+FastFwdSecs=1
+RewindSecs=2
+PauseSecs=20
+LouderDigit=0
+SofterDigit=0
+TerminateOnSpeech=0
+MinSpeechTermTime=50
+</value>
+  </data>
+  <data name="Spanish.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+_ExtentX=1535
+_ExtentY=1482
+Pos_X=8890
+Pos_Y=1826
+Pos_XP=336
+Pos_YP=69
+ControlName=Spanish
+BlockId=1066372176
+FramePage=0
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071549872
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+EventMask=0
+Directory=spanish\
+LanguageId=4
+TimeFormat=0
+DateOrder=0
+RSTDictionary=
+</value>
+  </data>
+  <data name="LangSelect.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH5000.VAP
+EntryGreeting.Phrase0.Data=5001
+EntryGreeting.Phrase0.Type=262148
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1693
+_ExtentY=2011
+Pos_X=6350
+Pos_Y=926
+Pos_XP=240
+Pos_YP=35
+ControlName=LangSelect
+BlockId=1066372191
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071549872
+Dest0.Conn=1
+Dest1BlockID=1066372176
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=70
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="Playresponse.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1931
+_ExtentY=2011
+Pos_X=15028
+Pos_Y=1111
+Pos_XP=568
+Pos_YP=42
+ControlName=Playresponse
+BlockId=1069476113
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1069476422
+Dest0.Conn=1
+Dest1BlockID=1032705719
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=1
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="User1.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=6
+Condition0.Name=0
+Condition0.Data=
+Condition0.UseVB=1
+Condition0.Data2=
+Condition1.Name=1
+Condition1.Data=
+Condition1.UseVB=1
+Condition1.Data2=
+Condition2.Name=2
+Condition2.Data=
+Condition2.UseVB=1
+Condition2.Data2=
+Condition3.Name=3
+Condition3.Data=
+Condition3.UseVB=1
+Condition3.Data2=
+Condition4.Name=4
+Condition4.Data=
+Condition4.UseVB=1
+Condition4.Data2=
+Condition5.Name=5
+Condition5.Data=
+Condition5.UseVB=1
+Condition5.Data2=
+_ExtentX=1058
+_ExtentY=3307
+Pos_X=3810
+Pos_Y=6615
+Pos_XP=144
+Pos_YP=250
+ControlName=User1
+BlockId=1069476422
+FramePage=0
+ContainerType=5
+NumNodes=6
+Dest0BlockID=1032705719
+Dest0.Conn=1
+Dest1BlockID=1072742769
+Dest1.Conn=1
+Dest2BlockID=1071551927
+Dest3BlockID=1073521591
+Dest4BlockID=1069476113
+Dest4.Conn=1
+Dest5BlockID=1074294595
+Dest5.Conn=1
+Comment=Use this page to document the configuration for this control
+</value>
+  </data>
+  <data name="openstatment.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH5000.VAP
+EntryGreeting.Phrase0.Data=5002
+EntryGreeting.Phrase0.Type=262149
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+_ExtentX=1958
+_ExtentY=1720
+Pos_X=11430
+Pos_Y=1111
+Pos_XP=432
+Pos_YP=42
+ControlName=openstatment
+BlockId=1071549872
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1032705719
+Dest0.Conn=1
+Dest1BlockID=1032705719
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+FastForwardDigit=0
+RewindDigit=0
+PauseDigit=0
+FastFwdSecs=1
+RewindSecs=2
+PauseSecs=20
+LouderDigit=0
+SofterDigit=0
+TerminateOnSpeech=0
+MinSpeechTermTime=50
+</value>
+  </data>
+  <data name="L7000.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.TermOnDTMF=0
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7000
+EntryGreeting.Phrase0.Type=262144
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+_ExtentX=1852
+_ExtentY=1720
+Pos_X=2328
+Pos_Y=54636
+Pos_XP=88
+Pos_YP=65
+ControlName=L7000
+BlockId=1071551927
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071551957
+Dest0.Conn=1
+Dest1BlockID=0
+Comment=Use this page to document the configuration for this control
+FastForwardDigit=0
+RewindDigit=0
+PauseDigit=0
+FastFwdSecs=1
+RewindSecs=2
+PauseSecs=20
+LouderDigit=0
+SofterDigit=0
+TerminateOnSpeech=0
+MinSpeechTermTime=50
+</value>
+  </data>
+  <data name="L7001.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7001
+EntryGreeting.Phrase0.Type=262145
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=Month
+Condition0.Data=01-12
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1693
+_ExtentY=2011
+Pos_X=5292
+Pos_Y=54134
+Pos_XP=200
+Pos_YP=46
+ControlName=L7001
+BlockId=1071551957
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071552199
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=2
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=157
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7002.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7002
+EntryGreeting.Phrase0.Type=262146
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=Day
+Condition0.Data=01-31
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1402
+_ExtentY=2011
+Pos_X=8043
+Pos_Y=54134
+Pos_XP=304
+Pos_YP=46
+ControlName=L7002
+BlockId=1071552199
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071552053
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=2
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=255
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7003.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7003
+EntryGreeting.Phrase0.Type=262147
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=Year
+Condition0.Data=00-99
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1482
+_ExtentY=2011
+Pos_X=10583
+Pos_Y=54134
+Pos_XP=400
+Pos_YP=46
+ControlName=L7003
+BlockId=1071552053
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071553475
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=2
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=255
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7004.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7004
+EntryGreeting.Phrase0.Type=262148
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+_ExtentX=1482
+_ExtentY=2117
+Pos_X=17145
+Pos_Y=54134
+Pos_XP=648
+Pos_YP=46
+ControlName=L7004
+BlockId=1071552893
+FramePage=1
+ContainerType=5
+NumNodes=3
+Dest0BlockID=1071553221
+Dest0.Conn=1
+Dest1BlockID=1071552893
+Dest1.Conn=1
+Dest2BlockID=1071552893
+Dest2.Conn=1
+Comment=Use this page to document the configuration for this control
+MinTime=1
+MaxTime=60
+MaxSil=3
+AppendFile=0
+SilenceGreeting.NumPhrase=0
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+OptionsGreeting.NumPhrase=8
+OptionsGreeting.Phrase0.File=record.vap
+OptionsGreeting.Phrase0.Data=to send this message press
+OptionsGreeting.Phrase0.Type=262145
+OptionsGreeting.Phrase0.DataExtra=
+OptionsGreeting.Phrase1.File=1
+OptionsGreeting.Phrase1.Data=
+OptionsGreeting.Phrase1.Type=131077
+OptionsGreeting.Phrase1.DataExtra=
+OptionsGreeting.Phrase2.File=record.vap
+OptionsGreeting.Phrase2.Data=to rerecord the message from the beginning press
+OptionsGreeting.Phrase2.Type=262146
+OptionsGreeting.Phrase2.DataExtra=
+OptionsGreeting.Phrase3.File=2
+OptionsGreeting.Phrase3.Data=
+OptionsGreeting.Phrase3.Type=131077
+OptionsGreeting.Phrase3.DataExtra=
+OptionsGreeting.Phrase4.File=record.vap
+OptionsGreeting.Phrase4.Data=to review the message press
+OptionsGreeting.Phrase4.Type=262148
+OptionsGreeting.Phrase4.DataExtra=
+OptionsGreeting.Phrase5.File=3
+OptionsGreeting.Phrase5.Data=
+OptionsGreeting.Phrase5.Type=131077
+OptionsGreeting.Phrase5.DataExtra=
+OptionsGreeting.Phrase6.File=record.vap
+OptionsGreeting.Phrase6.Data=or to cancel the message press
+OptionsGreeting.Phrase6.Type=262147
+OptionsGreeting.Phrase6.DataExtra=
+OptionsGreeting.Phrase7.File=4
+OptionsGreeting.Phrase7.Data=
+OptionsGreeting.Phrase7.Type=131077
+OptionsGreeting.Phrase7.DataExtra=
+CancelGreeting.NumPhrase=1
+CancelGreeting.Phrase0.File=record.vap
+CancelGreeting.Phrase0.Data=message cancelled
+CancelGreeting.Phrase0.Type=262149
+CancelGreeting.Phrase0.DataExtra=
+MsgSentGreeting.NumPhrase=1
+MsgSentGreeting.Phrase0.File=record.vap
+MsgSentGreeting.Phrase0.Data=your message has been sent
+MsgSentGreeting.Phrase0.Type=262150
+MsgSentGreeting.Phrase0.DataExtra=
+RecordOKGreeting.NumPhrase=1
+RecordOKGreeting.Phrase0.File=record.vap
+RecordOKGreeting.Phrase0.Data=your message has been recorded
+RecordOKGreeting.Phrase0.Type=262144
+RecordOKGreeting.Phrase0.DataExtra=
+AppendDigit=1024
+TermDigit=2
+RerecordDigit=4
+CancelDigit=16
+ReviewDigit=8
+Filename=*.wav
+BeepBefore=1
+CompressSilence=1
+IgnoreDtmf=1
+RecordFormat=-1
+FileData=
+PauseDigit=1024
+PauseSecs=7
+PauseGreeting.NumPhrase=0
+</value>
+  </data>
+  <data name="L7007.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7007
+EntryGreeting.Phrase0.Type=262151
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=areacode
+Condition0.Data=nnn
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=2090
+_ExtentY=2011
+Pos_X=4233
+Pos_Y=58526
+Pos_XP=160
+Pos_YP=212
+ControlName=L7007
+BlockId=1071553221
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071553807
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=0
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=48
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7008.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7008
+EntryGreeting.Phrase0.Type=262152
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=phone
+Condition0.Data=nnnnnnn
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1693
+_ExtentY=2011
+Pos_X=7197
+Pos_Y=58790
+Pos_XP=272
+Pos_YP=222
+ControlName=L7008
+BlockId=1071553807
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071554522
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=0
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=48
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="confDOB.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1429
+_ExtentY=2011
+Pos_X=12700
+Pos_Y=54134
+Pos_XP=480
+Pos_YP=46
+ControlName=confDOB
+BlockId=1071553475
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071552893
+Dest0.Conn=1
+Dest1BlockID=1071551957
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=219
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="ConfACPhone.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=2037
+_ExtentY=2011
+Pos_X=9948
+Pos_Y=58526
+Pos_XP=376
+Pos_YP=212
+ControlName=ConfACPhone
+BlockId=1071554522
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071554253
+Dest0.Conn=1
+Dest1BlockID=1071553221
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=219
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7005.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=2
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7005
+EntryGreeting.Phrase0.Type=262149
+EntryGreeting.Phrase0.DataExtra=
+EntryGreeting.Phrase1.File=CAHcommons.vap
+EntryGreeting.Phrase1.Data=press 1 for yes or press 2 for no
+EntryGreeting.Phrase1.Type=262145
+EntryGreeting.Phrase1.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1402
+_ExtentY=2011
+Pos_X=4233
+Pos_Y=61701
+Pos_XP=160
+Pos_YP=332
+ControlName=L7005
+BlockId=1071553357
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071552943
+Dest0.Conn=1
+Dest1BlockID=1071554061
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=219
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="GetCoID.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7006
+EntryGreeting.Phrase0.Type=262150
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=COID
+Condition0.Data=$
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1588
+_ExtentY=2011
+Pos_X=6562
+Pos_Y=61701
+Pos_XP=248
+Pos_YP=332
+ControlName=GetCoID
+BlockId=1071552943
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071909188
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=6
+MaxSil=5
+TermDtmf=0
+RetryOnSilence=48
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7009.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=7
+EntryGreeting.Phrase0.File=CAH7000.VAP
+EntryGreeting.Phrase0.Data=7009
+EntryGreeting.Phrase0.Type=262153
+EntryGreeting.Phrase0.DataExtra=
+EntryGreeting.Phrase1.File=CAH7000.VAP
+EntryGreeting.Phrase1.Data=7009.1
+EntryGreeting.Phrase1.Type=262154
+EntryGreeting.Phrase1.DataExtra=
+EntryGreeting.Phrase2.File=CAHcommons.vap
+EntryGreeting.Phrase2.Data=press 1
+EntryGreeting.Phrase2.Type=262157
+EntryGreeting.Phrase2.DataExtra=
+EntryGreeting.Phrase3.File=CAH7000.VAP
+EntryGreeting.Phrase3.Data=7009.2
+EntryGreeting.Phrase3.Type=262155
+EntryGreeting.Phrase3.DataExtra=
+EntryGreeting.Phrase4.File=CAHcommons.vap
+EntryGreeting.Phrase4.Data=press 2
+EntryGreeting.Phrase4.Type=262158
+EntryGreeting.Phrase4.DataExtra=
+EntryGreeting.Phrase5.File=CAH7000.VAP
+EntryGreeting.Phrase5.Data=7009.3
+EntryGreeting.Phrase5.Type=262156
+EntryGreeting.Phrase5.DataExtra=
+EntryGreeting.Phrase6.File=CAHcommons.vap
+EntryGreeting.Phrase6.Data=press 3
+EntryGreeting.Phrase6.Type=262159
+EntryGreeting.Phrase6.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=Best Time
+Condition0.Data=1-3
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=2143
+_ExtentY=2011
+Pos_X=12912
+Pos_Y=58526
+Pos_XP=488
+Pos_YP=212
+ControlName=L7009
+BlockId=1071554253
+FramePage=1
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071553743
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=219
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="ConfBest.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1402
+_ExtentY=2011
+Pos_X=16298
+Pos_Y=58790
+Pos_XP=616
+Pos_YP=222
+ControlName=ConfBest
+BlockId=1071553743
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071553357
+Dest0.Conn=1
+Dest1BlockID=1071554253
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=219
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7010.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=2
+EntryGreeting.Phrase0.File=CAH7010.VAP
+EntryGreeting.Phrase0.Data=7010
+EntryGreeting.Phrase0.Type=262144
+EntryGreeting.Phrase0.DataExtra=
+EntryGreeting.Phrase1.File=CAHcommons.vap
+EntryGreeting.Phrase1.Data=press 1 for yes or press 2 for no
+EntryGreeting.Phrase1.Type=262145
+EntryGreeting.Phrase1.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1402
+_ExtentY=2011
+Pos_X=11430
+Pos_Y=61965
+Pos_XP=432
+Pos_YP=342
+ControlName=L7010
+BlockId=1071554061
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071554426
+Dest0.Conn=1
+Dest1BlockID=1071554061
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=10
+TermDtmf=0
+RetryOnSilence=219
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="Confirmation.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.TermOnDTMF=0
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+_ExtentX=1852
+_ExtentY=1720
+Pos_X=13758
+Pos_Y=61701
+Pos_XP=520
+Pos_YP=332
+ControlName=Confirmation
+BlockId=1071554426
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1072745426
+Dest0.Conn=1
+Dest1BlockID=0
+Comment=Use this page to document the configuration for this control
+FastForwardDigit=0
+RewindDigit=0
+PauseDigit=0
+FastFwdSecs=1
+RewindSecs=2
+PauseSecs=20
+LouderDigit=0
+SofterDigit=0
+TerminateOnSpeech=0
+MinSpeechTermTime=50
+</value>
+  </data>
+  <data name="L7014.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+EntryGreeting.TermOnDTMF=0
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7010.VAP
+EntryGreeting.Phrase0.Data=7014
+EntryGreeting.Phrase0.Type=262149
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+_ExtentX=1852
+_ExtentY=1720
+Pos_X=12912
+Pos_Y=7514
+Pos_XP=488
+Pos_YP=284
+ControlName=L7014
+BlockId=1071554921
+FramePage=0
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1032706053
+Dest0.Conn=1
+Dest1BlockID=0
+Comment=Use this page to document the configuration for this control
+FastForwardDigit=0
+RewindDigit=0
+PauseDigit=0
+FastFwdSecs=1
+RewindSecs=2
+PauseSecs=20
+LouderDigit=0
+SofterDigit=0
+TerminateOnSpeech=0
+MinSpeechTermTime=50
+</value>
+  </data>
+  <data name="ConfCOID.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=0
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1535
+_ExtentY=2011
+Pos_X=9102
+Pos_Y=61701
+Pos_XP=344
+Pos_YP=332
+ControlName=ConfCOID
+BlockId=1071909188
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1071554061
+Dest0.Conn=1
+Dest1BlockID=1071552943
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=0
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7013.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH7010.VAP
+EntryGreeting.Phrase0.Data=7013
+EntryGreeting.Phrase0.Type=262148
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=1
+Condition0.Name=$
+Condition0.Data=$
+Condition0.UseVB=0
+Condition0.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1402
+_ExtentY=2011
+Pos_X=10160
+Pos_Y=5689
+Pos_XP=384
+Pos_YP=215
+ControlName=L7013
+BlockId=1072742769
+FramePage=0
+ContainerType=5
+NumNodes=1
+Dest0BlockID=1071554921
+Dest0.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=1
+MaxSil=15
+TermDtmf=-1
+RetryOnSilence=1
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L7012.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=2
+EntryGreeting.Phrase0.File=CAH7010.VAP
+EntryGreeting.Phrase0.Data=7012
+EntryGreeting.Phrase0.Type=262147
+EntryGreeting.Phrase0.DataExtra=
+EntryGreeting.Phrase1.File=CAHcommons.vap
+EntryGreeting.Phrase1.Data=press 1 for yes or press 2 for no
+EntryGreeting.Phrase1.Type=262145
+EntryGreeting.Phrase1.DataExtra=
+HintGreeting.NumPhrase=0
+NumConditions=2
+Condition0.Name=1
+Condition0.Data=1
+Condition0.UseVB=0
+Condition0.Data2=
+Condition1.Name=2
+Condition1.Data=2
+Condition1.UseVB=0
+Condition1.Data2=
+IUseMenuMode=0
+NumMenuRoutes=0
+_ExtentX=1402
+_ExtentY=2011
+Pos_X=16510
+Pos_Y=61701
+Pos_XP=624
+Pos_YP=332
+ControlName=L7012
+BlockId=1072745426
+FramePage=1
+ContainerType=5
+NumNodes=2
+Dest0BlockID=1072742769
+Dest1BlockID=1071554426
+Dest1.Conn=1
+Comment=Use this page to document the configuration for this control
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+SilenceGreeting.NumPhrase=0
+MaxKeys=0
+MaxSil=3
+TermDtmf=0
+RetryOnSilence=1
+useDefaultError=1
+DisableHelp=1
+MaskLogDigit=0
+</value>
+  </data>
+  <data name="L6006.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+maxRetries=3
+EntryGreeting.NumPhrase=1
+EntryGreeting.Phrase0.File=CAH6000.VAP
+EntryGreeting.Phrase0.Data=6006
+EntryGreeting.Phrase0.Type=262150
+EntryGreeting.Phrase0.DataExtra=
+HintGreeting.NumPhrase=0
+_ExtentX=1482
+_ExtentY=2117
+Pos_X=2117
+Pos_Y=60008
+Pos_XP=80
+Pos_YP=268
+ControlName=L6006
+BlockId=1073521591
+FramePage=1
+ContainerType=5
+NumNodes=3
+Dest0BlockID=1071553357
+Dest0.Conn=1
+Dest1BlockID=1073521591
+Dest1.Conn=1
+Dest2BlockID=0
+Comment=Use this page to document the configuration for this control
+MinTime=1
+MaxTime=90
+MaxSil=4
+AppendFile=0
+SilenceGreeting.NumPhrase=0
+InvalidGreeting.NumPhrase=1
+InvalidGreeting.Phrase0.File=vbvoice30.vap
+InvalidGreeting.Phrase0.Data=that was not a valid entry
+InvalidGreeting.Phrase0.Type=262444
+InvalidGreeting.Phrase0.DataExtra=
+OptionsGreeting.NumPhrase=8
+OptionsGreeting.Phrase0.File=record.vap
+OptionsGreeting.Phrase0.Data=to send this message press
+OptionsGreeting.Phrase0.Type=262145
+OptionsGreeting.Phrase0.DataExtra=
+OptionsGreeting.Phrase1.File=1
+OptionsGreeting.Phrase1.Data=
+OptionsGreeting.Phrase1.Type=131077
+OptionsGreeting.Phrase1.DataExtra=
+OptionsGreeting.Phrase2.File=record.vap
+OptionsGreeting.Phrase2.Data=to rerecord the message from the beginning press
+OptionsGreeting.Phrase2.Type=262146
+OptionsGreeting.Phrase2.DataExtra=
+OptionsGreeting.Phrase3.File=2
+OptionsGreeting.Phrase3.Data=
+OptionsGreeting.Phrase3.Type=131077
+OptionsGreeting.Phrase3.DataExtra=
+OptionsGreeting.Phrase4.File=record.vap
+OptionsGreeting.Phrase4.Data=to review the message press
+OptionsGreeting.Phrase4.Type=262148
+OptionsGreeting.Phrase4.DataExtra=
+OptionsGreeting.Phrase5.File=3
+OptionsGreeting.Phrase5.Data=
+OptionsGreeting.Phrase5.Type=131077
+OptionsGreeting.Phrase5.DataExtra=
+OptionsGreeting.Phrase6.File=record.vap
+OptionsGreeting.Phrase6.Data=or to cancel the message press
+OptionsGreeting.Phrase6.Type=262147
+OptionsGreeting.Phrase6.DataExtra=
+OptionsGreeting.Phrase7.File=4
+OptionsGreeting.Phrase7.Data=
+OptionsGreeting.Phrase7.Type=131077
+OptionsGreeting.Phrase7.DataExtra=
+CancelGreeting.NumPhrase=1
+CancelGreeting.Phrase0.File=record.vap
+CancelGreeting.Phrase0.Data=message cancelled
+CancelGreeting.Phrase0.Type=262149
+CancelGreeting.Phrase0.DataExtra=
+MsgSentGreeting.NumPhrase=1
+MsgSentGreeting.Phrase0.File=record.vap
+MsgSentGreeting.Phrase0.Data=your message has been sent
+MsgSentGreeting.Phrase0.Type=262150
+MsgSentGreeting.Phrase0.DataExtra=
+RecordOKGreeting.NumPhrase=1
+RecordOKGreeting.Phrase0.File=record.vap
+RecordOKGreeting.Phrase0.Data=your message has been recorded
+RecordOKGreeting.Phrase0.Type=262144
+RecordOKGreeting.Phrase0.DataExtra=
+AppendDigit=1024
+TermDigit=2
+RerecordDigit=4
+CancelDigit=16
+ReviewDigit=8
+Filename=Amsg*.wav
+BeepBefore=1
+CompressSilence=1
+IgnoreDtmf=1
+RecordFormat=-1
+FileData=
+PauseDigit=0
+PauseSecs=20
+PauseGreeting.NumPhrase=0
+</value>
+  </data>
+  <data name="VbvFrame1.PropertyBag" xml:space="preserve">
+    <value>
+_Version=655362
+LanguageVer=1
+ContainerType=5
+ControlName=VbvFrame1
+_ExtentX=22648
+_ExtentY=12568
+_StockProps=2
+PageList.NumPage=2
+PageList.Page0.Name=Main Q Sect.
+PageList.Page0.X=11
+PageList.Page0.Y=240
+PageList.Page1.Name=close
+PageList.Page1.X=52
+PageList.Page1.Y=36
+CurrPage=0
+NumFields=0
+Playformat=0
+VoiceDir=C:\hotline\WebSite\CorpHrApp\old voices\
+LogDir=C:\ProgramData\Pronexus\VBVoice\Logs\
+TimeFormat=0
+DateOrder=3
+LanguageId=0
+NumControls=30
+Control0=0,PlaySpecial
+Control1=0,LineGroup1
+Control2=0,Msurvey
+Control3=0,OnHook1
+Control4=0,InitGreet
+Control5=0,Spanish
+Control6=0,LangSelect
+Control7=0,Playresponse
+Control8=0,User1
+Control9=0,openstatment
+Control10=1,L7000
+Control11=1,L7001
+Control12=1,L7002
+Control13=1,L7003
+Control14=1,L7004
+Control15=1,L7007
+Control16=1,L7008
+Control17=1,confDOB
+Control18=1,ConfACPhone
+Control19=1,L7005
+Control20=1,GetCoID
+Control21=1,L7009
+Control22=1,ConfBest
+Control23=1,L7010
+Control24=1,Confirmation
+Control25=0,L7014
+Control26=1,ConfCOID
+Control27=0,L7013
+Control28=1,L7012
+Control29=1,L6006
+Comment=Use this page to document the configuration for this control
+LangProgID=Pronexus.Language.1
+TTSSpeaker=
+ASREngine=
+NuancePackages=
+ConfigFile=vbvoice.ini
+RSTDictionary=
+UsingTTS=0
+UsingASR=0
+IsASlave=0
+SlaveName=EzHR Employee Hot Line
+TypeOfRecEngine=1
+</value>
+  </data>
+  <metadata name="myResAdapt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>23, 33</value>
+  </metadata>
+  <metadata name="OleDbDeleteCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbDeleteCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbDeleteCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 12</value>
+  </metadata>
+  <data name="OleDbConnection1.ConnectionString" xml:space="preserve">
+    <value>Provider=Microsoft.Jet.OLEDB.4.0;Password="";User ID=Admin;Data Source=CorPaccHL.mdb;Mode=Share Deny None;Extended Properties="";Jet OLEDB:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Database Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False</value>
+  </data>
+  <metadata name="OleDbInsertCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbInsertCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbInsertCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbSelectCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbSelectCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbSelectCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbUpdateCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbUpdateCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbUpdateCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="OleDbUpdateCommand1.CommandText" xml:space="preserve">
+    <value>UPDATE Respdata SET CallID = ?, Dcollect = ?, QID = ? WHERE (id = ?) AND (CallID = ? OR ? IS NULL AND CallID IS NULL) AND (Dcollect = ? OR ? IS NULL AND Dcollect IS NULL) AND (QID = ? OR ? IS NULL AND QID IS NULL)</value>
+  </data>
+  <metadata name="myrepadapt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 12</value>
+  </metadata>
+  <metadata name="OleDbDeleteCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbDeleteCommand2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbDeleteCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="OleDbDeleteCommand2.CommandText" xml:space="preserve">
+    <value>DELETE FROM ReportData WHERE (AutoID = ?) AND (AnonReq = ? OR ? IS NULL AND AnonReq IS NULL) AND (CBtime = ? OR ? IS NULL AND CBtime IS NULL) AND (CallDate = ? OR ? IS NULL AND CallDate IS NULL) AND (CallID = ? OR ? IS NULL AND CallID IS NULL) AND (CallStatus = ? OR ? IS NULL AND CallStatus IS NULL) AND (Comments = ? OR ? IS NULL AND Comments IS NULL) AND (Confirmation = ? OR ? IS NULL AND Confirmation IS NULL) AND (DOB = ? OR ? IS NULL AND DOB IS NULL) AND (Fname = ? OR ? IS NULL AND Fname IS NULL) AND (Lang = ? OR ? IS NULL AND Lang IS NULL) AND (Lname = ? OR ? IS NULL AND Lname IS NULL) AND (Phone = ? OR ? IS NULL AND Phone IS NULL) AND (SID = ? OR ? IS NULL AND SID IS NULL) AND (Subscriber = ? OR ? IS NULL AND Subscriber IS NULL) AND (VerifiedDate = ? OR ? IS NULL AND VerifiedDate IS NULL) AND (Verifiedby = ? OR ? IS NULL AND Verifiedby IS NULL) AND (verified = ?)</value>
+  </data>
+  <metadata name="OleDbInsertCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbInsertCommand2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbInsertCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="OleDbInsertCommand2.CommandText" xml:space="preserve">
+    <value>INSERT INTO ReportData(AnonReq, CallDate, CallStatus, CBtime, Comments, Confirmation, DOB, Fname, Lang, Lname, Phone, SID, Subscriber, verified, Verifiedby, VerifiedDate, CallID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</value>
+  </data>
+  <metadata name="OleDbSelectCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbSelectCommand2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbSelectCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbUpdateCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="OleDbUpdateCommand2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="OleDbUpdateCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="OleDbUpdateCommand2.CommandText" xml:space="preserve">
+    <value>UPDATE ReportData SET AnonReq = ?, CallDate = ?, CallStatus = ?, CBtime = ?, Comments = ?, Confirmation = ?, DOB = ?, Fname = ?, Lang = ?, Lname = ?, Phone = ?, SID = ?, Subscriber = ?, verified = ?, Verifiedby = ?, VerifiedDate = ?, CallID = ? WHERE (AutoID = ?) AND (AnonReq = ? OR ? IS NULL AND AnonReq IS NULL) AND (CBtime = ? OR ? IS NULL AND CBtime IS NULL) AND (CallDate = ? OR ? IS NULL AND CallDate IS NULL) AND (CallID = ? OR ? IS NULL AND CallID IS NULL) AND (CallStatus = ? OR ? IS NULL AND CallStatus IS NULL) AND (Comments = ? OR ? IS NULL AND Comments IS NULL) AND (Confirmation = ? OR ? IS NULL AND Confirmation IS NULL) AND (DOB = ? OR ? IS NULL AND DOB IS NULL) AND (Fname = ? OR ? IS NULL AND Fname IS NULL) AND (Lang = ? OR ? IS NULL AND Lang IS NULL) AND (Lname = ? OR ? IS NULL AND Lname IS NULL) AND (Phone = ? OR ? IS NULL AND Phone IS NULL) AND (SID = ? OR ? IS NULL AND SID IS NULL) AND (Subscriber = ? OR ? IS NULL AND Subscriber IS NULL) AND (VerifiedDate = ? OR ? IS NULL AND VerifiedDate IS NULL) AND (Verifiedby = ? OR ? IS NULL AND Verifiedby IS NULL) AND (verified = ?)</value>
+  </data>
+  <data name="Linestatus1.PropertyBag" xml:space="preserve">
+    <value>
+AutoSize=True
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </value>
+  </data>
+  <metadata name="Myrepdata1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 37</value>
+  </metadata>
+  <metadata name="Myresdata1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>258, 37</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>39</value>
+  </metadata>
+</root>

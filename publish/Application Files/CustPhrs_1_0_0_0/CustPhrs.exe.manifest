@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CustPhrs.exe" version="1.0.0.0" publicKeyToken="5ec36f21ae61c99b" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="newhotline32v6.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CustPhrs" version="1.0.6794.34899" language="neutral" processorArchitecture="x86" />
+    <commandLine file="CustPhrs.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.VBVRINGLib.dll" size="15360">
+      <assemblyIdentity name="AxInterop.VBVRINGLib" version="5.1.0.0" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QnJA3xZ6zs+7bYBndzk2q6mJ6ljkUKCQyEYaY8TEsEM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CustPhrs.exe" size="287216">
+      <assemblyIdentity name="CustPhrs" version="1.0.6794.34899" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SDWFwx1MlLIXdQmHF2QYaENUogQH9XdmyGHAaqqUPaQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="261768">
+      <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>w2BKS1LU9CJJbkawsoG1m1wmBfD9USlGkArvyQOalzE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pronexus.VBVoice.dll" size="1798144">
+      <assemblyIdentity name="Pronexus.VBVoice" version="10.2.3.1067" publicKeyToken="E1FB684C38AF2B04" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sqvsgodQikH+MHQGgMgAqHJ6w88/KKOueaLzPFoEAEI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="32392">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rGmMssiW8gGwtStzwqYgcNCFNq0Ep42tTlnFRp6rWeA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VSLangProj.dll" size="69272">
+      <assemblyIdentity name="VSLangProj" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yf3wn3KOB01nyfB5S6qlfYtxTnBsNMbTyrJGBHZ3jho=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AllData.xsd" size="3095">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZcYCmrcMwQKCF0FA/buneVtaQvqx3zAFaqfFIq0PINI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CallReport.xsd" size="2233">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G5El/v4s4moZ8l8oXtHRxZypRgiLAGzmiwlUr/6KbZE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CallUnverified.xsd" size="2479">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+Fwgrn3/Lq5AQ1plYCWjJWyScdhb2fNTPpbvgcDeFaY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Callverified.xsd" size="2394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dUQ080l6OFZOqX/BGLBQCLr/+v3qHiubg+PJ+5ycc7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CustPhrs.exe.config" size="1363">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3ZUPk88XSELeIYr8oQuEz6GPGrXGWXp1goQCGqZh3Zc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="myrepdata.xsd" size="2228">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HQiLyQ994orJeaJ5AYEqzRuhJKxuudYXchZkJbKcEVI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="myresdata.xsd" size="1215">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8/xbmLn4oFfylrhfsR7pv5YqrzT1YEwy4nBceNWu9bM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="newhotline32v6.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>weT6tNHdUyqSxfwKVfFeoyP9/SgwD1fNryLVDc+hHgo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CHI-DOLSONDA-W7\dadolson" issuerKeyHash="f5e4585bfdcffa7c16f99b73ca6a572a74111f3f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>8s52WLQQfwi6X/+XoNe11vaPdGR9T77aZymjg9k4Abs=</DigestValue></Reference></SignedInfo><SignatureValue>AgNa/O7fIRZ5LXsiUSlWXiRPs5K7LkI0YiTpN2WMjdEPZUCjOK7pqGh6L3o/U7lHcyZY34rurxUVqsd47+WxOsUApP2g3GNGNKuEmy2Ep1A7druG7ktWNPx0+QfGxHQY8QlnUxaDnmx4l4cTYF+L4e8jjQYIAUEQk4UaQoa3kjA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zOTv6e+t+0r8STuW/ArL0Spht2i6zdulj/ZWyNaD7LcAELEeNCBGhQHp5xvrwo7V8NhFiyRe/OiTHR4YrUmtTvixyKhCmcrGNYDVMG48AsdJFqHXLFg3R8pxTuHL8oudYH52aY45TXytY5RMf6NFKeVJ38D+BFDn1J4Bm4PErXE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bb0138d983a32967dabe4f7d64748ff6d6b5d7a097ff5fba087f10b45876cef2" Description="" Url=""><as:assemblyIdentity name="CustPhrs.exe" version="1.0.0.0" publicKeyToken="5ec36f21ae61c99b" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CHI-DOLSONDA-W7\dadolson</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aBtVF2fYCGi/MTFfFmGyebakNIN8jnCBgVGfxdgI/5Q=</DigestValue></Reference></SignedInfo><SignatureValue>SPMRfaMA3+Zyhlq9bn5zU5dbPw/ZuZm8xU1NmuKqoLO9sA4bdSO1XXQolHTjfvNdKkYax6o2t7+hEPhgwXBS/TIXARlWbwxRbkVx/4A+ZKJ0mLyeFlG2xa3FATgV4PeAUC9Gq6UcRxGRdjE6lSxV9h3+CEFKfRu9Bq2ml2rVDFo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zOTv6e+t+0r8STuW/ArL0Spht2i6zdulj/ZWyNaD7LcAELEeNCBGhQHp5xvrwo7V8NhFiyRe/OiTHR4YrUmtTvixyKhCmcrGNYDVMG48AsdJFqHXLFg3R8pxTuHL8oudYH52aY45TXytY5RMf6NFKeVJ38D+BFDn1J4Bm4PErXE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQXRvsCCoVCqtJGvL5r9mqojANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAAQwBIAEkALQBEAE8ATABTAE8ATgBEAEEALQBXADcAXABkAGEAZABvAGwAcwBvAG4wHhcNMTgwODA4MjMyMzE4WhcNMTkwODA5MDUyMzE4WjA7MTkwNwYDVQQDHjAAQwBIAEkALQBEAE8ATABTAE8ATgBEAEEALQBXADcAXABkAGEAZABvAGwAcwBvAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMzk7+nvrftK/Ek7lvwKy9EqYbdous3bpY/2VsjWg+y3ABCxHjQgRoUB6ecb68KO1fDYRYskXvzokx0eGK1JrU74scioQpnKxjWA1TBuPALHSRah1yxYN0fKcU7hy/KLnWB+dmmOOU18rWOUTH+jRSnlSd/A/gRQ59SeAZuDxK1xAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAflcHdeigbUiJQF43BknSbzHBu+RorxYr7LR35HNmjeQrmpEfQtZd19dalb2toD7YVuWsM0Nx4z/afVSjonVR1yck9XqZi2KW6mxB5gUbqkulA72dEyM/HUcrsStLdcyGAKcXvXaupvLrD9CaiNkj6wCbQKsuYBzbWv467RwCvD0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

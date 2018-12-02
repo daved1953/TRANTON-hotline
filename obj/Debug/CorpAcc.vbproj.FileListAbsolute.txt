@@ -1,0 +1,3 @@
+C:\Dev\VBVoice\hotline\obj\Debug\CorpAcc.vbproj.ResolveComReference.cache
+C:\Dev\VBVoice\hotline\obj\Debug\CustPhrs.pdb
+C:\Dev\VBVoice\hotline\bin\CustPhrs.exe.config

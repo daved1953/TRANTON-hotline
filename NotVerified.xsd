@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NotVerified" targetNamespace="http://www.tempuri.org/NotVerified.xsd" xmlns:mstns="http://www.tempuri.org/NotVerified.xsd" xmlns="http://www.tempuri.org/NotVerified.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="NotVerified" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="ReportData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AnonReq" type="xs:string" minOccurs="0" />
+              <xs:element name="AutoID" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="CallDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CallID" type="xs:string" minOccurs="0" />
+              <xs:element name="CallStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="CBtime" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" type="xs:string" minOccurs="0" />
+              <xs:element name="Confirmation" type="xs:string" minOccurs="0" />
+              <xs:element name="DOB" type="xs:string" minOccurs="0" />
+              <xs:element name="Fname" type="xs:string" minOccurs="0" />
+              <xs:element name="Lang" type="xs:string" minOccurs="0" />
+              <xs:element name="Lname" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" type="xs:string" minOccurs="0" />
+              <xs:element name="SID" type="xs:string" minOccurs="0" />
+              <xs:element name="Subscriber" type="xs:string" minOccurs="0" />
+              <xs:element name="verified" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Verifiedby" type="xs:string" minOccurs="0" />
+              <xs:element name="VerifiedDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReportData" />
+      <xs:field xpath="mstns:AutoID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

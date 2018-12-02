@@ -1,0 +1,145 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CustPhrs
+</name>
+</assembly>
+<members>
+<member name="T:CustPhrs.AllData">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CustPhrs.AllData.RespdataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.AllData.ReportDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.AllData.RespdataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.AllData.ReportDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.AllData.RespdataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CustPhrs.AllData.ReportDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CustPhrs.CallReport">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CustPhrs.CallReport.ReportDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.CallReport.ReportDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.CallReport.ReportDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CustPhrs.CallUnverified">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CustPhrs.CallUnverified.ReportDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.CallUnverified.ReportDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.CallUnverified.ReportDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CustPhrs.Callverified">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CustPhrs.Callverified.ReportDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.Callverified.ReportDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.Callverified.ReportDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CustPhrs.myrepdata">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CustPhrs.myrepdata.ReportDataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.myrepdata.ReportDataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.myrepdata.ReportDataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:CustPhrs.myresdata">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:CustPhrs.myresdata.RespdataDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:CustPhrs.myresdata.RespdataRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:CustPhrs.myresdata.RespdataRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>
