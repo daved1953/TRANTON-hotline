@@ -1,6 +1,23 @@
+
+Imports System
+Imports System.Text
+Imports System.Data.SqlClient
+Imports System.Configuration
+Imports System.IO
+Imports Microsoft.VisualBasic
+
+
+
+
 Public Class Main
 
     Inherits System.Windows.Forms.Form
+
+    Public dbconnection As String
+
+    Public dbconn As New OleDb.OleDbConnection()
+    Public adapter As New OleDb.OleDbDataAdapter()
+
 
     Public Shared lcnt(5) As Integer               'used to track certain loops like birthdate and area code phone number get digits
     Public Shared Strxp(5) As String            'used when collecting loop data like area code and phone number or  birthdate information
@@ -10,11 +27,17 @@ Public Class Main
     Public Shared Conf(5) As String
 
 
+    Public Shared g_voicepath As String
+
     'Data Constructs
     Public Shared qmdataset As New DataSet()      'QMaster DataSet
     Public Shared qmtable As DataTable = qmdataset.Tables.Add("QmasterDT") 'Data Table that holds question Logic
     Public Shared dmdataset As New DataSet()      'Dmaker DS
     Public Shared dmtable As DataTable = dmdataset.Tables.Add("dmasterDT") 'DataTable that holds discesion branch info
+
+
+
+
     'Public Shared RepDataDS As New DataSet()   'Report DataSet
     'Public Shared Reptable As DataTable = RepDataDS.Tables.Add("RepDataT") 'DataTable that holds update info for the header record
     'Public Shared RDtable As DataTable = RepDataDS.Tables.Add("RespDataT") 'DataTable that holds Update detail options selected for quistions
@@ -29,9 +52,13 @@ Public Class Main
     Public Shared MaxD(5) As String             'The max total of responses used to build answer phrases
     Public Shared NxtQID(5) As String           'The next Question ID
     Public Shared QType(5) As String            'Used to determin the question type
-    Public Shared Dindex(5) As Integer          'Index of selected option for decision maker
-    Friend WithEvents cmdStart As Button
+    Public Shared Dindex(5) As Integer
+    Friend WithEvents GroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents checkdata As System.Windows.Forms.Button
+    Friend WithEvents cmdStop As System.Windows.Forms.Button
+    Friend WithEvents cmdStart As System.Windows.Forms.Button          'Index of selected option for decision maker
     Public Shared MDXindex(5) As Integer        'index on MX questions to advance to next Q
+
 
 
 #Region " Windows Form Designer generated code "
@@ -41,9 +68,20 @@ Public Class Main
 
         'This call is required by the Windows Form Designer.
         InitializeComponent()
+        '  Dim dbconn As New OleDb.OleDbConnection()
+        '  Dim adapter As New OleDb.OleDbDataAdapter()
+        '  Dim qmquery As String       'Use for Select String
+        '  Dim dmquery As String
+        '  Dim settingquery As String
 
+        dbconnection = GetConnectionStringByName("AccessDB")
+
+        ''   dbconn.Close()
+
+        dbconn.ConnectionString = dbconnection
         'Add any initialization after the InitializeComponent() call
 
+        
     End Sub
 
     'Form overrides dispose to clean up the component list.
@@ -65,7 +103,6 @@ Public Class Main
     Friend WithEvents VbvFrame1 As Pronexus.VBVoice.VBVFrame
     Friend WithEvents LineGroup1 As Pronexus.VBVoice.LineGroup
     Friend WithEvents OnHook1 As Pronexus.VBVoice.OnHook
-    Friend WithEvents cmdStop As System.Windows.Forms.Button
     Friend WithEvents Msurvey As Pronexus.VBVoice.GetDigits
     Friend WithEvents InitGreet As Pronexus.VBVoice.PlayGreeting
     Friend WithEvents Spanish As Pronexus.VBVoice.Lang
@@ -78,13 +115,8 @@ Public Class Main
     Friend WithEvents LblVolume As System.Windows.Forms.Label
     Friend WithEvents openstatment As Pronexus.VBVoice.PlayGreeting
     Friend WithEvents L7000 As Pronexus.VBVoice.PlayGreeting
-    Friend WithEvents L7001 As Pronexus.VBVoice.GetDigits
-    Friend WithEvents L7002 As Pronexus.VBVoice.GetDigits
-    Friend WithEvents L7003 As Pronexus.VBVoice.GetDigits
-    Friend WithEvents L7004 As Pronexus.VBVoice.Record
     Friend WithEvents L7007 As Pronexus.VBVoice.GetDigits
     Friend WithEvents L7008 As Pronexus.VBVoice.GetDigits
-    Friend WithEvents confDOB As Pronexus.VBVoice.GetDigits
     Friend WithEvents ConfACPhone As Pronexus.VBVoice.GetDigits
     Friend WithEvents L7005 As Pronexus.VBVoice.GetDigits
     Friend WithEvents GetCoID As Pronexus.VBVoice.GetDigits
@@ -94,7 +126,6 @@ Public Class Main
     Friend WithEvents L7010 As Pronexus.VBVoice.GetDigits
     Friend WithEvents ConfCOID As Pronexus.VBVoice.GetDigits
     Friend WithEvents L7014 As Pronexus.VBVoice.PlayGreeting
-    Friend WithEvents checkdata As System.Windows.Forms.Button
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents myResAdapt As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents myrepadapt As System.Data.OleDb.OleDbDataAdapter
@@ -128,13 +159,8 @@ Public Class Main
         Me.User1 = New Pronexus.VBVoice.User()
         Me.openstatment = New Pronexus.VBVoice.PlayGreeting()
         Me.L7000 = New Pronexus.VBVoice.PlayGreeting()
-        Me.L7001 = New Pronexus.VBVoice.GetDigits()
-        Me.L7002 = New Pronexus.VBVoice.GetDigits()
-        Me.L7003 = New Pronexus.VBVoice.GetDigits()
-        Me.L7004 = New Pronexus.VBVoice.Record()
         Me.L7007 = New Pronexus.VBVoice.GetDigits()
         Me.L7008 = New Pronexus.VBVoice.GetDigits()
-        Me.confDOB = New Pronexus.VBVoice.GetDigits()
         Me.ConfACPhone = New Pronexus.VBVoice.GetDigits()
         Me.L7005 = New Pronexus.VBVoice.GetDigits()
         Me.GetCoID = New Pronexus.VBVoice.GetDigits()
@@ -147,12 +173,10 @@ Public Class Main
         Me.L7013 = New Pronexus.VBVoice.GetDigits()
         Me.L7012 = New Pronexus.VBVoice.GetDigits()
         Me.L6006 = New Pronexus.VBVoice.Record()
-        Me.cmdStop = New System.Windows.Forms.Button()
         Me.LblSpeed = New System.Windows.Forms.Label()
         Me.SpeedControl = New System.Windows.Forms.NumericUpDown()
         Me.VolumeControl = New System.Windows.Forms.NumericUpDown()
         Me.LblVolume = New System.Windows.Forms.Label()
-        Me.checkdata = New System.Windows.Forms.Button()
         Me.myResAdapt = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
@@ -165,9 +189,12 @@ Public Class Main
         Me.OleDbSelectCommand2 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbUpdateCommand2 = New System.Data.OleDb.OleDbCommand()
         Me.Linestatus1 = New Pronexus.VBVoice.Linestatus()
+        Me.GroupBox = New System.Windows.Forms.GroupBox()
+        Me.checkdata = New System.Windows.Forms.Button()
+        Me.cmdStop = New System.Windows.Forms.Button()
+        Me.cmdStart = New System.Windows.Forms.Button()
         Me.Myrepdata1 = New CustPhrs.myrepdata()
         Me.Myresdata1 = New CustPhrs.myresdata()
-        Me.cmdStart = New System.Windows.Forms.Button()
         CType(Me.VbvFrame1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.VbvFrame1.SuspendLayout()
         CType(Me.PlaySpecial, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -181,13 +208,8 @@ Public Class Main
         CType(Me.User1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.openstatment, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.L7000, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.L7001, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.L7002, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.L7003, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.L7004, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.L7007, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.L7008, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.confDOB, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ConfACPhone, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.L7005, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GetCoID, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -203,6 +225,7 @@ Public Class Main
         CType(Me.SpeedControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VolumeControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Linestatus1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox.SuspendLayout()
         CType(Me.Myrepdata1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Myresdata1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -220,13 +243,8 @@ Public Class Main
         Me.VbvFrame1.Controls.Add(Me.User1)
         Me.VbvFrame1.Controls.Add(Me.openstatment)
         Me.VbvFrame1.Controls.Add(Me.L7000)
-        Me.VbvFrame1.Controls.Add(Me.L7001)
-        Me.VbvFrame1.Controls.Add(Me.L7002)
-        Me.VbvFrame1.Controls.Add(Me.L7003)
-        Me.VbvFrame1.Controls.Add(Me.L7004)
         Me.VbvFrame1.Controls.Add(Me.L7007)
         Me.VbvFrame1.Controls.Add(Me.L7008)
-        Me.VbvFrame1.Controls.Add(Me.confDOB)
         Me.VbvFrame1.Controls.Add(Me.ConfACPhone)
         Me.VbvFrame1.Controls.Add(Me.L7005)
         Me.VbvFrame1.Controls.Add(Me.GetCoID)
@@ -239,241 +257,224 @@ Public Class Main
         Me.VbvFrame1.Controls.Add(Me.L7013)
         Me.VbvFrame1.Controls.Add(Me.L7012)
         Me.VbvFrame1.Controls.Add(Me.L6006)
-        Me.VbvFrame1.Location = New System.Drawing.Point(115, 10)
+        Me.VbvFrame1.Location = New System.Drawing.Point(24, 10)
         Me.VbvFrame1.Name = "VbvFrame1"
-        Me.VbvFrame1.PropertyBag = resources.GetString("VbvFrame1.PropertyBag")
-        Me.VbvFrame1.Size = New System.Drawing.Size(856, 475)
+        Me.VbvFrame1.OcxState = CType(resources.GetObject("VbvFrame1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.VbvFrame1.Size = New System.Drawing.Size(1045, 434)
         Me.VbvFrame1.TabIndex = 9
         '
         'PlaySpecial
         '
         Me.PlaySpecial.Location = New System.Drawing.Point(282, 315)
         Me.PlaySpecial.Name = "PlaySpecial"
-        Me.PlaySpecial.PropertyBag = resources.GetString("PlaySpecial.PropertyBag")
+        Me.PlaySpecial.OcxState = CType(resources.GetObject("PlaySpecial.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.PlaySpecial.Size = New System.Drawing.Size(70, 65)
         Me.PlaySpecial.TabIndex = 54
         '
         'LineGroup1
         '
-        Me.LineGroup1.Location = New System.Drawing.Point(24, 35)
+        Me.LineGroup1.Location = New System.Drawing.Point(19, 152)
         Me.LineGroup1.Name = "LineGroup1"
-        Me.LineGroup1.PropertyBag = resources.GetString("LineGroup1.PropertyBag")
+        Me.LineGroup1.OcxState = CType(resources.GetObject("LineGroup1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.LineGroup1.Size = New System.Drawing.Size(65, 110)
         Me.LineGroup1.TabIndex = 1
         '
         'Msurvey
         '
         Me.Msurvey.Location = New System.Drawing.Point(646, 215)
         Me.Msurvey.Name = "Msurvey"
-        Me.Msurvey.PropertyBag = resources.GetString("Msurvey.PropertyBag")
+        Me.Msurvey.OcxState = CType(resources.GetObject("Msurvey.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.Msurvey.Size = New System.Drawing.Size(72, 76)
         Me.Msurvey.TabIndex = 2
         '
         'OnHook1
         '
-        Me.OnHook1.Location = New System.Drawing.Point(752, 129)
+        Me.OnHook1.Location = New System.Drawing.Point(772, 152)
         Me.OnHook1.Name = "OnHook1"
-        Me.OnHook1.PropertyBag = resources.GetString("OnHook1.PropertyBag")
+        Me.OnHook1.OcxState = CType(resources.GetObject("OnHook1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.OnHook1.Size = New System.Drawing.Size(56, 56)
         Me.OnHook1.TabIndex = 4
         '
         'InitGreet
         '
         Me.InitGreet.Location = New System.Drawing.Point(136, 55)
         Me.InitGreet.Name = "InitGreet"
-        Me.InitGreet.PropertyBag = resources.GetString("InitGreet.PropertyBag")
+        Me.InitGreet.OcxState = CType(resources.GetObject("InitGreet.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.InitGreet.Size = New System.Drawing.Size(70, 65)
         Me.InitGreet.TabIndex = 10
         '
         'Spanish
         '
         Me.Spanish.Location = New System.Drawing.Point(336, 69)
         Me.Spanish.Name = "Spanish"
-        Me.Spanish.PropertyBag = resources.GetString("Spanish.PropertyBag")
+        Me.Spanish.OcxState = CType(resources.GetObject("Spanish.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.Spanish.Size = New System.Drawing.Size(58, 56)
         Me.Spanish.TabIndex = 11
         '
         'LangSelect
         '
         Me.LangSelect.Location = New System.Drawing.Point(240, 35)
         Me.LangSelect.Name = "LangSelect"
-        Me.LangSelect.PropertyBag = resources.GetString("LangSelect.PropertyBag")
+        Me.LangSelect.OcxState = CType(resources.GetObject("LangSelect.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.LangSelect.Size = New System.Drawing.Size(64, 76)
         Me.LangSelect.TabIndex = 12
         '
         'Playresponse
         '
         Me.Playresponse.Location = New System.Drawing.Point(568, 42)
         Me.Playresponse.Name = "Playresponse"
-        Me.Playresponse.PropertyBag = resources.GetString("Playresponse.PropertyBag")
+        Me.Playresponse.OcxState = CType(resources.GetObject("Playresponse.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.Playresponse.Size = New System.Drawing.Size(73, 76)
         Me.Playresponse.TabIndex = 13
         '
         'User1
         '
         Me.User1.Location = New System.Drawing.Point(144, 250)
         Me.User1.Name = "User1"
-        Me.User1.PropertyBag = resources.GetString("User1.PropertyBag")
+        Me.User1.OcxState = CType(resources.GetObject("User1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.User1.Size = New System.Drawing.Size(39, 125)
         Me.User1.TabIndex = 14
         '
         'openstatment
         '
         Me.openstatment.Location = New System.Drawing.Point(432, 42)
         Me.openstatment.Name = "openstatment"
-        Me.openstatment.PropertyBag = resources.GetString("openstatment.PropertyBag")
+        Me.openstatment.OcxState = CType(resources.GetObject("openstatment.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.openstatment.Size = New System.Drawing.Size(74, 65)
         Me.openstatment.TabIndex = 24
         '
         'L7000
         '
-        Me.L7000.Location = New System.Drawing.Point(88, 2065)
+        Me.L7000.Location = New System.Drawing.Point(99, 104)
         Me.L7000.Name = "L7000"
-        Me.L7000.PropertyBag = resources.GetString("L7000.PropertyBag")
+        Me.L7000.OcxState = CType(resources.GetObject("L7000.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7000.Size = New System.Drawing.Size(70, 65)
         Me.L7000.TabIndex = 30
-        '
-        'L7001
-        '
-        Me.L7001.Location = New System.Drawing.Point(200, 2046)
-        Me.L7001.Name = "L7001"
-        Me.L7001.PropertyBag = resources.GetString("L7001.PropertyBag")
-        Me.L7001.TabIndex = 31
-        '
-        'L7002
-        '
-        Me.L7002.Location = New System.Drawing.Point(304, 2046)
-        Me.L7002.Name = "L7002"
-        Me.L7002.PropertyBag = resources.GetString("L7002.PropertyBag")
-        Me.L7002.TabIndex = 32
-        '
-        'L7003
-        '
-        Me.L7003.Location = New System.Drawing.Point(400, 2046)
-        Me.L7003.Name = "L7003"
-        Me.L7003.PropertyBag = resources.GetString("L7003.PropertyBag")
-        Me.L7003.TabIndex = 33
-        '
-        'L7004
-        '
-        Me.L7004.Location = New System.Drawing.Point(648, 2046)
-        Me.L7004.Name = "L7004"
-        Me.L7004.PropertyBag = resources.GetString("L7004.PropertyBag")
-        Me.L7004.TabIndex = 34
         '
         'L7007
         '
-        Me.L7007.Location = New System.Drawing.Point(160, 2212)
+        Me.L7007.Location = New System.Drawing.Point(241, 54)
         Me.L7007.Name = "L7007"
-        Me.L7007.PropertyBag = resources.GetString("L7007.PropertyBag")
+        Me.L7007.OcxState = CType(resources.GetObject("L7007.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7007.Size = New System.Drawing.Size(78, 76)
         Me.L7007.TabIndex = 35
         '
         'L7008
         '
-        Me.L7008.Location = New System.Drawing.Point(272, 2222)
+        Me.L7008.Location = New System.Drawing.Point(402, 54)
         Me.L7008.Name = "L7008"
-        Me.L7008.PropertyBag = resources.GetString("L7008.PropertyBag")
+        Me.L7008.OcxState = CType(resources.GetObject("L7008.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7008.Size = New System.Drawing.Size(63, 76)
         Me.L7008.TabIndex = 36
-        '
-        'confDOB
-        '
-        Me.confDOB.Location = New System.Drawing.Point(480, 2046)
-        Me.confDOB.Name = "confDOB"
-        Me.confDOB.PropertyBag = resources.GetString("confDOB.PropertyBag")
-        Me.confDOB.TabIndex = 37
         '
         'ConfACPhone
         '
-        Me.ConfACPhone.Location = New System.Drawing.Point(376, 2212)
+        Me.ConfACPhone.Location = New System.Drawing.Point(534, 54)
         Me.ConfACPhone.Name = "ConfACPhone"
-        Me.ConfACPhone.PropertyBag = resources.GetString("ConfACPhone.PropertyBag")
+        Me.ConfACPhone.OcxState = CType(resources.GetObject("ConfACPhone.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.ConfACPhone.Size = New System.Drawing.Size(77, 76)
         Me.ConfACPhone.TabIndex = 38
         '
         'L7005
         '
-        Me.L7005.Location = New System.Drawing.Point(160, 2332)
+        Me.L7005.Location = New System.Drawing.Point(201, 321)
         Me.L7005.Name = "L7005"
-        Me.L7005.PropertyBag = resources.GetString("L7005.PropertyBag")
+        Me.L7005.OcxState = CType(resources.GetObject("L7005.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7005.Size = New System.Drawing.Size(53, 76)
         Me.L7005.TabIndex = 39
         '
         'GetCoID
         '
-        Me.GetCoID.Location = New System.Drawing.Point(248, 2332)
+        Me.GetCoID.Location = New System.Drawing.Point(299, 321)
         Me.GetCoID.Name = "GetCoID"
-        Me.GetCoID.PropertyBag = resources.GetString("GetCoID.PropertyBag")
+        Me.GetCoID.OcxState = CType(resources.GetObject("GetCoID.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.GetCoID.Size = New System.Drawing.Size(59, 76)
         Me.GetCoID.TabIndex = 40
         '
         'L7009
         '
-        Me.L7009.Location = New System.Drawing.Point(488, 2212)
+        Me.L7009.Location = New System.Drawing.Point(681, 54)
         Me.L7009.Name = "L7009"
-        Me.L7009.PropertyBag = resources.GetString("L7009.PropertyBag")
+        Me.L7009.OcxState = CType(resources.GetObject("L7009.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7009.Size = New System.Drawing.Size(80, 76)
         Me.L7009.TabIndex = 41
         '
         'ConfBest
         '
-        Me.ConfBest.Location = New System.Drawing.Point(616, 2222)
+        Me.ConfBest.Location = New System.Drawing.Point(803, 65)
         Me.ConfBest.Name = "ConfBest"
-        Me.ConfBest.PropertyBag = resources.GetString("ConfBest.PropertyBag")
+        Me.ConfBest.OcxState = CType(resources.GetObject("ConfBest.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.ConfBest.Size = New System.Drawing.Size(53, 76)
         Me.ConfBest.TabIndex = 42
         '
         'L7010
         '
-        Me.L7010.Location = New System.Drawing.Point(432, 2342)
+        Me.L7010.Location = New System.Drawing.Point(487, 321)
         Me.L7010.Name = "L7010"
-        Me.L7010.PropertyBag = resources.GetString("L7010.PropertyBag")
+        Me.L7010.OcxState = CType(resources.GetObject("L7010.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7010.Size = New System.Drawing.Size(53, 76)
         Me.L7010.TabIndex = 43
         '
         'Confirmation
         '
-        Me.Confirmation.Location = New System.Drawing.Point(520, 2332)
+        Me.Confirmation.Location = New System.Drawing.Point(602, 321)
         Me.Confirmation.Name = "Confirmation"
-        Me.Confirmation.PropertyBag = resources.GetString("Confirmation.PropertyBag")
+        Me.Confirmation.OcxState = CType(resources.GetObject("Confirmation.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.Confirmation.Size = New System.Drawing.Size(70, 65)
         Me.Confirmation.TabIndex = 44
         '
         'L7014
         '
         Me.L7014.Location = New System.Drawing.Point(488, 284)
         Me.L7014.Name = "L7014"
-        Me.L7014.PropertyBag = resources.GetString("L7014.PropertyBag")
+        Me.L7014.OcxState = CType(resources.GetObject("L7014.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7014.Size = New System.Drawing.Size(70, 65)
         Me.L7014.TabIndex = 47
         '
         'ConfCOID
         '
-        Me.ConfCOID.Location = New System.Drawing.Point(344, 2332)
+        Me.ConfCOID.Location = New System.Drawing.Point(389, 321)
         Me.ConfCOID.Name = "ConfCOID"
-        Me.ConfCOID.PropertyBag = resources.GetString("ConfCOID.PropertyBag")
+        Me.ConfCOID.OcxState = CType(resources.GetObject("ConfCOID.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.ConfCOID.Size = New System.Drawing.Size(58, 76)
         Me.ConfCOID.TabIndex = 48
         '
         'L7013
         '
         Me.L7013.Location = New System.Drawing.Point(384, 215)
         Me.L7013.Name = "L7013"
-        Me.L7013.PropertyBag = resources.GetString("L7013.PropertyBag")
+        Me.L7013.OcxState = CType(resources.GetObject("L7013.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7013.Size = New System.Drawing.Size(53, 76)
         Me.L7013.TabIndex = 50
         '
         'L7012
         '
-        Me.L7012.Location = New System.Drawing.Point(624, 2332)
+        Me.L7012.Location = New System.Drawing.Point(730, 321)
         Me.L7012.Name = "L7012"
-        Me.L7012.PropertyBag = resources.GetString("L7012.PropertyBag")
+        Me.L7012.OcxState = CType(resources.GetObject("L7012.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L7012.Size = New System.Drawing.Size(53, 76)
         Me.L7012.TabIndex = 51
         '
         'L6006
         '
-        Me.L6006.Location = New System.Drawing.Point(80, 2268)
+        Me.L6006.Location = New System.Drawing.Point(80, 268)
         Me.L6006.Name = "L6006"
-        Me.L6006.PropertyBag = resources.GetString("L6006.PropertyBag")
+        Me.L6006.OcxState = CType(resources.GetObject("L6006.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.L6006.Size = New System.Drawing.Size(55, 80)
         Me.L6006.TabIndex = 53
-        '
-        'cmdStop
-        '
-        Me.cmdStop.Location = New System.Drawing.Point(885, 491)
-        Me.cmdStop.Name = "cmdStop"
-        Me.cmdStop.Size = New System.Drawing.Size(75, 22)
-        Me.cmdStop.TabIndex = 6
-        Me.cmdStop.Text = "Stop"
         '
         'LblSpeed
         '
-        Me.LblSpeed.Location = New System.Drawing.Point(812, 432)
+        Me.LblSpeed.Location = New System.Drawing.Point(6, 20)
         Me.LblSpeed.Name = "LblSpeed"
-        Me.LblSpeed.Size = New System.Drawing.Size(55, 15)
+        Me.LblSpeed.Size = New System.Drawing.Size(49, 15)
         Me.LblSpeed.TabIndex = 17
         Me.LblSpeed.Text = "Speed"
+        Me.LblSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'SpeedControl
         '
-        Me.SpeedControl.Location = New System.Drawing.Point(896, 428)
+        Me.SpeedControl.Location = New System.Drawing.Point(71, 19)
         Me.SpeedControl.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.SpeedControl.Minimum = New Decimal(New Integer() {10, 0, 0, -2147483648})
         Me.SpeedControl.Name = "SpeedControl"
@@ -482,7 +483,7 @@ Public Class Main
         '
         'VolumeControl
         '
-        Me.VolumeControl.Location = New System.Drawing.Point(896, 465)
+        Me.VolumeControl.Location = New System.Drawing.Point(70, 51)
         Me.VolumeControl.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.VolumeControl.Minimum = New Decimal(New Integer() {10, 0, 0, -2147483648})
         Me.VolumeControl.Name = "VolumeControl"
@@ -491,19 +492,12 @@ Public Class Main
         '
         'LblVolume
         '
-        Me.LblVolume.Location = New System.Drawing.Point(812, 467)
+        Me.LblVolume.Location = New System.Drawing.Point(6, 51)
         Me.LblVolume.Name = "LblVolume"
-        Me.LblVolume.Size = New System.Drawing.Size(71, 16)
+        Me.LblVolume.Size = New System.Drawing.Size(52, 16)
         Me.LblVolume.TabIndex = 19
         Me.LblVolume.Text = "Volume"
-        '
-        'checkdata
-        '
-        Me.checkdata.Location = New System.Drawing.Point(722, 489)
-        Me.checkdata.Name = "checkdata"
-        Me.checkdata.Size = New System.Drawing.Size(80, 24)
-        Me.checkdata.TabIndex = 49
-        Me.checkdata.Text = "Reports"
+        Me.LblVolume.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'myResAdapt
         '
@@ -515,15 +509,15 @@ Public Class Main
         '
         'OleDbDeleteCommand1
         '
-        Me.OleDbDeleteCommand1.CommandText = "DELETE FROM Respdata WHERE (id = ?) AND (CallID = ? OR ? IS NULL AND CallID IS NU" &
-    "LL) AND (Dcollect = ? OR ? IS NULL AND Dcollect IS NULL) AND (QID = ? OR ? IS NU" &
+        Me.OleDbDeleteCommand1.CommandText = "DELETE FROM Respdata WHERE (id = ?) AND (CallID = ? OR ? IS NULL AND CallID IS NU" & _
+    "LL) AND (Dcollect = ? OR ? IS NULL AND Dcollect IS NULL) AND (QID = ? OR ? IS NU" & _
     "LL AND QID IS NULL)"
         Me.OleDbDeleteCommand1.Connection = Me.OleDbConnection1
         Me.OleDbDeleteCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("Original_id", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(10, Byte), CType(0, Byte), "id", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("Original_CallID", System.Data.OleDb.OleDbType.VarWChar, 20, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "CallID", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("Original_CallID1", System.Data.OleDb.OleDbType.VarWChar, 20, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "CallID", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("Original_Dcollect", System.Data.OleDb.OleDbType.VarWChar, 10, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "Dcollect", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("Original_Dcollect1", System.Data.OleDb.OleDbType.VarWChar, 10, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "Dcollect", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("Original_QID", System.Data.OleDb.OleDbType.VarWChar, 5, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "QID", System.Data.DataRowVersion.Original, Nothing), New System.Data.OleDb.OleDbParameter("Original_QID1", System.Data.OleDb.OleDbType.VarWChar, 5, System.Data.ParameterDirection.Input, False, CType(0, Byte), CType(0, Byte), "QID", System.Data.DataRowVersion.Original, Nothing)})
         '
         'OleDbConnection1
         '
-        Me.OleDbConnection1.ConnectionString = resources.GetString("OleDbConnection1.ConnectionString")
+        Me.OleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\CORPHL_Share\CorPaccHL.mdb"
         '
         'OleDbInsertCommand1
         '
@@ -564,8 +558,8 @@ Public Class Main
         '
         'OleDbSelectCommand2
         '
-        Me.OleDbSelectCommand2.CommandText = "SELECT AnonReq, AutoID, CallDate, CallStatus, CBtime, Comments, Confirmation, DOB" &
-    ", Fname, Lang, Lname, Phone, SID, Subscriber, verified, Verifiedby, VerifiedDate" &
+        Me.OleDbSelectCommand2.CommandText = "SELECT AnonReq, AutoID, CallDate, CallStatus, CBtime, Comments, Confirmation, DOB" & _
+    ", Fname, Lang, Lname, Phone, SID, Subscriber, verified, Verifiedby, VerifiedDate" & _
     ", CallID FROM ReportData"
         Me.OleDbSelectCommand2.Connection = Me.OleDbConnection1
         '
@@ -577,12 +571,52 @@ Public Class Main
         '
         'Linestatus1
         '
-        Me.Linestatus1.Location = New System.Drawing.Point(161, 519)
+        Me.Linestatus1.Enabled = True
+        Me.Linestatus1.Location = New System.Drawing.Point(24, 450)
         Me.Linestatus1.Name = "Linestatus1"
-        Me.Linestatus1.PropertyBag = resources.GetString("Linestatus1.PropertyBag")
-        Me.Linestatus1.Size = New System.Drawing.Size(628, 81)
+        Me.Linestatus1.OcxState = CType(resources.GetObject("Linestatus1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.Linestatus1.Size = New System.Drawing.Size(647, 40)
         Me.Linestatus1.TabIndex = 55
         Me.Linestatus1.TabStop = False
+        '
+        'GroupBox
+        '
+        Me.GroupBox.Controls.Add(Me.checkdata)
+        Me.GroupBox.Controls.Add(Me.cmdStop)
+        Me.GroupBox.Controls.Add(Me.VolumeControl)
+        Me.GroupBox.Controls.Add(Me.cmdStart)
+        Me.GroupBox.Controls.Add(Me.LblVolume)
+        Me.GroupBox.Controls.Add(Me.SpeedControl)
+        Me.GroupBox.Controls.Add(Me.LblSpeed)
+        Me.GroupBox.Location = New System.Drawing.Point(837, 450)
+        Me.GroupBox.Name = "GroupBox"
+        Me.GroupBox.Size = New System.Drawing.Size(232, 111)
+        Me.GroupBox.TabIndex = 56
+        Me.GroupBox.TabStop = False
+        '
+        'checkdata
+        '
+        Me.checkdata.Location = New System.Drawing.Point(133, 15)
+        Me.checkdata.Name = "checkdata"
+        Me.checkdata.Size = New System.Drawing.Size(80, 24)
+        Me.checkdata.TabIndex = 52
+        Me.checkdata.Text = "Reports"
+        '
+        'cmdStop
+        '
+        Me.cmdStop.Location = New System.Drawing.Point(133, 73)
+        Me.cmdStop.Name = "cmdStop"
+        Me.cmdStop.Size = New System.Drawing.Size(75, 22)
+        Me.cmdStop.TabIndex = 51
+        Me.cmdStop.Text = "Stop"
+        '
+        'cmdStart
+        '
+        Me.cmdStart.Location = New System.Drawing.Point(133, 45)
+        Me.cmdStart.Name = "cmdStart"
+        Me.cmdStart.Size = New System.Drawing.Size(75, 22)
+        Me.cmdStart.TabIndex = 50
+        Me.cmdStart.Text = "Start"
         '
         'Myrepdata1
         '
@@ -596,26 +630,12 @@ Public Class Main
         Me.Myresdata1.Locale = New System.Globalization.CultureInfo("en-US")
         Me.Myresdata1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'cmdStart
-        '
-        Me.cmdStart.Location = New System.Drawing.Point(808, 491)
-        Me.cmdStart.Name = "cmdStart"
-        Me.cmdStart.Size = New System.Drawing.Size(75, 22)
-        Me.cmdStart.TabIndex = 56
-        Me.cmdStart.Text = "Start"
-        '
         'Main
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(1257, 615)
+        Me.ClientSize = New System.Drawing.Size(1086, 560)
         Me.Controls.Add(Me.VbvFrame1)
-        Me.Controls.Add(Me.cmdStart)
-        Me.Controls.Add(Me.checkdata)
-        Me.Controls.Add(Me.VolumeControl)
-        Me.Controls.Add(Me.LblVolume)
-        Me.Controls.Add(Me.SpeedControl)
-        Me.Controls.Add(Me.LblSpeed)
-        Me.Controls.Add(Me.cmdStop)
+        Me.Controls.Add(Me.GroupBox)
         Me.Controls.Add(Me.Linestatus1)
         Me.Name = "Main"
         Me.Text = "Corporate Accountability Hotline V4.0 .NET"
@@ -632,13 +652,8 @@ Public Class Main
         CType(Me.User1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.openstatment, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.L7000, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.L7001, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.L7002, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.L7003, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.L7004, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.L7007, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.L7008, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.confDOB, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ConfACPhone, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.L7005, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GetCoID, System.ComponentModel.ISupportInitialize).EndInit()
@@ -654,17 +669,22 @@ Public Class Main
         CType(Me.SpeedControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VolumeControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Linestatus1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox.ResumeLayout(False)
         CType(Me.Myrepdata1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Myresdata1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
 #End Region
 
-    Private Sub cmdStart_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub cmdStart_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdStart.Click
         On Error GoTo err1
+
+        LineGroup1.AddChannel(1)
+        LineGroup1.AddChannel(2)
+
+
         If Not VbvFrame1.SystemStarted() Then VbvFrame1.StartSystem(True)
         Exit Sub
 err1:
@@ -801,10 +821,21 @@ err1:
     End Sub
 
     Private Sub Main_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Dim dbconn As New OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data source=CorPaccHL.mdb")
-        Dim adapter As New OleDb.OleDbDataAdapter()
+
         Dim qmquery As String       'Use for Select String
         Dim dmquery As String
+        Dim settingquery As String
+
+        '  dbconnection = GetConnectionStringByName("AccessDB")
+
+        ''   dbconn.Close()
+
+        '  dbconn.ConnectionString = dbconnection
+
+
+
+
+
 
         'Set Question master DataTable
         Dim pkCol As DataColumn = qmtable.Columns.Add("QID", Type.GetType("System.String"))
@@ -838,6 +869,8 @@ err1:
             'Next i
             qmquery = "Select * from QMaster"
             dmquery = "Select * from Dmaker"
+            settingquery = "Select settingvalue from syssettings where setting = 'IVRVoiceSavePath'"
+
             'repq = "Select * from ReportData Where 'Confirmation'=1"
             'respq = "Select * from Respdata Where 'Confirmation'=1"
             dbconn.Open()
@@ -845,6 +878,14 @@ err1:
             adapter.Fill(qmdataset, "QMasterDT")
             adapter.SelectCommand = New OleDb.OleDbCommand(dmquery, dbconn)
             adapter.Fill(dmdataset, "DMasterDT")
+
+            adapter.SelectCommand = New OleDb.OleDbCommand(settingquery, dbconn)
+
+            ' Load settings from syssteeemings table for voice file storage path 
+            Dim settingsdataset As New DataSet()
+            adapter.Fill(settingsdataset, "settingDT")
+            g_voicepath = settingsdataset.Tables(0).Rows(0).Item("settingvalue").ToString
+
             'adapter.SelectCommand = New OleDb.OleDbCommand(repq, dbconn)
             'adapter.Fill(qmdataset, "RepDataT")
             'adapter.SelectCommand = New OleDb.OleDbCommand(respq, dbconn)
@@ -1051,25 +1092,25 @@ err1:
 
 
 
-    Private Sub confDOB_EnterEvent(ByVal sender As Object, ByVal e As AxVBVoiceLib._DGetdgEvents_EnterEvent) Handles confDOB.EnterEvent
-        Dim NewPhrase As Object
-        Dim DOB As String
-        Dim Chnl As Integer
-        Dim Rvap As String
-        Chnl = e.channel
-        Rvap = "CAHcommons.vap"   ' Need different lead in on response based on type of question 
-        DOB = L7001.Digits(Chnl) & "/" & L7002.Digits(Chnl) & "/19" & L7003.Digits(Chnl)
-        NewPhrase = New VBVoiceLib.Phrase()   'CreateObject("vbv.phrase")
-        NewPhrase.PhrsType = VBVoiceLib.vbvPhraseTypeConstants.vbvSYSPHRASE
-        NewPhrase.Type = VBVoiceLib.vbvSysPhraseConstants.vbvSayDate
+    'Private Sub confDOB_EnterEvent(ByVal sender As Object, ByVal e As AxVBVoiceLib._DGetdgEvents_EnterEvent)
+    '    Dim NewPhrase As Object
+    '    Dim DOB As String
+    '    Dim Chnl As Integer
+    '    Dim Rvap As String
+    '    Chnl = e.channel
+    '    Rvap = "CAHcommons.vap"   ' Need different lead in on response based on type of question 
+    '    DOB = L7001.Digits(Chnl) & "/" & L7002.Digits(Chnl) & "/19" & L7003.Digits(Chnl)
+    '    NewPhrase = New VBVoiceLib.Phrase()   'CreateObject("vbv.phrase")
+    '    NewPhrase.PhrsType = VBVoiceLib.vbvPhraseTypeConstants.vbvSYSPHRASE
+    '    NewPhrase.Type = VBVoiceLib.vbvSysPhraseConstants.vbvSayDate
 
-        NewPhrase.PhraseData1 = DOB
-        NewPhrase.PhraseData2 = "Day,MonthName,Year"
-        e.greeting.InsertNamedPhrase(0, Rvap, "you have entered")
-        e.greeting.InsertPhrase(1, NewPhrase)
-        e.greeting.InsertNamedPhrase(2, Rvap, "If this is Correct Press 1 If this is Not")
+    '    NewPhrase.PhraseData1 = DOB
+    '    NewPhrase.PhraseData2 = "Day,MonthName,Year"
+    '    e.greeting.InsertNamedPhrase(0, Rvap, "you have entered")
+    '    e.greeting.InsertPhrase(1, NewPhrase)
+    '    e.greeting.InsertNamedPhrase(2, Rvap, "If this is Correct Press 1 If this is Not")
 
-    End Sub
+    'End Sub
 
     Private Sub ConfACPhone_EnterEvent(ByVal sender As System.Object, ByVal e As AxVBVoiceLib._DGetdgEvents_EnterEvent) Handles ConfACPhone.EnterEvent
         Dim NewPhrase As Object
@@ -1160,6 +1201,7 @@ err1:
     Private Sub LineGroup1_Disconnect(ByVal sender As Object, ByVal e As AxVBVoiceLib._DLineGroupEvents_DisconnectEvent) Handles LineGroup1.Disconnect
         Dim Chnl As Integer = e.channel
         Dim Linestat(5) As String
+        Dim RC(5) As String
         'Determin reason or disconnect
         Select Case e.reason
             Case Is = 0
@@ -1175,23 +1217,27 @@ err1:
             Case Else
                 Linestat(Chnl) = "Termination Undetermined"
         End Select
-        recordRepData(e.channel, "CallStatus", Linestat(Chnl))
-        If Conf(Chnl) <> "" Then
-            'If Confirmation number was generated need to Update Confirmation Number to report
-            Reprow(Chnl)("Confirmation") = Conf(Chnl)
-        Else 'Assigns Temp Confirmation Number to Record
 
-            Reprow(Chnl)("Confirmation") = tmpConNum(Chnl)
-            'Also copies it to Tconfirmation which is needed to relationship with RespData
-            Reprow(Chnl)("CallID") = tmpConNum(Chnl)
-        End If
-        'copies The Temp Conf # to Tconfirmation which is needed to relationship with RespData
+        Conf(Chnl) = Format(Now(), "ddMM") & Chnl & RC(Chnl)
+
+        Reprow(Chnl)("Confirmation") = Conf(Chnl)
+
+        'If Conf(Chnl) <> "" Then
+        '    'If Confirmation number was generated need to Update Confirmation Number to report
+
+        'Else 'Assigns Temp Confirmation Number to Record
+        '    tmpConNum(Chnl)("Confirmation") = Conf(Chnl)
+        '    Reprow(Chnl)("Confirmation") = tmpConNum(Chnl)
+        '    'Also copies it to Tconfirmation which is needed to relationship with RespData
+        '    Reprow(Chnl)("CallID") = tmpConNum(Chnl)
+        'End If
+        ''copies The Temp Conf # to Tconfirmation which is needed to relationship with RespData
         Reprow(Chnl)("CallID") = tmpConNum(Chnl)
         '
         Myrepdata1.Tables("Reportdata").Rows.Add(Reprow(Chnl))
         myResAdapt.Update(Myresdata1, "Respdata")      'Write Data from DataSet to db
         myrepadapt.Update(Myrepdata1, "Reportdata")
-
+        recordRepData(e.channel, "CallStatus", Linestat(Chnl))
 
 
 
@@ -1211,16 +1257,16 @@ err1:
 
     End Sub
 
-    Private Sub confDOB_Exit(ByVal sender As Object, ByVal e As AxVBVoiceLib._DGetdgEvents_ExitEvent) Handles confDOB.Exit
-        Dim DOB As String = String.Empty
-        Dim Chnl As Integer = e.channel
-        If confDOB.Digits(e.channel) = 1 Then
-            DOB = L7001.Digits(Chnl) & "/" & L7002.Digits(Chnl) & "/19" & L7003.Digits(Chnl)
-        End If
-        'Reprow(e.channel)("DOB") = DOB
-        recordRepData(e.channel, "DOB", DOB)
-        'repdata(Chnl, 7) = DOB
-    End Sub
+    'Private Sub confDOB_Exit(ByVal sender As Object, ByVal e As AxVBVoiceLib._DGetdgEvents_ExitEvent)
+    '    Dim DOB As String = String.Empty
+    '    Dim Chnl As Integer = e.channel
+    '    If confDOB.Digits(e.channel) = 1 Then
+    '        DOB = L7001.Digits(Chnl) & "/" & L7002.Digits(Chnl) & "/19" & L7003.Digits(Chnl)
+    '    End If
+    '    'Reprow(e.channel)("DOB") = DOB
+    '    recordRepData(e.channel, "DOB", DOB)
+    '    'repdata(Chnl, 7) = DOB
+    'End Sub
 
     Private Sub ConfACPhone_Exit(ByVal sender As Object, ByVal e As AxVBVoiceLib._DGetdgEvents_ExitEvent) Handles ConfACPhone.Exit
         Dim ACPhone As String
@@ -1308,14 +1354,24 @@ err1:
         End Select
     End Sub
 
-    Private Sub L7004_EnterEvent(ByVal sender As System.Object, ByVal e As AxVBVoiceLib._DRecordEvents_EnterEvent) Handles L7004.EnterEvent
-        Dim Chnl As Integer = e.channel
-        L7004.FileName(Chnl) = tmpConNum(Chnl) + ".wav" 'renames msg file as Call Id
-    End Sub
+    'Private Sub L7004_EnterEvent(ByVal sender As System.Object, ByVal e As AxVBVoiceLib._DRecordEvents_EnterEvent)
+    '    Dim Chnl As Integer = e.channel
+
+    '    If File.Exists(g_voicepath + tmpConNum(Chnl) + ".wav") Then
+    '        File.Delete(g_voicepath + tmpConNum(Chnl) + ".wav")
+    '    End If
+
+    '    L7004.FileName(Chnl) = g_voicepath + tmpConNum(Chnl) + ".wav" 'renames msg file as Call Id
+
+    'End Sub
+
 
     Private Sub L6006_EnterEvent(ByVal sender As System.Object, ByVal e As AxVBVoiceLib._DRecordEvents_EnterEvent) Handles L6006.EnterEvent
         Dim Chnl As Integer = e.channel
-        L6006.FileName(Chnl) = tmpConNum(Chnl) + ".wav" 'renames Anon Call as Call ID
+        If File.Exists(g_voicepath + tmpConNum(Chnl) + ".wav") Then
+            File.Delete(g_voicepath + tmpConNum(Chnl) + ".wav")
+        End If
+        L6006.FileName(Chnl) = g_voicepath + tmpConNum(Chnl) + ".wav" 'renames Anon Call as Call ID
     End Sub
 
 
@@ -1332,14 +1388,48 @@ err1:
         Dim Rvap As String
         Chnl = e.channel
         Rvap = "CAH5000.vap"   ' 
-        e.greeting.InsertNamedPhrase(0, Rvap, "5000-" + CStr(Chnl))
+        e.greeting.InsertNamedPhrase(0, Rvap, "5000-1") '+ CStr(Chnl))
     End Sub
 
-    '    Private Sub cmdStart_Click(sender As Object, e As EventArgs) Handles cmdStart.Click
-    '        On Error GoTo err1
-    '        If Not VbvFrame1.SystemStarted() Then VbvFrame1.StartSystem(True)
-    '        Exit Sub
-    'err1:
-    '        MsgBox("Start System Error: " & Err.Number & Chr(13) & Err.Description)
-    '    End Sub
+
+    Public Function GetConnectionStringByName(ByVal name As String) As String
+
+        ' Assume failure
+        Dim returnValue As String = Nothing
+
+        ' Look for the name in the connectionStrings section.
+        Dim settings As String = ConfigurationManager.ConnectionStrings(name).ConnectionString()
+
+        ' If found, return the connection string.
+        If Not settings Is Nothing Then
+            ''     returnValue = settings..ConnectionString
+        End If
+
+        Return settings
+    End Function
+
+    'Public Shared Function MakeConfirmationNum(ChanelNum As Integer) As Object
+    '    Dim NewPhrase As Object
+    '    'Dim Conf As String
+    '    Dim Chnl As Integer
+    '    Dim Rvap As String
+    '    Dim RC(5) As String
+    '    Chnl = ChanelNum
+    '    RC(Chnl) = Microsoft.VisualBasic.Right(Str(Myrepdata1.Tables("Reportdata").Rows.Count + 1000), 3)
+    '    Rvap = "CAHcommons.vap"   ' Need different lead in on response based on type of question 
+    '    Conf(Chnl) = Format(Now(), "ddMM") & Chnl & RC(Chnl)
+    '    NewPhrase = New VBVoiceLib.Phrase()   'CreateObject("vbv.phrase")
+    '    NewPhrase.PhrsType = VBVoiceLib.vbvPhraseTypeConstants.vbvSYSPHRASE
+    '    NewPhrase.Type = VBVoiceLib.vbvSysPhraseConstants.vbvDigits
+
+    '    NewPhrase.PhraseData1 = Conf(Chnl)
+    '    Return NewPhrase
+
+    'End Function
+
+
+
+    Private Sub LineGroup1_VoiceError(sender As Object, e As AxVBVoiceLib._DLineGroupEvents_VoiceErrorEvent) Handles LineGroup1.VoiceError
+
+    End Sub
 End Class

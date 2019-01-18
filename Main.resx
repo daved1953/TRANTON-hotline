@@ -117,1515 +117,444 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PlaySpecial.PropertyBag" xml:space="preserve">
+  <data name="PlaySpecial.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.TermOnDTMF=0
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-_ExtentX=1852
-_ExtentY=1720
-Pos_X=7461
-Pos_Y=8334
-Pos_XP=282
-Pos_YP=315
-ControlName=PlaySpecial
-BlockId=1074294595
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1069476422
-Dest0.Conn=1
-Dest1BlockID=0
-Comment=Use this page to document the configuration for this control
-FastForwardDigit=0
-RewindDigit=0
-PauseDigit=0
-FastFwdSecs=1
-RewindSecs=2
-PauseSecs=20
-LouderDigit=0
-SofterDigit=0
-TerminateOnSpeech=0
-MinSpeechTermTime=50
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA5AAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAM8AAAAAAAoA/////wAAAAEJW0RlZmF1bHRdCVtEZWZhdWx0XQlbRGVmYXVs
+        dF08BwAAuAYAACUdAACOIAAAGgEAADsBAAALUGxheVNwZWNpYWxLHEFcAQAAAAUAAgBMHEFcAQAAAAAA
+        AAAAADxVc2UgdGhpcyBwYWdlIHRvIGRvY3VtZW50IHRoZSBjb25maWd1cmF0aW9uIGZvciB0aGlzIGNv
+        bnRyb2wA/////wAAAAAAAAAAAAAAAAEAAAACAAAAFAAAAAAAAAAAAAAAADIAAAAL
 </value>
   </data>
-  <data name="LineGroup1.PropertyBag" xml:space="preserve">
+  <data name="LineGroup1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-_ExtentX=1720
-_ExtentY=2910
-Pos_X=635
-Pos_Y=926
-Pos_XP=24
-Pos_YP=35
-ControlName=LineGroup1
-BlockId=1032705711
-FramePage=0
-ContainerType=5
-NumNodes=5
-Dest0BlockID=1066372156
-Dest0.Conn=1
-Dest1BlockID=1066372156
-Dest1.Conn=1
-Dest2BlockID=0
-Dest3BlockID=0
-Dest4BlockID=0
-DelayTime=5
-Mode=2
-LinesInGroup=2
-Mode=2
-MobileAppName=EZHRIncidents
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4AAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAMsAAAAAAAoAuAYAAF4LAAD3AQAAtg8AABMAAACYAAAACkxpbmVHcm91cDFK
+        HEFcAQAAAAUABQChG0FcAAAAoRtBXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD1Vc2UgdGhpcyBwYWdl
+        IHRvIGRvY3VtZW50IHRoZSBjb25maWd1cmF0aW9uIGZvciB0aGlzIGNvbnRyb2wuAP////8FAAAAAAAA
+        AAEAAAAAAAAAAQAAAAAAAgAJW0RlZmF1bHRdCVtEZWZhdWx0XQAAAAIAAAs=
 </value>
   </data>
-  <data name="Msurvey.PropertyBag" xml:space="preserve">
+  <data name="Msurvey.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=Phrs 1-9
-Condition0.Data=1-9
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name= Exit *
-Condition1.Data=*
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1931
-_ExtentY=2011
-Pos_X=17092
-Pos_Y=5689
-Pos_XP=646
-Pos_YP=215
-ControlName=Msurvey
-BlockId=1032705719
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1069476113
-Dest0.Conn=1
-Dest1BlockID=1069476422
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=1
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAPQEAAAIB
+        AAAAAQAAAAAAAAAAAAAAACgBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdAgAAAAhQaHJzIDEtOQMxLTkAAAcgRXhpdCAqASoAAAAAAAAA
+        cQcAANsHAADEQgAAORYAAIYCAADXAAAAB01zdXJ2ZXlNHEFcAQAAAAUAAgBOHEFcAQAATBxBXAEAADxV
+        c2UgdGhpcyBwYWdlIHRvIGRvY3VtZW50IHRoZSBjb25maWd1cmF0aW9uIGZvciB0aGlzIGNvbnRyb2wA
+        //////////8BAQANdmJ2b2ljZTMwLnZhcBp0aGF0IHdhcyBub3QgYSB2YWxpZCBlbnRyeSwBBAAA////
+        /wEAAAEAAwAAAAAAAQEBAAs=
 </value>
   </data>
-  <data name="OnHook1.PropertyBag" xml:space="preserve">
+  <data name="OnHook1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.TermOnDTMF=0
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-_ExtentX=1482
-_ExtentY=1482
-Pos_X=19897
-Pos_Y=3413
-Pos_XP=752
-Pos_YP=129
-ControlName=OnHook1
-BlockId=1032706053
-FramePage=0
-ContainerType=5
-Comment=Use this page to document the configuration for this control
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAArQAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAJgAAAAAAAoA/////wAAAAEJW0RlZmF1bHRdCVtEZWZhdWx0XQlbRGVmYXVs
+        dF3KBQAAygUAAMpPAAC2DwAABAMAAJgAAAAHT25Ib29rMU8cQVwBAAAABQAAADxVc2UgdGhpcyBwYWdl
+        IHRvIGRvY3VtZW50IHRoZSBjb25maWd1cmF0aW9uIGZvciB0aGlzIGNvbnRyb2wA/////ws=
 </value>
   </data>
-  <data name="InitGreet.PropertyBag" xml:space="preserve">
+  <data name="InitGreet.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH5000a.VAP
-EntryGreeting.Phrase0.Data=5000
-EntryGreeting.Phrase0.Type=262144
-EntryGreeting.Phrase0.DataExtra= Select a language to continue
-HintGreeting.NumPhrase=0
-_ExtentX=1852
-_ExtentY=1720
-Pos_X=3598
-Pos_Y=1455
-Pos_XP=136
-Pos_YP=55
-ControlName=InitGreet
-BlockId=1066372156
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1066372191
-Dest0.Conn=1
-Dest1BlockID=1066372191
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-FastForwardDigit=0
-RewindDigit=0
-PauseDigit=0
-FastFwdSecs=1
-RewindSecs=2
-PauseSecs=20
-LouderDigit=0
-SofterDigit=0
-TerminateOnSpeech=0
-MinSpeechTermTime=50
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4gAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAM0AAAAAAAoA/////wEAAAEJW0RlZmF1bHRdCVtEZWZhdWx0XQlbRGVmYXVs
+        dF08BwAAuAYAAA4OAACvBQAAiAAAADcAAAAJSW5pdEdyZWV0oRtBXAEAAAAFAAIAUBxBXAEAAFAcQVwB
+        AAA8VXNlIHRoaXMgcGFnZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250
+        cm9sAP////8AAAAAAAAAAAAAAAABAAAAAgAAABQAAAAAAAAAAAAAAAAyAAAACw==
 </value>
   </data>
-  <data name="Spanish.PropertyBag" xml:space="preserve">
+  <data name="Spanish.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-_ExtentX=1535
-_ExtentY=1482
-Pos_X=8890
-Pos_Y=1826
-Pos_XP=336
-Pos_YP=69
-ControlName=Spanish
-BlockId=1066372176
-FramePage=0
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071549872
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-EventMask=0
-Directory=spanish\
-LanguageId=4
-TimeFormat=0
-DateOrder=0
-RSTDictionary=
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAvgAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKkAAAAAAAoA/wUAAMoFAAC6IgAAIgcAAFABAABFAAAAB1NwYW5pc2hRHEFc
+        AQAAAAUAAQBSHEFcAQAAPFVzZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24g
+        Zm9yIHRoaXMgY29udHJvbAD/////AAAAAAhzcGFuaXNoXAQAAAAAAAAAAAAAABNQcm9uZXh1cy5MYW5n
+        dWFnZS4xAAAACw==
 </value>
   </data>
-  <data name="LangSelect.PropertyBag" xml:space="preserve">
+  <data name="LangSelect.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH5000.VAP
-EntryGreeting.Phrase0.Data=5001
-EntryGreeting.Phrase0.Type=262148
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1693
-_ExtentY=2011
-Pos_X=6350
-Pos_Y=926
-Pos_XP=240
-Pos_YP=35
-ControlName=LangSelect
-BlockId=1066372191
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071549872
-Dest0.Conn=1
-Dest1BlockID=1066372176
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=70
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAARwEAAAIB
+        AAAAAQAAAAAAAAAAAAAAADIBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAQALQ0FINTAw
+        MC5WQVAENTAwMQQABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQIAAAABMQExAAABMgEy
+        AAAAAAAAAJ0GAADbBwAAzhgAAJ4DAADwAAAAIwAAAApMYW5nU2VsZWN0UBxBXAEAAAAFAAIAUhxBXAEA
+        AFEcQVwAAAA8VXNlIHRoaXMgcGFnZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhp
+        cyBjb250cm9sAP//////////AQEADXZidm9pY2UzMC52YXAadGhhdCB3YXMgbm90IGEgdmFsaWQgZW50
+        cnksAQQAAP////8BAAABAAMAAAAAAEYBAQAL
 </value>
   </data>
-  <data name="Playresponse.PropertyBag" xml:space="preserve">
+  <data name="Playresponse.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1931
-_ExtentY=2011
-Pos_X=15028
-Pos_Y=1111
-Pos_XP=568
-Pos_YP=42
-ControlName=Playresponse
-BlockId=1069476113
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1069476422
-Dest0.Conn=1
-Dest1BlockID=1032705719
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=1
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAMwEAAAIB
+        AAAAAQAAAAAAAAAAAAAAAB4BAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdAgAAAAExATEAAAEyATIAAAAAAAAAiwcAANsHAAC0OgAAVwQA
+        ADgCAAAqAAAADFBsYXlyZXNwb25zZU4cQVwBAAAABQACAEwcQVwBAABNHEFcAAAAPFVzZSB0aGlzIHBh
+        Z2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJvbAD//////////wEB
+        AA12YnZvaWNlMzAudmFwGnRoYXQgd2FzIG5vdCBhIHZhbGlkIGVudHJ5LAEEAAD/////AQAAAQADAAAA
+        AAABAQEACw==
 </value>
   </data>
-  <data name="User1.PropertyBag" xml:space="preserve">
+  <data name="User1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=6
-Condition0.Name=0
-Condition0.Data=
-Condition0.UseVB=1
-Condition0.Data2=
-Condition1.Name=1
-Condition1.Data=
-Condition1.UseVB=1
-Condition1.Data2=
-Condition2.Name=2
-Condition2.Data=
-Condition2.UseVB=1
-Condition2.Data2=
-Condition3.Name=3
-Condition3.Data=
-Condition3.UseVB=1
-Condition3.Data2=
-Condition4.Name=4
-Condition4.Data=
-Condition4.UseVB=1
-Condition4.Data2=
-Condition5.Name=5
-Condition5.Data=
-Condition5.UseVB=1
-Condition5.Data2=
-_ExtentX=1058
-_ExtentY=3307
-Pos_X=3810
-Pos_Y=6615
-Pos_XP=144
-Pos_YP=250
-ControlName=User1
-BlockId=1069476422
-FramePage=0
-ContainerType=5
-NumNodes=6
-Dest0BlockID=1032705719
-Dest0.Conn=1
-Dest1BlockID=1072742769
-Dest1.Conn=1
-Dest2BlockID=1071551927
-Dest3BlockID=1073521591
-Dest4BlockID=1069476113
-Dest4.Conn=1
-Dest5BlockID=1074294595
-Dest5.Conn=1
-Comment=Use this page to document the configuration for this control
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA9wAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAOIAAAAAAAoA/////wEAAAEJW0RlZmF1bHRdCVtEZWZhdWx0XQlbRGVmYXVs
+        dF0GAAAAATAAAQABMQABAAEyAAEAATMAAQABNAABAAE1AAEACAQAAOsMAADiDgAA1xkAAJAAAAD6AAAA
+        BVVzZXIxTBxBXAEAAAAFAAYATRxBXAAAAFMcQVwBAABUHEFcAAAAVRxBXAAAAE4cQVwAAABLHEFcAAAA
+        PFVzZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJv
+        bAD/////Cw==
 </value>
   </data>
-  <data name="openstatment.PropertyBag" xml:space="preserve">
+  <data name="openstatment.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH5000.VAP
-EntryGreeting.Phrase0.Data=5002
-EntryGreeting.Phrase0.Type=262149
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-_ExtentX=1958
-_ExtentY=1720
-Pos_X=11430
-Pos_Y=1111
-Pos_XP=432
-Pos_YP=42
-ControlName=openstatment
-BlockId=1071549872
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1032705719
-Dest0.Conn=1
-Dest1BlockID=1032705719
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-FastForwardDigit=0
-RewindDigit=0
-PauseDigit=0
-FastFwdSecs=1
-RewindSecs=2
-PauseSecs=20
-LouderDigit=0
-SofterDigit=0
-TerminateOnSpeech=0
-MinSpeechTermTime=50
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+wAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAOYAAAAAAAoA/////wEBAAtDQUg1MDAwLlZBUAQ1MDAyBQAEAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdpgcAALgGAACmLAAAVwQAALABAAAqAAAADG9wZW5zdGF0bWVu
+        dFIcQVwBAAAABQACAE0cQVwAAABNHEFcAAAAPFVzZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNv
+        bmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJvbAD/////AAAAAAAAAAAAAAAAAQAAAAIAAAAUAAAAAAAA
+        AAAAAAAAMgAAAAs=
 </value>
   </data>
-  <data name="L7000.PropertyBag" xml:space="preserve">
+  <data name="L7000.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.TermOnDTMF=0
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7000
-EntryGreeting.Phrase0.Type=262144
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-_ExtentX=1852
-_ExtentY=1720
-Pos_X=2328
-Pos_Y=54636
-Pos_XP=88
-Pos_YP=65
-ControlName=L7000
-BlockId=1071551927
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071551957
-Dest0.Conn=1
-Dest1BlockID=0
-Comment=Use this page to document the configuration for this control
-FastForwardDigit=0
-RewindDigit=0
-PauseDigit=0
-FastFwdSecs=1
-RewindSecs=2
-PauseSecs=20
-LouderDigit=0
-SofterDigit=0
-TerminateOnSpeech=0
-MinSpeechTermTime=50
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA3gAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAMkAAAAAAAoA/////wAAAAEJW0RlZmF1bHRdCVtEZWZhdWx0XQlbRGVmYXVs
+        dF08BwAAuAYAADsKAADACgAAWAAAAEEAAAAFTDcwMDBUHEFcAQAAAAUAAgBWHEFcAQAAAAAAAAAAADxV
+        c2UgdGhpcyBwYWdlIHRvIGRvY3VtZW50IHRoZSBjb25maWd1cmF0aW9uIGZvciB0aGlzIGNvbnRyb2wA
+        /////wAAAAAAAAAAAAAAAAEAAAACAAAAFAAAAAAAAAAAAAAAADIAAAAL
 </value>
   </data>
-  <data name="L7001.PropertyBag" xml:space="preserve">
+  <data name="L7007.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7001
-EntryGreeting.Phrase0.Type=262145
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=Month
-Condition0.Data=01-12
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1693
-_ExtentY=2011
-Pos_X=5292
-Pos_Y=54134
-Pos_XP=200
-Pos_YP=46
-ControlName=L7001
-BlockId=1071551957
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071552199
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=2
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=157
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAPgEAAAIB
+        AAAAAQAAAAAAAAAAAAAAACkBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAQALQ0FINzAw
+        MC5WQVAENzAwNwcABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQEAAAAIYXJlYWNvZGUD
+        bm5uAAAAAAAAABAIAADbBwAA6BgAAJUFAADxAAAANgAAAAVMNzAwN1YcQVwBAAAABQABAFccQVwBAAA8
+        VXNlIHRoaXMgcGFnZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9s
+        AP//////////AQEADXZidm9pY2UzMC52YXAadGhhdCB3YXMgbm90IGEgdmFsaWQgZW50cnksAQQAAP//
+        //8BAAAAAAMAAAAAADABAQAL
 </value>
   </data>
-  <data name="L7002.PropertyBag" xml:space="preserve">
+  <data name="L7008.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7002
-EntryGreeting.Phrase0.Type=262146
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=Day
-Condition0.Data=01-31
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1402
-_ExtentY=2011
-Pos_X=8043
-Pos_Y=54134
-Pos_XP=304
-Pos_YP=46
-ControlName=L7002
-BlockId=1071552199
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071552053
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=2
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=255
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAPwEAAAIB
+        AAAAAQAAAAAAAAAAAAAAACoBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAQALQ0FINzAw
+        MC5WQVAENzAwOAgABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQEAAAAFcGhvbmUHbm5u
+        bm5ubgAAAAAAAACDBgAA2wcAAIwpAACVBQAAkgEAADYAAAAFTDcwMDhXHEFcAQAAAAUAAQBYHEFcAQAA
+        PFVzZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJv
+        bAD//////////wEBAA12YnZvaWNlMzAudmFwGnRoYXQgd2FzIG5vdCBhIHZhbGlkIGVudHJ5LAEEAAD/
+        ////AQAAAAADAAAAAAAwAQEACw==
 </value>
   </data>
-  <data name="L7003.PropertyBag" xml:space="preserve">
+  <data name="ConfACPhone.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7003
-EntryGreeting.Phrase0.Type=262147
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=Year
-Condition0.Data=00-99
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1482
-_ExtentY=2011
-Pos_X=10583
-Pos_Y=54134
-Pos_XP=400
-Pos_YP=46
-ControlName=L7003
-BlockId=1071552053
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071553475
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=2
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=255
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAMgEAAAIB
+        AAAAAQAAAAAAAAAAAAAAAB0BAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdAgAAAAExATEAAAEyATIAAAAAAAAA9QcAANsHAAAxNwAAlQUA
+        ABYCAAA2AAAAC0NvbmZBQ1Bob25lWBxBXAEAAAAFAAIAWRxBXAEAAFYcQVwAAAA8VXNlIHRoaXMgcGFn
+        ZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9sAP//////////AQEA
+        DXZidm9pY2UzMC52YXAadGhhdCB3YXMgbm90IGEgdmFsaWQgZW50cnksAQQAAP////8BAAABAAMAAAAA
+        ANsBAQAL
 </value>
   </data>
-  <data name="L7004.PropertyBag" xml:space="preserve">
+  <data name="L7005.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7004
-EntryGreeting.Phrase0.Type=262148
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-_ExtentX=1482
-_ExtentY=2117
-Pos_X=17145
-Pos_Y=54134
-Pos_XP=648
-Pos_YP=46
-ControlName=L7004
-BlockId=1071552893
-FramePage=1
-ContainerType=5
-NumNodes=3
-Dest0BlockID=1071553221
-Dest0.Conn=1
-Dest1BlockID=1071552893
-Dest1.Conn=1
-Dest2BlockID=1071552893
-Dest2.Conn=1
-Comment=Use this page to document the configuration for this control
-MinTime=1
-MaxTime=60
-MaxSil=3
-AppendFile=0
-SilenceGreeting.NumPhrase=0
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-OptionsGreeting.NumPhrase=8
-OptionsGreeting.Phrase0.File=record.vap
-OptionsGreeting.Phrase0.Data=to send this message press
-OptionsGreeting.Phrase0.Type=262145
-OptionsGreeting.Phrase0.DataExtra=
-OptionsGreeting.Phrase1.File=1
-OptionsGreeting.Phrase1.Data=
-OptionsGreeting.Phrase1.Type=131077
-OptionsGreeting.Phrase1.DataExtra=
-OptionsGreeting.Phrase2.File=record.vap
-OptionsGreeting.Phrase2.Data=to rerecord the message from the beginning press
-OptionsGreeting.Phrase2.Type=262146
-OptionsGreeting.Phrase2.DataExtra=
-OptionsGreeting.Phrase3.File=2
-OptionsGreeting.Phrase3.Data=
-OptionsGreeting.Phrase3.Type=131077
-OptionsGreeting.Phrase3.DataExtra=
-OptionsGreeting.Phrase4.File=record.vap
-OptionsGreeting.Phrase4.Data=to review the message press
-OptionsGreeting.Phrase4.Type=262148
-OptionsGreeting.Phrase4.DataExtra=
-OptionsGreeting.Phrase5.File=3
-OptionsGreeting.Phrase5.Data=
-OptionsGreeting.Phrase5.Type=131077
-OptionsGreeting.Phrase5.DataExtra=
-OptionsGreeting.Phrase6.File=record.vap
-OptionsGreeting.Phrase6.Data=or to cancel the message press
-OptionsGreeting.Phrase6.Type=262147
-OptionsGreeting.Phrase6.DataExtra=
-OptionsGreeting.Phrase7.File=4
-OptionsGreeting.Phrase7.Data=
-OptionsGreeting.Phrase7.Type=131077
-OptionsGreeting.Phrase7.DataExtra=
-CancelGreeting.NumPhrase=1
-CancelGreeting.Phrase0.File=record.vap
-CancelGreeting.Phrase0.Data=message cancelled
-CancelGreeting.Phrase0.Type=262149
-CancelGreeting.Phrase0.DataExtra=
-MsgSentGreeting.NumPhrase=1
-MsgSentGreeting.Phrase0.File=record.vap
-MsgSentGreeting.Phrase0.Data=your message has been sent
-MsgSentGreeting.Phrase0.Type=262150
-MsgSentGreeting.Phrase0.DataExtra=
-RecordOKGreeting.NumPhrase=1
-RecordOKGreeting.Phrase0.File=record.vap
-RecordOKGreeting.Phrase0.Data=your message has been recorded
-RecordOKGreeting.Phrase0.Type=262144
-RecordOKGreeting.Phrase0.DataExtra=
-AppendDigit=1024
-TermDigit=2
-RerecordDigit=4
-CancelDigit=16
-ReviewDigit=8
-Filename=*.wav
-BeepBefore=1
-CompressSilence=1
-IgnoreDtmf=1
-RecordFormat=-1
-FileData=
-PauseDigit=1024
-PauseSecs=7
-PauseGreeting.NumPhrase=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAeAEAAAIB
+        AAAAAQAAAAAAAAAAAAAAAGMBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAgALQ0FINzAw
+        MC5WQVAENzAwNQUABAAADkNBSGNvbW1vbnMudmFwIXByZXNzIDEgZm9yIHllcyBvciBwcmVzcyAyIGZv
+        ciBubwEABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQIAAAABMQExAAABMgEyAAAAAAAA
+        AHoFAADbBwAAxhQAAC0hAADJAAAAQQEAAAVMNzAwNVocQVwBAAAABQACAFscQVwBAABcHEFcAQAAPFVz
+        ZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJvbAD/
+        /////////wEBAA12YnZvaWNlMzAudmFwGnRoYXQgd2FzIG5vdCBhIHZhbGlkIGVudHJ5LAEEAAD/////
+        AQAAAQADAAAAAADbAQEACw==
 </value>
   </data>
-  <data name="L7007.PropertyBag" xml:space="preserve">
+  <data name="GetCoID.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7007
-EntryGreeting.Phrase0.Type=262151
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=areacode
-Condition0.Data=nnn
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=2090
-_ExtentY=2011
-Pos_X=4233
-Pos_Y=58526
-Pos_XP=160
-Pos_YP=212
-ControlName=L7007
-BlockId=1071553221
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071553807
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=0
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=48
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAOgEAAAIB
+        AAAAAQAAAAAAAAAAAAAAACUBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAQALQ0FINzAw
+        MC5WQVAENzAwNgYABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQEAAAAEQ09JRAEkAAAA
+        AAAAABkGAADbBwAA5x4AAC0hAAArAQAAQQEAAAdHZXRDb0lEWxxBXAEAAAAFAAEAXRxBXAEAADxVc2Ug
+        dGhpcyBwYWdlIHRvIGRvY3VtZW50IHRoZSBjb25maWd1cmF0aW9uIGZvciB0aGlzIGNvbnRyb2wA////
+        //////8BAQANdmJ2b2ljZTMwLnZhcBp0aGF0IHdhcyBub3QgYSB2YWxpZCBlbnRyeSwBBAAA/////wEA
+        AAYABQAAAAAAMAEBAAs=
 </value>
   </data>
-  <data name="L7008.PropertyBag" xml:space="preserve">
+  <data name="L7009.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7008
-EntryGreeting.Phrase0.Type=262152
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=phone
-Condition0.Data=nnnnnnn
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1693
-_ExtentY=2011
-Pos_X=7197
-Pos_Y=58790
-Pos_XP=272
-Pos_YP=222
-ControlName=L7008
-BlockId=1071553807
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071554522
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=0
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=48
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA2wEAAAIB
+        AAAAAQAAAAAAAAAAAAAAAMYBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BBwALQ0FINzAw
+        MC5WQVAENzAwOQkABAAAC0NBSDcwMDAuVkFQBjcwMDkuMQoABAAADkNBSGNvbW1vbnMudmFwB3ByZXNz
+        IDENAAQAAAtDQUg3MDAwLlZBUAY3MDA5LjILAAQAAA5DQUhjb21tb25zLnZhcAdwcmVzcyAyDgAEAAAL
+        Q0FINzAwMC5WQVAGNzAwOS4zDAAEAAAOQ0FIY29tbW9ucy52YXAHcHJlc3MgMw8ABAAAAQlbRGVmYXVs
+        dF0JW0RlZmF1bHRdCVtEZWZhdWx0XQEAAAAJQmVzdCBUaW1lAzEtMwAAAAAAAABFCAAA2wcAAGJGAACV
+        BQAAqQIAADYAAAAFTDcwMDlZHEFcAQAAAAUAAQBeHEFcAQAAPFVzZSB0aGlzIHBhZ2UgdG8gZG9jdW1l
+        bnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJvbAD//////////wEBAA12YnZvaWNlMzAu
+        dmFwGnRoYXQgd2FzIG5vdCBhIHZhbGlkIGVudHJ5LAEEAAD/////AQAAAQADAAAAAADbAQEACw==
 </value>
   </data>
-  <data name="confDOB.PropertyBag" xml:space="preserve">
+  <data name="ConfBest.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1429
-_ExtentY=2011
-Pos_X=12700
-Pos_Y=54134
-Pos_XP=480
-Pos_YP=46
-ControlName=confDOB
-BlockId=1071553475
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071552893
-Dest0.Conn=1
-Dest1BlockID=1071551957
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=219
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAALwEAAAIB
+        AAAAAQAAAAAAAAAAAAAAABoBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdAgAAAAExATEAAAEyATIAAAAAAAAAegUAANsHAAD+UgAAuAYA
+        ACMDAABBAAAACENvbmZCZXN0XhxBXAEAAAAFAAIAWhxBXAAAAFkcQVwAAAA8VXNlIHRoaXMgcGFnZSB0
+        byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9sAP//////////AQEADXZi
+        dm9pY2UzMC52YXAadGhhdCB3YXMgbm90IGEgdmFsaWQgZW50cnksAQQAAP////8BAAABAAMAAAAAANsB
+        AQAL
 </value>
   </data>
-  <data name="ConfACPhone.PropertyBag" xml:space="preserve">
+  <data name="L7010.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=2037
-_ExtentY=2011
-Pos_X=9948
-Pos_Y=58526
-Pos_XP=376
-Pos_YP=212
-ControlName=ConfACPhone
-BlockId=1071554522
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071554253
-Dest0.Conn=1
-Dest1BlockID=1071553221
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=219
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAeAEAAAIB
+        AAAAAQAAAAAAAAAAAAAAAGMBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAgALQ0FINzAx
+        MC5WQVAENzAxMAAABAAADkNBSGNvbW1vbnMudmFwIXByZXNzIDEgZm9yIHllcyBvciBwcmVzcyAyIGZv
+        ciBubwEABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQIAAAABMQExAAABMgEyAAAAAAAA
+        AHoFAADbBwAAVTIAAC0hAADnAQAAQQEAAAVMNzAxMFwcQVwBAAAABQACAF8cQVwBAABcHEFcAQAAPFVz
+        ZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJvbAD/
+        /////////wEBAA12YnZvaWNlMzAudmFwGnRoYXQgd2FzIG5vdCBhIHZhbGlkIGVudHJ5LAEEAAD/////
+        AQAAAQAKAAAAAADbAQEACw==
 </value>
   </data>
-  <data name="L7005.PropertyBag" xml:space="preserve">
+  <data name="Confirmation.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=2
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7005
-EntryGreeting.Phrase0.Type=262149
-EntryGreeting.Phrase0.DataExtra=
-EntryGreeting.Phrase1.File=CAHcommons.vap
-EntryGreeting.Phrase1.Data=press 1 for yes or press 2 for no
-EntryGreeting.Phrase1.Type=262145
-EntryGreeting.Phrase1.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1402
-_ExtentY=2011
-Pos_X=4233
-Pos_Y=61701
-Pos_XP=160
-Pos_YP=332
-ControlName=L7005
-BlockId=1071553357
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071552943
-Dest0.Conn=1
-Dest1BlockID=1071554061
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=219
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA5QAAAAIB
+        AAAAAQAAAAAAAAAAAAAAANAAAAAAAAoA/////wAAAAEJW0RlZmF1bHRdCVtEZWZhdWx0XQlbRGVmYXVs
+        dF08BwAAuAYAADg+AAAtIQAAWgIAAEEBAAAMQ29uZmlybWF0aW9uXxxBXAEAAAAFAAIAYBxBXAEAAAAA
+        AAAAAAA8VXNlIHRoaXMgcGFnZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBj
+        b250cm9sAP////8AAAAAAAAAAAAAAAABAAAAAgAAABQAAAAAAAAAAAAAAAAyAAAACw==
 </value>
   </data>
-  <data name="GetCoID.PropertyBag" xml:space="preserve">
+  <data name="L7014.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7006
-EntryGreeting.Phrase0.Type=262150
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=COID
-Condition0.Data=$
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1588
-_ExtentY=2011
-Pos_X=6562
-Pos_Y=61701
-Pos_XP=248
-Pos_YP=332
-ControlName=GetCoID
-BlockId=1071552943
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071909188
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=6
-MaxSil=5
-TermDtmf=0
-RetryOnSilence=48
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA9AAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAN8AAAAAAAoA/////wABAAtDQUg3MDEwLlZBUAQ3MDE0BQAEAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdPAcAALgGAABwMgAAWh0AAOgBAAAcAQAABUw3MDE0YRxBXAEA
+        AAAFAAIATxxBXAAAAAAAAAAAAAA8VXNlIHRoaXMgcGFnZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJh
+        dGlvbiBmb3IgdGhpcyBjb250cm9sAP////8AAAAAAAAAAAAAAAABAAAAAgAAABQAAAAAAAAAAAAAAAAy
+        AAAACw==
 </value>
   </data>
-  <data name="L7009.PropertyBag" xml:space="preserve">
+  <data name="ConfCOID.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=7
-EntryGreeting.Phrase0.File=CAH7000.VAP
-EntryGreeting.Phrase0.Data=7009
-EntryGreeting.Phrase0.Type=262153
-EntryGreeting.Phrase0.DataExtra=
-EntryGreeting.Phrase1.File=CAH7000.VAP
-EntryGreeting.Phrase1.Data=7009.1
-EntryGreeting.Phrase1.Type=262154
-EntryGreeting.Phrase1.DataExtra=
-EntryGreeting.Phrase2.File=CAHcommons.vap
-EntryGreeting.Phrase2.Data=press 1
-EntryGreeting.Phrase2.Type=262157
-EntryGreeting.Phrase2.DataExtra=
-EntryGreeting.Phrase3.File=CAH7000.VAP
-EntryGreeting.Phrase3.Data=7009.2
-EntryGreeting.Phrase3.Type=262155
-EntryGreeting.Phrase3.DataExtra=
-EntryGreeting.Phrase4.File=CAHcommons.vap
-EntryGreeting.Phrase4.Data=press 2
-EntryGreeting.Phrase4.Type=262158
-EntryGreeting.Phrase4.DataExtra=
-EntryGreeting.Phrase5.File=CAH7000.VAP
-EntryGreeting.Phrase5.Data=7009.3
-EntryGreeting.Phrase5.Type=262156
-EntryGreeting.Phrase5.DataExtra=
-EntryGreeting.Phrase6.File=CAHcommons.vap
-EntryGreeting.Phrase6.Data=press 3
-EntryGreeting.Phrase6.Type=262159
-EntryGreeting.Phrase6.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=Best Time
-Condition0.Data=1-3
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=2143
-_ExtentY=2011
-Pos_X=12912
-Pos_Y=58526
-Pos_XP=488
-Pos_YP=212
-ControlName=L7009
-BlockId=1071554253
-FramePage=1
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071553743
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=219
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAALwEAAAIB
+        AAAAAQAAAAAAAAAAAAAAABoBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAAABCVtEZWZh
+        dWx0XQlbRGVmYXVsdF0JW0RlZmF1bHRdAgAAAAExATEAAAEyATIAAAAAAAAA/wUAANsHAAA0KAAALSEA
+        AIUBAABBAQAACENvbmZDT0lEXRxBXAEAAAAFAAIAXBxBXAAAAFscQVwAAAA8VXNlIHRoaXMgcGFnZSB0
+        byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9sAP//////////AQEADXZi
+        dm9pY2UzMC52YXAadGhhdCB3YXMgbm90IGEgdmFsaWQgZW50cnksAQQAAP////8BAAABAAMAAAAAAAAB
+        AQAL
 </value>
   </data>
-  <data name="ConfBest.PropertyBag" xml:space="preserve">
+  <data name="L7013.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1402
-_ExtentY=2011
-Pos_X=16298
-Pos_Y=58790
-Pos_XP=616
-Pos_YP=222
-ControlName=ConfBest
-BlockId=1071553743
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071553357
-Dest0.Conn=1
-Dest1BlockID=1071554253
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=219
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAANQEAAAIB
+        AAAAAQAAAAAAAAAAAAAAACABAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAQALQ0FINzAx
+        MC5WQVAENzAxMwQABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQEAAAABJAEkAAAAAAAA
+        AHoFAADbBwAAsCcAADkWAACAAQAA1wAAAAVMNzAxM1McQVwBAAAABQABAGEcQVwAAAA8VXNlIHRoaXMg
+        cGFnZSB0byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9sAP//////////
+        AQEADXZidm9pY2UzMC52YXAadGhhdCB3YXMgbm90IGEgdmFsaWQgZW50cnksAQQAAP////8BAAABAA8A
+        /////wEBAQAL
 </value>
   </data>
-  <data name="L7010.PropertyBag" xml:space="preserve">
+  <data name="L7012.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=2
-EntryGreeting.Phrase0.File=CAH7010.VAP
-EntryGreeting.Phrase0.Data=7010
-EntryGreeting.Phrase0.Type=262144
-EntryGreeting.Phrase0.DataExtra=
-EntryGreeting.Phrase1.File=CAHcommons.vap
-EntryGreeting.Phrase1.Data=press 1 for yes or press 2 for no
-EntryGreeting.Phrase1.Type=262145
-EntryGreeting.Phrase1.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1402
-_ExtentY=2011
-Pos_X=11430
-Pos_Y=61965
-Pos_XP=432
-Pos_YP=342
-ControlName=L7010
-BlockId=1071554061
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071554426
-Dest0.Conn=1
-Dest1BlockID=1071554061
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=10
-TermDtmf=0
-RetryOnSilence=219
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAeAEAAAIB
+        AAAAAQAAAAAAAAAAAAAAAGMBAAAAAAoAAwAJW0RlZmF1bHRdCVtEZWZhdWx0Xf////8BAgALQ0FINzAx
+        MC5WQVAENzAxMgMABAAADkNBSGNvbW1vbnMudmFwIXByZXNzIDEgZm9yIHllcyBvciBwcmVzcyAyIGZv
+        ciBubwEABAAAAQlbRGVmYXVsdF0JW0RlZmF1bHRdCVtEZWZhdWx0XQIAAAABMQExAAABMgEyAAAAAAAA
+        AHoFAADbBwAAc0sAAC0hAADaAgAAQQEAAAVMNzAxMmAcQVwBAAAABQACAFMcQVwAAABfHEFcAAAAPFVz
+        ZSB0aGlzIHBhZ2UgdG8gZG9jdW1lbnQgdGhlIGNvbmZpZ3VyYXRpb24gZm9yIHRoaXMgY29udHJvbAD/
+        /////////wEBAA12YnZvaWNlMzAudmFwGnRoYXQgd2FzIG5vdCBhIHZhbGlkIGVudHJ5LAEEAAD/////
+        AQAAAAADAAAAAAABAQEACw==
 </value>
   </data>
-  <data name="Confirmation.PropertyBag" xml:space="preserve">
+  <data name="L6006.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.TermOnDTMF=0
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-_ExtentX=1852
-_ExtentY=1720
-Pos_X=13758
-Pos_Y=61701
-Pos_XP=520
-Pos_YP=332
-ControlName=Confirmation
-BlockId=1071554426
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1072745426
-Dest0.Conn=1
-Dest1BlockID=0
-Comment=Use this page to document the configuration for this control
-FastForwardDigit=0
-RewindDigit=0
-PauseDigit=0
-FastFwdSecs=1
-RewindSecs=2
-PauseSecs=20
-LouderDigit=0
-SofterDigit=0
-TerminateOnSpeech=0
-MinSpeechTermTime=50
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA4QIAAAIB
+        AAAAAQAAAAAAAAAAAAAAAMwCAAAAAAoAAwAJW0RlZmF1bHRdBUw3MDA1/////wEBAAtDQUg2MDAwLlZB
+        UAQ2MDA2BgAEAAABBUw3MDA1CVtEZWZhdWx0XQlbRGVmYXVsdF2vBQAARQgAAEUIAACzGwAAUAAAAAwB
+        AAAFTDYwMDZVHEFcAQAAAAUAAwBaHEFcAAAAWhxBXAAAAAAAAAAAAAA8VXNlIHRoaXMgcGFnZSB0byBk
+        b2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9sAP////8BAAAAWgAAAAQAAAAA
+        /////wEAAP////8BAQANdmJ2b2ljZTMwLnZhcBp0aGF0IHdhcyBub3QgYSB2YWxpZCBlbnRyeSwBBAAA
+        /////wEIAApyZWNvcmQudmFwGnRvIHNlbmQgdGhpcyBtZXNzYWdlIHByZXNzAQAEAAABMQAFAAIAAApy
+        ZWNvcmQudmFwMHRvIHJlcmVjb3JkIHRoZSBtZXNzYWdlIGZyb20gdGhlIGJlZ2lubmluZyBwcmVzcwIA
+        BAAAATIABQACAAAKcmVjb3JkLnZhcBt0byByZXZpZXcgdGhlIG1lc3NhZ2UgcHJlc3MEAAQAAAEzAAUA
+        AgAACnJlY29yZC52YXAeb3IgdG8gY2FuY2VsIHRoZSBtZXNzYWdlIHByZXNzAwAEAAABNAAFAAIAAP//
+        //8BAQAKcmVjb3JkLnZhcBFtZXNzYWdlIGNhbmNlbGxlZAUABAAA/////wEBAApyZWNvcmQudmFwGnlv
+        dXIgbWVzc2FnZSBoYXMgYmVlbiBzZW50BgAEAAD/////AQEACnJlY29yZC52YXAeeW91ciBtZXNzYWdl
+        IGhhcyBiZWVuIHJlY29yZGVkAAAEAAAABAAAAgAAAAQAAAAQAAAACAAAAAlBbXNnKi53YXYBAQH/////
+        AAAAAAAUAAAA/////wEAAAs=
 </value>
   </data>
-  <data name="L7014.PropertyBag" xml:space="preserve">
+  <data name="VbvFrame1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-_Version=655362
-EntryGreeting.TermOnDTMF=0
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7010.VAP
-EntryGreeting.Phrase0.Data=7014
-EntryGreeting.Phrase0.Type=262149
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-_ExtentX=1852
-_ExtentY=1720
-Pos_X=12912
-Pos_Y=7514
-Pos_XP=488
-Pos_YP=284
-ControlName=L7014
-BlockId=1071554921
-FramePage=0
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1032706053
-Dest0.Conn=1
-Dest1BlockID=0
-Comment=Use this page to document the configuration for this control
-FastForwardDigit=0
-RewindDigit=0
-PauseDigit=0
-FastFwdSecs=1
-RewindSecs=2
-PauseSecs=20
-LouderDigit=0
-SofterDigit=0
-TerminateOnSpeech=0
-MinSpeechTermTime=50
-</value>
-  </data>
-  <data name="ConfCOID.PropertyBag" xml:space="preserve">
-    <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=0
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1535
-_ExtentY=2011
-Pos_X=9102
-Pos_Y=61701
-Pos_XP=344
-Pos_YP=332
-ControlName=ConfCOID
-BlockId=1071909188
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1071554061
-Dest0.Conn=1
-Dest1BlockID=1071552943
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=0
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
-</value>
-  </data>
-  <data name="L7013.PropertyBag" xml:space="preserve">
-    <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH7010.VAP
-EntryGreeting.Phrase0.Data=7013
-EntryGreeting.Phrase0.Type=262148
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=1
-Condition0.Name=$
-Condition0.Data=$
-Condition0.UseVB=0
-Condition0.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1402
-_ExtentY=2011
-Pos_X=10160
-Pos_Y=5689
-Pos_XP=384
-Pos_YP=215
-ControlName=L7013
-BlockId=1072742769
-FramePage=0
-ContainerType=5
-NumNodes=1
-Dest0BlockID=1071554921
-Dest0.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=1
-MaxSil=15
-TermDtmf=-1
-RetryOnSilence=1
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
-</value>
-  </data>
-  <data name="L7012.PropertyBag" xml:space="preserve">
-    <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=2
-EntryGreeting.Phrase0.File=CAH7010.VAP
-EntryGreeting.Phrase0.Data=7012
-EntryGreeting.Phrase0.Type=262147
-EntryGreeting.Phrase0.DataExtra=
-EntryGreeting.Phrase1.File=CAHcommons.vap
-EntryGreeting.Phrase1.Data=press 1 for yes or press 2 for no
-EntryGreeting.Phrase1.Type=262145
-EntryGreeting.Phrase1.DataExtra=
-HintGreeting.NumPhrase=0
-NumConditions=2
-Condition0.Name=1
-Condition0.Data=1
-Condition0.UseVB=0
-Condition0.Data2=
-Condition1.Name=2
-Condition1.Data=2
-Condition1.UseVB=0
-Condition1.Data2=
-IUseMenuMode=0
-NumMenuRoutes=0
-_ExtentX=1402
-_ExtentY=2011
-Pos_X=16510
-Pos_Y=61701
-Pos_XP=624
-Pos_YP=332
-ControlName=L7012
-BlockId=1072745426
-FramePage=1
-ContainerType=5
-NumNodes=2
-Dest0BlockID=1072742769
-Dest1BlockID=1071554426
-Dest1.Conn=1
-Comment=Use this page to document the configuration for this control
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-SilenceGreeting.NumPhrase=0
-MaxKeys=0
-MaxSil=3
-TermDtmf=0
-RetryOnSilence=1
-useDefaultError=1
-DisableHelp=1
-MaskLogDigit=0
-</value>
-  </data>
-  <data name="L6006.PropertyBag" xml:space="preserve">
-    <value>
-_Version=655362
-maxRetries=3
-EntryGreeting.NumPhrase=1
-EntryGreeting.Phrase0.File=CAH6000.VAP
-EntryGreeting.Phrase0.Data=6006
-EntryGreeting.Phrase0.Type=262150
-EntryGreeting.Phrase0.DataExtra=
-HintGreeting.NumPhrase=0
-_ExtentX=1482
-_ExtentY=2117
-Pos_X=2117
-Pos_Y=60008
-Pos_XP=80
-Pos_YP=268
-ControlName=L6006
-BlockId=1073521591
-FramePage=1
-ContainerType=5
-NumNodes=3
-Dest0BlockID=1071553357
-Dest0.Conn=1
-Dest1BlockID=1073521591
-Dest1.Conn=1
-Dest2BlockID=0
-Comment=Use this page to document the configuration for this control
-MinTime=1
-MaxTime=90
-MaxSil=4
-AppendFile=0
-SilenceGreeting.NumPhrase=0
-InvalidGreeting.NumPhrase=1
-InvalidGreeting.Phrase0.File=vbvoice30.vap
-InvalidGreeting.Phrase0.Data=that was not a valid entry
-InvalidGreeting.Phrase0.Type=262444
-InvalidGreeting.Phrase0.DataExtra=
-OptionsGreeting.NumPhrase=8
-OptionsGreeting.Phrase0.File=record.vap
-OptionsGreeting.Phrase0.Data=to send this message press
-OptionsGreeting.Phrase0.Type=262145
-OptionsGreeting.Phrase0.DataExtra=
-OptionsGreeting.Phrase1.File=1
-OptionsGreeting.Phrase1.Data=
-OptionsGreeting.Phrase1.Type=131077
-OptionsGreeting.Phrase1.DataExtra=
-OptionsGreeting.Phrase2.File=record.vap
-OptionsGreeting.Phrase2.Data=to rerecord the message from the beginning press
-OptionsGreeting.Phrase2.Type=262146
-OptionsGreeting.Phrase2.DataExtra=
-OptionsGreeting.Phrase3.File=2
-OptionsGreeting.Phrase3.Data=
-OptionsGreeting.Phrase3.Type=131077
-OptionsGreeting.Phrase3.DataExtra=
-OptionsGreeting.Phrase4.File=record.vap
-OptionsGreeting.Phrase4.Data=to review the message press
-OptionsGreeting.Phrase4.Type=262148
-OptionsGreeting.Phrase4.DataExtra=
-OptionsGreeting.Phrase5.File=3
-OptionsGreeting.Phrase5.Data=
-OptionsGreeting.Phrase5.Type=131077
-OptionsGreeting.Phrase5.DataExtra=
-OptionsGreeting.Phrase6.File=record.vap
-OptionsGreeting.Phrase6.Data=or to cancel the message press
-OptionsGreeting.Phrase6.Type=262147
-OptionsGreeting.Phrase6.DataExtra=
-OptionsGreeting.Phrase7.File=4
-OptionsGreeting.Phrase7.Data=
-OptionsGreeting.Phrase7.Type=131077
-OptionsGreeting.Phrase7.DataExtra=
-CancelGreeting.NumPhrase=1
-CancelGreeting.Phrase0.File=record.vap
-CancelGreeting.Phrase0.Data=message cancelled
-CancelGreeting.Phrase0.Type=262149
-CancelGreeting.Phrase0.DataExtra=
-MsgSentGreeting.NumPhrase=1
-MsgSentGreeting.Phrase0.File=record.vap
-MsgSentGreeting.Phrase0.Data=your message has been sent
-MsgSentGreeting.Phrase0.Type=262150
-MsgSentGreeting.Phrase0.DataExtra=
-RecordOKGreeting.NumPhrase=1
-RecordOKGreeting.Phrase0.File=record.vap
-RecordOKGreeting.Phrase0.Data=your message has been recorded
-RecordOKGreeting.Phrase0.Type=262144
-RecordOKGreeting.Phrase0.DataExtra=
-AppendDigit=1024
-TermDigit=2
-RerecordDigit=4
-CancelDigit=16
-ReviewDigit=8
-Filename=Amsg*.wav
-BeepBefore=1
-CompressSilence=1
-IgnoreDtmf=1
-RecordFormat=-1
-FileData=
-PauseDigit=0
-PauseSecs=20
-PauseGreeting.NumPhrase=0
-</value>
-  </data>
-  <data name="VbvFrame1.PropertyBag" xml:space="preserve">
-    <value>
-_Version=655362
-LanguageVer=1
-ContainerType=5
-ControlName=VbvFrame1
-_ExtentX=22648
-_ExtentY=12568
-_StockProps=2
-PageList.NumPage=2
-PageList.Page0.Name=Main Q Sect.
-PageList.Page0.X=11
-PageList.Page0.Y=240
-PageList.Page1.Name=close
-PageList.Page1.X=52
-PageList.Page1.Y=36
-CurrPage=0
-NumFields=0
-Playformat=0
-VoiceDir=C:\hotline\WebSite\CorpHrApp\old voices\
-LogDir=C:\ProgramData\Pronexus\VBVoice\Logs\
-TimeFormat=0
-DateOrder=3
-LanguageId=0
-NumControls=30
-Control0=0,PlaySpecial
-Control1=0,LineGroup1
-Control2=0,Msurvey
-Control3=0,OnHook1
-Control4=0,InitGreet
-Control5=0,Spanish
-Control6=0,LangSelect
-Control7=0,Playresponse
-Control8=0,User1
-Control9=0,openstatment
-Control10=1,L7000
-Control11=1,L7001
-Control12=1,L7002
-Control13=1,L7003
-Control14=1,L7004
-Control15=1,L7007
-Control16=1,L7008
-Control17=1,confDOB
-Control18=1,ConfACPhone
-Control19=1,L7005
-Control20=1,GetCoID
-Control21=1,L7009
-Control22=1,ConfBest
-Control23=1,L7010
-Control24=1,Confirmation
-Control25=0,L7014
-Control26=1,ConfCOID
-Control27=0,L7013
-Control28=1,L7012
-Control29=1,L6006
-Comment=Use this page to document the configuration for this control
-LangProgID=Pronexus.Language.1
-TTSSpeaker=
-ASREngine=
-NuancePackages=
-ConfigFile=vbvoice.ini
-RSTDictionary=
-UsingTTS=0
-UsingASR=0
-IsASlave=0
-SlaveName=EzHR Employee Hot Line
-TypeOfRecEngine=1
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAnhoAAAIB
+        AAAAAQAAAAAqAAAAM0pIWjgyRTNKSFo4MkVYVFBHQzBYRUE3MEFQWlBWNzBUV1oxOUpSTlU2AAAAAF8a
+        AAAAAAoAAQAAAAUACVZidkZyYW1lMQFsAADbLAAAAgAAAAACAAxNYWluIFEgU2VjdC4LAAAA8AAAAAVj
+        bG9zZTMAAAAkAAAAAQAAAAAAAAAAAAAAC0M6XGhvdGxpbmVcJUM6XFByb2dyYW1EYXRhXFByb25leHVz
+        XFZCVm9pY2VcTG9nc1wTUHJvbmV4dXMuTGFuZ3VhZ2UuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIA
+        AAANMSxQbGF5U3BlY2lhbAwxLExpbmVHcm91cDEJMSxNc3VydmV5CTEsT25Ib29rMQsxLEluaXRHcmVl
+        dAkxLFNwYW5pc2gMMSxMYW5nU2VsZWN0DjEsUGxheXJlc3BvbnNlBzEsVXNlcjEOMSxvcGVuc3RhdG1l
+        bnQHMSxMNzAwMAcxLEw3MDA3BzEsTDcwMDgNMSxDb25mQUNQaG9uZQcxLEw3MDA1CTEsR2V0Q29JRAcx
+        LEw3MDA5CjEsQ29uZkJlc3QHMSxMNzAxMA4xLENvbmZpcm1hdGlvbgcxLEw3MDE0CjEsQ29uZkNPSUQH
+        MSxMNzAxMwcxLEw3MDEyBzEsTDYwMDYNMSxQbGF5U3BlY2lhbAwxLExpbmVHcm91cDEJMSxNc3VydmV5
+        CTEsT25Ib29rMQsxLEluaXRHcmVldAkxLFNwYW5pc2gMMSxMYW5nU2VsZWN0DjEsUGxheXJlc3BvbnNl
+        BzEsVXNlcjEOMSxvcGVuc3RhdG1lbnQHMSxMNzAwMAcxLEw3MDA3BzEsTDcwMDgNMSxDb25mQUNQaG9u
+        ZQcxLEw3MDA1CTEsR2V0Q29JRAcxLEw3MDA5CjEsQ29uZkJlc3QHMSxMNzAxMA4xLENvbmZpcm1hdGlv
+        bgcxLEw3MDE0CjEsQ29uZkNPSUQHMSxMNzAxMwcxLEw3MDEyBzEsTDYwMDY8VXNlIHRoaXMgcGFnZSB0
+        byBkb2N1bWVudCB0aGUgY29uZmlndXJhdGlvbiBmb3IgdGhpcyBjb250cm9sE1Byb25leHVzLkxhbmd1
+        YWdlLjEAAAAAAAAAAAAAAAABAP8/F0ludGVncml0eVN0cmluZzoyMjcwOEQyNzVENzUyNkEyRUM5RjBB
+        QjA4RTc3MEEzNjQ3ODVGNzU5ODFGQ0ExQ0I2QzEyQTc1MjYwQzdBQjQ2Q0NGNDk2Q0M4NjlGQTg3MTVE
+        OTYxQzQzMDBEQTkyQjM3MTg0MjlFMTZGNkUwRUI4MDNCNzNERjgxRTgyMzE5NjI3QUQ1MkM4MzUxQkYx
+        NEMxMTZDMjNCN0QwQTM2NDAxQzY1RTUxQTcxQzY0QTIzNTc1MTI4NjNDMUYwQjkyNkRGQjBCQTBDNEVC
+        MkIxQ0ZDQkVENjM3MzQ4QUM0MzBDQTFGMDhEODg0MUI5NzAxQUJCMEZFREMwNTJCRTVBMjQ2QTlEM0VG
+        NjQ0MDdGM0ZFODUzQTFDMzY0QjYzMjQ2OEVBODVFRTNBRTREMDJEREQ2M0E5RjgwMTU1NjYxRUMwREZD
+        RkI3Qjc4OTY1MjEzMTI2NzZEMjkxOTBGRTA5MDE2MTVDQjgwMjlGRUQ3RjBCODEzNUJFQTVERDA4NzZE
+        QkNGQTE2NzdENUYyNzFBNDA5Njg0M0M5MTc2QkIzQzFBNzlENzA5RDY3MkJERUM4MTJBQzhFMDk4NkE4
+        RTYzM0ZEMUFBMTNBMTAxNzI2N0VENTZEMEQyNzEzMTZCRDc3MzU1RjNERURDMDBGNTBGRTcxNDg4OEMz
+        OTE1QzMyREVFQ0RCMDdEMjdFQzdCREI3QkQ5QkE0MkU2REYwQjYwMkFENkVGMzFGMDI2QTU2NTE1Mjg2
+        NUIzOUI5RUNGMUM0MkY1MjUxMEYwNkZBNzBDQzZGMjY1MjZEQjFBRTEyQjZEODE3N0EwQ0Y0NTBEQjk5
+        QkMyMDhDMURBQjhENzMyNTA2MDJGQjA0ODQ4MTRBQkZCOEQxMDA5NzQ3OUUyNENFRTBCREYxRTZDNEND
+        NDFGNkI2OUI3MzE3QkI4OTE2OUU1RDI4MTM4MzY1NTRGQkMwNDQ2NjAzQTExQ0M1NDc2RTE2NjZFNjIw
+        N0QxQkI3OUFCMzAwOUEzNjE3QUI2ODg1N0JBQkI1QUI4MUUzQjQyQUIwMDAzQzIzQjJCQ0I4QUFFRkU4
+        ODE2MkMxREU2OTVGMDA1MTMwRTEyNEY3MUQzMUNBODVBMTc3NkRENEYxNTVBOEIwMTgwODNCRUY4NjRB
+        Q0JDMjdEQzdBN0Q1MEU2RDE4MTc2NTVDMUIwMkJGNDg3MjE0QTczNkU0RTcwNUI5NUM5NjZEQUM2RkEx
+        NTgxRjA2OUZFOURDMjZBNDY2NEIwNzlGMEVCODlGQzE2RTcyNzUyQTZEQzA4RDZFRDYzRTdFMUE0MEJC
+        MERFQTY3RUQzREFDNTdBQkQ0MjQ5MEE0MjI2MzM3ODJDNDg0QzQ1MjEwM0Y3NDYxMzYwRjIyQTk5NUUx
+        RDRBRDcyQzlBODVDNjc2QzIwNEI0QUIwMjc3M0VGNTBDODlENDBERjI3MzI5RDU5NTBFMDY0OUZEOUYx
+        NzJFN0IzNzg4NTU4NThCM0RERUFFNDA3Q0Q1MUIxOTg1MzY3RjVFNzA0MEYxRkU2Qzc3N0FBRkY3MzA2
+        NDVGNjZGODlDNEU5RTg4NzFCRTg4OUEyM0M2RTdFMTlDOEQ3NDFEQTRGQzVFM0U0QjdFREMwQ0Y5MEFE
+        RkNDM0U5RDNCM0JFQzYzQjFFMTI0RTA1REYyOURCOTMwQzVDMUJBRUM2RDI5MDU0MTZDM0QzMkNENkI1
+        MjQ4MEU0RkQyMjgzMENBMTg1MzkxMjg3OTZGNkJFNzgwMTZCNDc0QURGMzRDRDVCNUZFNERBQUJGQjJD
+        RDBCRUQ4NjgwOEI5Qjg5QUU4RDkwRDUyRTQ2OTVEREU0QkY1NDE4RDA1RjQyMkMwNjA0Q0REMzQ4OTM4
+        RkRCNjgxOTZDMTQ3NjhEREUzM0Q2NjAzNjA4RkRBN0IwNjQ4RUVBMzJBNDRENzcxMEI0RDhDNUQxMjJC
+        MDJCQkExODg2MERBQUIxOTJDMzg1NzM0RDZFQTc0QjhDNDU0QzJFNkJGMTc3MDA1NEUxM0RERDFGNjk1
+        M0QzQUJGMTVGNTMxNzJDODAyQzVDMDI3QzFDOTkzMTEwQjVCMjhBNzgzN0JCRTNEOTRDMTZGNTVENDU2
+        NUZERDgyNUVCMDk4RjRGNDlFNjg0RkE5MTZFM0QwNkY2QzJFN0UyMDlCNjU4OUY0MEQ2ODk5RDAwRjE0
+        NDYzQzNDNDk2M0E1RTY2NkI1Mzk0MkI1MTdCRTQ1RTRDNEIwQjlEOTNCNDYxMTJENjhEQzlCODFCRjEy
+        REMwQjE0NDZDM0UwMDY4NzQ3RjZBQzhGOTE3MTVCRjRDRjMxOTlENUZFNTZFQzg1NjUyRTM2MEFCRkQ0
+        MEQ1REU3OENEMjM5MzExQzVCN0RENkRDRkZBMjQyRTMyNzcyNjFDODQxNzQ1ODFDODg5MTBFNzRFQUNF
+        RERENTExRDE1N0MzRUExNEFEMDU4MkM1RjIxODU0N0EyNTk4OTlBQTdERjczQjZCMENBOTNDOTI3RDI4
+        RTA5ODcxRUFFQzM0MjgyODg5NTg1QTE1NUU2NkZGMDc2REYyNkVDNzM0MDI4NkRFQjcwNDNEMDkzOUI3
+        QkRCMTI4NDdEODJGQjIwNTQxMEU5MzQyMEU1RjVCNTQ1NzQ0OEYzNjM0QzE3MEM3MDNCQ0QwMEE0QTkx
+        RTg2Q0I2RDkxMzExODlGMkE2OEQ5MjlEOEM4RDgxMjI4N0VDQTgyQThDNkRGNDUxNkFBNEM3RjM4RjY5
+        NDFDQzE5MzJFODc3MEFCQTE1NzNBMERFRTdCNjkxQzFCMzQ0QUNGNjlFQzk2OTQ4REE3MkJCNzVCM0JC
+        MzkyRDYxN0ZDNzhGOEEyQzJEMTZGMzlGNDdBQzM5QTdBNTdBRjMxOUI4MkJERUJERDkxRjBCOUQzQTdF
+        RTIwRDAxMDlCNDk3OTA0ODFBNENBMThCMEU0QjVFNTlFNzIwNDZGMzE1MDI0MTBCMTFCNkJCMjU2MzlE
+        MDVBM0I5OTU1NDJCM0ZCQUZDMjAxRTA2NTFCMzVFRjU2QkJFREM1OUQ5QTAwRTBBQTVGQkZBRTRGRDY4
+        QTk0NTU3MDVGMTg4NEE4Rjg1REYxOEUyRTE0NzE2M0NBRUMxNzdENzIyODE1MDgzMjY5OTdGQkFFQjYz
+        NkIxQzQyNUE4Qjc3MjQ0RDVDNEIzMTJDRTM4QTY1QzU2MTA1Qjk0RDc3NTU4NDM5QzcyNENFNjU1NkMz
+        OTkyNUE2NzgyRUI0MDE5QUE1RDNFOUFBMDQ5NDFEQkFBQkJENTgzNkI1NTVFNDM5QTEwMzA2MERCOTA2
+        MDM0RDBEQzZFODBBOUVBOUFDRTYzMDhDMEQxMjExMTYyQzBBQjg5MjZGQkFGQjJFNUMyRkYwMDA2N0RE
+        NDgyM0EyQzA5MTk0QjBGOEM3QTdERTNGOUQ3MTREMDRDRDhDMDAxQThCM0FBNzkxQjNGNzFFN0Q0RkM1
+        MDkwRDkzQjBFMEMxMDJCRjBEMzIyRDE3NDk0QTZFQ0M5QjNDQjk2MzkyM0ZCRkY4OTdBMEQ4QTZCNjJB
+        MUU4RThCMzZEOUZEOTIwOTJCNDM5MTJBNzA4QjIwQjg0MTBEMEQxQTgxQjlDNTc1RkMyQTM0NTUyQjI4
+        QjA2OEJCRTYwODhGMjgyNjVENTc2NjZDRDdEQzFGQTlCRkYyRUE1NzM3Q0FCMzZEMTg1Mzk2QjQyQTYx
+        QjI4M0Q4M0YyMjRGQzM0N0FDREQ5Q0M4QzNFN0NERDdEQ0RBRkVBQjkyQTQwRDM1NzIwRDk0MzY2NTgz
+        MTQzMjRDOUQ3NkE1MzQ0MDNGRDJFQTg4RjlGQUM2MDRGMzJDMTQwMTg3RUM1Q0U3MzhEQzQ0NTVGNDU5
+        QUE3M0U4MkVGNzg0N0UzQjZGNzQ1RkM1NDUxRDAwOEMyRTVEMDFDNjc1NDMwNDkxMDczN0VFQTg3NUM3
+        OUM0MDY3MzhFRjZBOUJDMzJGQkExNTk4RTJDMEZFMzc2OTYzOUIyMzI3ODhBN0M2MjRGNTI4QUNCMTlD
+        MDVCQURCODYwQkFGQTFEMkNBRTYzODg0MzAwMzI1NjMzMzc2NTFDQzQ4MjlBNTgwREU0RDExMEEwM0E1
+        RTU4MDY2RkYyQ0YzNjJFNTEwMjUwMUFENkQ5QjYyQUUwNzdGNTAxMDQ3QzE5MTI0NTI3MjVBQ0Y2QzA1
+        NDZDM0JGQjM5NTE5Q0Y1QjBBREE0MTU3RTVFRkEyNDgyNzAxRUE0NDkwQTU5NkFBOTE2QzE0NzI0NjhF
+        NzgwRTE3M0E1Nzg5NjdCNEMxMjFBQTk0RjM1MTU1MTJGMjJBRTVFQjQxREVBNUE5Mjg2QjM5NkRFOERC
+        MkE0RkNCNTA2QTQ5OTc4NTZFMDQwREJCRkNCMkZDNUZFM0ZCOEZCRjk5OUU2MUI1NzIwMzI1RDUwNkY0
+        QTU1N0E1NDVDNDA3OTI5QzE1QkNEOEQyNjZCNDk1ODIxRThGRERCRTlDNTUzMDk5QzdGNTRFQzdFMEVB
+        OTU0NzkzNkQwQUJEQTRGN0JDREQxODM5MjExNDlBRUEwQkQwMzNFOEIwRkJDMUI1RTI3RUY4QUE5RjIx
+        NTNBOEM2RTY5NkRBOEFCOUUxREEwMzRGRjE3RjJENUQ2ODA1OEJFOTFGRjcwNzMyQTk0MjdBMTBGMTM2
+        MzAwNjI3NzBGQ0RBNzlBNjQ5NzgxMTE4QUEyM0MwOTM5NTgwMjFDNDM0NzlDRDk5QzM3MTI3OTE0NTFG
+        MTZBNEFBNEI2RDM0MjBEOTk3NUExNUE3OEYxMzlFREU5RTY4OTQ2QzFFMTVFNTg5RDg3MUM3MkQxNjEy
+        OUI1MzEyOTJFNjI3NkJCMTQxM0NENERGMUQ5QTlGRkI0N0U0QzUzMTA4QjkxOTI2MEJEOUYxMUQ4Mzc3
+        OTIzMUY2MjY5QUNDQ0U3Rjg2QzUwRDRGNjY3NjlERkVFOTUwNzAyRjcwRDk4MTgzQzMxMEU2QkVFOTMw
+        Q0VDQkQ0MkNGRTM0NEYxNTYxNkVDMjg3RUYzMkY4Q0U4RDY0MTA3NkU4MUZGODdENUY2RDZFREE4OEY5
+        OTE4QzRFNDk0NDMxQTU1MzA1RDdBRDE3NEU1Njc5RTRFRjdGRDExQjE2Q0U1NTE1NEU5QjM4NTlEMzBE
+        N0Y2NjRCNzc3RDJGOTcyNzdDNzQyRThCQTUxQUFFQTJEMzhEMzRBRDlEQzYyQjk1QTdCNTQwRDRBRDgw
+        QUE4Mjg4MjdFOTQxOEVEOTM0QzU5REREMkE4RDVEOUNENzMxN0ZEM0MzNDA4RUM2Q0U5RTgzM0FCNjg0
+        NTQ4NEZDQzg1QTcxOTQ1QzU5MjlDODdBMkY1MENENTJGQ0RGNkQ1MUI5NTIyMDM4OTAzQTQ5RDg5MUM0
+        Qjc4NEI1OThCRjk2QUNDODc3MjRFQkQ1QjdGM0E5QzU0NEJDNTZFMkQyOEM0RDhFQkZGNTU2MzE0RkM4
+        RUY2QzQ5ODFERjgzNDI3QTYyOTM1NzE2NkE4MTQ5OUU2NjY3QTJBQUFCNTk3OTg0QUE5RTM5RkNFQ0M3
+        N0Y5RDQ4RTAwRDhFMTg0NTQ0QUUyQ0IyNkE5OEI1RTFFQkJDRkJGQjg2MzRGQTg5MTBDN0Y5Mjg5ODFE
+        MTZCMEExMzlCNzA1NTBGMTZDNEJGNjlDMDEzM0Q5MzA4RDk1MUFGNUYxQkIzRkZCNkMyRDhFOTMxMjgx
+        M0ZCMzhFRDI2QjBCRjdFNEQzNEY5QzFENzQ1NURBNEVDMEQwNzI5OERCMkZFMEI5RkZCQUE5NkJCMDRC
+        ODgyQjNENzE4OEY2QzgwQzQ3M0Q2MDMzOTYxMjA2RTA2MUNEMjUzRUIwMUZCMkQ3OTI5QUE5QkUzOEIz
+        RUFEMjA2ODVGNTVEQTRDRkMxRTBEOEFBQTlENTM5OTdFRDY2QTMzNTU5RjkwMkNFMTU2OUI4RkMyRUE4
+        NjQ5QjNBQ0JFQjJEMkY2QTRBODkwODdCRkFGRDBGMTA3NjkwNjM2NDRBOUE3M0M2RjdEMEFBMUU4QjA4
+        RDM5OUI4RjA1MkNBOUUzQzk4NDE1QzdBNjE5NDlEQzM3MTQzMDJBQUEzQTkxNkU1NjEyRDI0MzlBNTVF
+        QkVDOEJBMDE4ODQ3NzIzNkY0MDAwRUYyNTk2NUIwQjdFOEY0QjgzQjdDNTNGMUE5RjkwQTlBNkEzNzEw
+        ODQ5RjNGQkEzOUY5NUEwNTIxMzEzOURFNkZFRDVCNTBFQ0VCNDYwRUIwMEQ0ODYyRDdCRUJENDFGOEU3
+        REM4NTM0MTczOURBRDZFREIxRkE1QUNGOTcxMjc4MTQ2QTZGQ0E4RDExMTdGNTNEQjM2RDBDRDhBRjE2
+        MEQ2QTYwRTE3NEI1RTAzRjlEODkzM0VCQjc2RjEwNkY2RDk1RERGOTcyODJDQjMxNTdFNTA2OTNGRjlF
+        MzgxREQ3NzRFNkQyQjg3MDJDN0EwMEE0QkUwM0JDQjE3RTg4NTgyRUI1OEZENjk3QUM0ODI4QTdFMUYx
+        REIyNDlENTgyODI0NDg4MDRENzk0QzQ4NTIwQ0MzMDkxNzJDMzNGMTkzMUUwNTkxODJEQUIzMURBRjRD
+        QTNENUJFMDgyREFDNzQ0RTI5RjgwNzE1QUYwNDk4RDU0MzczN0U0NjVCMTY1NkRCNDhDMUJDRTZCMDNG
+        RTk4MjBENDUxODhEODRBQjM0NzgwQUFEMTNDNDVCRURENDc1QzFFNzk3QTg1QTYzMDM3OUYwNTBGOTE4
+        MUIzN0QyQjVENUI3NTJBRjhBNjZCRTdFNzhFQ0RENjZERUQ5RTlCNzg2RTNDRDIxOTBCMkFDNzFDQzI5
+        NDczREEyQ0E5MjlBMDIxMzRFQUEzRTA0MzAyQkNDNzI5NzBGQjgwRkYxQjEwN0MyQjU4MDhFOEE4RTk5
+        Q0E0NEJDMDE4NjJFN0MyNTRGMUUxRTI1QUU5RjVGNjQ2RTA2MTQzRTZGMDUwQUQ3OTM3MUU4RTVENkI2
+        NTUwQUEwMEEwNkNCQUQxNUVCMUI4OUQxNjUyMUYwODI1REE1MUYxQUVFMjdEMzI1MzU1MDc4ODQ5QzAy
+        RUZGQzFDMDNBNkFBMTAyQjFDOUY3NEJEMTI1QTQwOEVFMTgxQzQ2NjUyODNBRjQ4QTkwMjE0NTIwMjNC
+        ODQ2N0U1NzIwM0U3OURBNUY4NEJCRDhBNkZBOEM5Q0FFNTA4NTA4RTU5NEQ5NzMzQjlEOTI0NEZBODlD
+        ODUyQzAxQTg3QzVBMUNDQkFDMkM0OUEzOUU0MzU3M0JFNzI4NjVENDZBRkQ5NDU2QTMzOEMyODQzMjhG
+        NzE1Q0M3OTQ5RUYzNDFGMjBFRTU0QUE5MkEyNkMwRjREQjc2RDJBQ0VFMkZDRUZBQjMzRjhGMkYwNUY5
+        QTdCMEE4MkQ4NDJGNDAwNUJGNTczRUMyMUYyOTQyMTQxMzAyMjA2QzQ2ODZGMjUwQzI5NDMwRTQ5MTVE
+        NUZGRDE2OUM4MEJEQTlCMzEyM0Q0RUMyQURCRTlCNjkxRkMxMTA2NTYxNkZCQkQ4QjdCQTk1RDQ1RkUw
+        MjY3MTA5RjkwNzQ1Q0E1OEE2REZENzcyREY1QUYyMjJDOUEwM0I5RDhFNzY0QzI5MTgxMDNBNTEyQTk3
+        NjUzOUE2NTU4OTQ4ODRBODY5MUVGRTFDQzJENTNEODY5QTJGQkYwRDU4MTg1MjM5Njg2MTNBOURDMEMz
+        NDBFN0FDRTdERTRBMzA0NEYwMjIzMTI0MEI0NTI4NUQwQ0Y0ODg5MDcwREMxREU5RjY5Q0E0OENENTI4
+        ODExQ0NFMDdGMDdDODE2Q0NBQURCOTYzMUNEODNEODFFMTE4QUNDNTU3MUQwNTY3OUJBMDk0QzJEMkFG
+        QUQyNDkxMzI3Nzc1QkMzMTczN0Q2REUyMEYxREEzMjIACw==
 </value>
   </data>
   <metadata name="myResAdapt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -1641,11 +570,8 @@ TypeOfRecEngine=1
     <value>False</value>
   </metadata>
   <metadata name="OleDbConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 12</value>
+    <value>10, 11</value>
   </metadata>
-  <data name="OleDbConnection1.ConnectionString" xml:space="preserve">
-    <value>Provider=Microsoft.Jet.OLEDB.4.0;Password="";User ID=Admin;Data Source=CorPaccHL.mdb;Mode=Share Deny None;Extended Properties="";Jet OLEDB:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Database Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:Create System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don't Copy Locale on Compact=False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:SFP=False</value>
-  </data>
   <metadata name="OleDbInsertCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -1724,11 +650,14 @@ TypeOfRecEngine=1
   <data name="OleDbUpdateCommand2.CommandText" xml:space="preserve">
     <value>UPDATE ReportData SET AnonReq = ?, CallDate = ?, CallStatus = ?, CBtime = ?, Comments = ?, Confirmation = ?, DOB = ?, Fname = ?, Lang = ?, Lname = ?, Phone = ?, SID = ?, Subscriber = ?, verified = ?, Verifiedby = ?, VerifiedDate = ?, CallID = ? WHERE (AutoID = ?) AND (AnonReq = ? OR ? IS NULL AND AnonReq IS NULL) AND (CBtime = ? OR ? IS NULL AND CBtime IS NULL) AND (CallDate = ? OR ? IS NULL AND CallDate IS NULL) AND (CallID = ? OR ? IS NULL AND CallID IS NULL) AND (CallStatus = ? OR ? IS NULL AND CallStatus IS NULL) AND (Comments = ? OR ? IS NULL AND Comments IS NULL) AND (Confirmation = ? OR ? IS NULL AND Confirmation IS NULL) AND (DOB = ? OR ? IS NULL AND DOB IS NULL) AND (Fname = ? OR ? IS NULL AND Fname IS NULL) AND (Lang = ? OR ? IS NULL AND Lang IS NULL) AND (Lname = ? OR ? IS NULL AND Lname IS NULL) AND (Phone = ? OR ? IS NULL AND Phone IS NULL) AND (SID = ? OR ? IS NULL AND SID IS NULL) AND (Subscriber = ? OR ? IS NULL AND Subscriber IS NULL) AND (VerifiedDate = ? OR ? IS NULL AND VerifiedDate IS NULL) AND (Verifiedby = ? OR ? IS NULL AND Verifiedby IS NULL) AND (verified = ?)</value>
   </data>
-  <data name="Linestatus1.PropertyBag" xml:space="preserve">
+  <data name="Linestatus1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-AutoSize=True
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAVgAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAEEAAAAAAAoA30IAACIEAAAEAAAAAANS4wuRj84RneMAqgBLuFEBAAAAkAFE
+        QgEAFE1pY3Jvc29mdCBTYW5zIFNlcmlmAQs=
+</value>
   </data>
   <metadata name="Myrepdata1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>148, 37</value>
@@ -1737,6 +666,6 @@ AutoSize=True
     <value>258, 37</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>39</value>
+    <value>63</value>
   </metadata>
 </root>
